@@ -12,12 +12,23 @@ def build(check=False):
     community = ROOT/'community-catalog.json'
     if community.exists():
         entries += json.loads(community.read_text())
+    previews_path = ROOT/'gallery-previews.json'
+    if previews_path.exists():
+        previews = json.loads(previews_path.read_text())
+        if isinstance(previews, dict):
+            previews = previews.get('styles', [])
+        by_id = {p['id']:p for p in previews}
+        for item in entries:
+            preview = by_id.get(item['id'], {})
+            for key in ('image', 'imageCaption', 'imageCredit', 'imageSourceUrl', 'credit', 'summary'):
+                if preview.get(key):
+                    item[key] = preview[key]
     ids = set()
     for item in entries:
         if item['id'] in ids:
             raise ValueError('Duplicate style ID: '+item['id'])
         ids.add(item['id'])
-        for key in ('entry','image'):
+        for key in ('entry','image','sourceImage'):
             if item.get(key):
                 path = (ROOT/item[key]).resolve()
                 if not path.is_relative_to(ROOT) or not path.is_file():

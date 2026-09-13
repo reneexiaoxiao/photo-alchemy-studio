@@ -1,9 +1,162 @@
 [
   {
+    "id": "souvenir-constellation",
+    "label": "旅行碎片星图",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "挑出食物、杯子与小物件，用比例和呼应关系留住一天的私人记忆。",
+    "best": [
+      "食物",
+      "旅行小物",
+      "多张照片"
+    ],
+    "fidelity": "medium",
+    "direction": "narrative",
+    "destinations": [
+      "葡萄牙",
+      "西班牙",
+      "土耳其"
+    ],
+    "image": "assets/examples/souvenir-constellation.png",
+    "entry": "styles/souvenir-constellation.md",
+    "installed": true,
+    "imageCaption": "方向试作 · 虚构旅行场景"
+  },
+  {
+    "id": "city-five-shapes",
+    "label": "城市五形",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "把街道压成五个大形状，只留下最能认出这个地方的几个细节。",
+    "best": [
+      "街巷",
+      "建筑",
+      "强轮廓"
+    ],
+    "fidelity": "low",
+    "direction": "abstract",
+    "destinations": [
+      "葡萄牙",
+      "西班牙"
+    ],
+    "image": "assets/examples/city-five-shapes.png",
+    "entry": "styles/city-five-shapes.md",
+    "installed": true,
+    "imageCaption": "方向试作 · 虚构旅行场景"
+  },
+  {
+    "id": "landscape-strata",
+    "label": "风景地层",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "提取山脊、海崖与岩石的轮廓，把风景展开为有节奏的地层色带。",
+    "best": [
+      "岩石地貌",
+      "山谷",
+      "海崖"
+    ],
+    "fidelity": "low",
+    "direction": "abstract",
+    "destinations": [
+      "土耳其",
+      "葡萄牙",
+      "西班牙"
+    ],
+    "image": "assets/examples/landscape-strata.png",
+    "entry": "styles/landscape-strata.md",
+    "installed": true,
+    "imageCaption": "方向试作 · 虚构旅行场景"
+  },
+  {
+    "id": "walking-multiview",
+    "label": "漫游多视角",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "把同一天的几个视角接成一段不可能的散步，让楼梯通向水果与市场。",
+    "best": [
+      "市场",
+      "街巷",
+      "多张照片"
+    ],
+    "fidelity": "medium",
+    "direction": "narrative",
+    "destinations": [
+      "西班牙",
+      "葡萄牙"
+    ],
+    "image": "assets/examples/walking-multiview.png",
+    "entry": "styles/walking-multiview.md",
+    "installed": true,
+    "imageCaption": "方向试作 · 虚构旅行场景"
+  },
+  {
+    "id": "courtyard-shadow-atlas",
+    "label": "庭院光影谱",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "让影子成为主角，用拱形、光缝和少量照片碎片重新组织庭院。",
+    "best": [
+      "庭院",
+      "拱廊",
+      "强光影"
+    ],
+    "fidelity": "low",
+    "direction": "abstract",
+    "destinations": [
+      "西班牙",
+      "葡萄牙",
+      "土耳其"
+    ],
+    "image": "assets/examples/courtyard-shadow-atlas.png",
+    "entry": "styles/courtyard-shadow-atlas.md",
+    "installed": true,
+    "imageCaption": "照片转译样例 · 虚构庭院场景",
+    "sourceImage": "assets/examples/source-courtyard.png"
+  },
+  {
+    "id": "miniature-journey",
+    "label": "微缩游记",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "打散远近比例，把渡轮、街区与一杯茶画进一条可以慢慢读的旅途。",
+    "best": [
+      "街区",
+      "水岸",
+      "旅行片段"
+    ],
+    "fidelity": "medium",
+    "direction": "narrative",
+    "destinations": [
+      "土耳其"
+    ],
+    "image": "assets/examples/miniature-journey.png",
+    "entry": "styles/miniature-journey.md",
+    "installed": true,
+    "imageCaption": "方向试作 · 虚构旅行场景"
+  },
+  {
     "id": "mosaic-tiles",
     "label": "马赛克瓷砖",
     "origin": "original",
-    "source": "Photo Alchemy Studio",
+    "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
     "summary": "让砖片顺着拱门、水流和轮廓铺排，把旅行片段变成一块有触感的陶瓷壁画。",
@@ -15,13 +168,22 @@
     "fidelity": "medium",
     "image": "assets/examples/mosaic-tiles.png",
     "entry": "styles/mosaic-tiles.md",
-    "installed": true
+    "installed": true,
+    "author": "Renee",
+    "direction": "material",
+    "sourceImage": "assets/examples/source-coast.png",
+    "imageCaption": "照片转译样例 · 虚构海岸场景",
+    "destinations": [
+      "葡萄牙",
+      "西班牙",
+      "土耳其"
+    ]
   },
   {
     "id": "embroidered-patch",
     "label": "刺绣纪念章",
     "origin": "original",
-    "source": "Photo Alchemy Studio",
+    "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
     "summary": "把最想记住的场景收进一枚织物徽章，让线迹、花结和包边成为记忆的质地。",
@@ -33,13 +195,22 @@
     "fidelity": "medium",
     "image": "assets/examples/embroidered-patch.png",
     "entry": "styles/embroidered-patch.md",
-    "installed": true
+    "installed": true,
+    "author": "Renee",
+    "direction": "material",
+    "sourceImage": "assets/examples/source-coast.png",
+    "imageCaption": "照片转译样例 · 虚构海岸场景",
+    "destinations": [
+      "葡萄牙",
+      "西班牙",
+      "土耳其"
+    ]
   },
   {
     "id": "riso-travel-print",
     "label": "套色旅行版画",
     "origin": "original",
-    "source": "Photo Alchemy Studio",
+    "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
     "summary": "将光影分成几块鲜明的油墨，让颜色叠印、纸面颗粒和大胆轮廓重新组织画面。",
@@ -51,13 +222,22 @@
     "fidelity": "medium",
     "image": "assets/examples/riso-travel-print.png",
     "entry": "styles/riso-travel-print.md",
-    "installed": true
+    "installed": true,
+    "author": "Renee",
+    "direction": "material",
+    "sourceImage": "assets/examples/source-coast.png",
+    "imageCaption": "照片转译样例 · 虚构海岸场景",
+    "destinations": [
+      "葡萄牙",
+      "西班牙",
+      "土耳其"
+    ]
   },
   {
     "id": "paper-cut-theatre",
     "label": "纸雕风景剧场",
     "origin": "original",
-    "source": "Photo Alchemy Studio",
+    "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
     "summary": "沿着真实的远近关系叠起纸层，把山路、街巷和树影变成一座小小的立体舞台。",
@@ -69,13 +249,22 @@
     "fidelity": "medium",
     "image": "assets/examples/paper-cut-theatre.png",
     "entry": "styles/paper-cut-theatre.md",
-    "installed": true
+    "installed": true,
+    "author": "Renee",
+    "direction": "material",
+    "sourceImage": "assets/examples/source-coast.png",
+    "imageCaption": "照片转译样例 · 虚构海岸场景",
+    "destinations": [
+      "葡萄牙",
+      "西班牙",
+      "土耳其"
+    ]
   },
   {
     "id": "stained-glass-light",
     "label": "透光彩玻璃",
     "origin": "original",
-    "source": "Photo Alchemy Studio",
+    "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
     "summary": "用铅线接住场景的结构，让天空、水面和墙体变成会透光的彩色玻璃。",
@@ -87,6 +276,15 @@
     "fidelity": "medium",
     "image": "assets/examples/stained-glass-light.png",
     "entry": "styles/stained-glass-light.md",
-    "installed": true
+    "installed": true,
+    "author": "Renee",
+    "direction": "material",
+    "sourceImage": "assets/examples/source-coast.png",
+    "imageCaption": "照片转译样例 · 虚构海岸场景",
+    "destinations": [
+      "葡萄牙",
+      "西班牙",
+      "土耳其"
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 # Mosaic Tiles · 马赛克瓷砖
 
-ID: `mosaic-tiles` · Original workflow by Photo Alchemy Studio, AI-assisted · MIT.
+ID: `mosaic-tiles` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
 
 Turn a photographed place into an authored ceramic tessera mural with a strong thumbnail silhouette. Best for arches, sea fronts, stepped streets, gardens and colored doors. Medium semantic fidelity; the whole scene is redrawn.
 

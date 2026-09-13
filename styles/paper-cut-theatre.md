@@ -1,6 +1,6 @@
 # Paper Cut Theatre · 纸雕风景剧场
 
-ID: `paper-cut-theatre` · Original workflow by Photo Alchemy Studio, AI-assisted · MIT.
+ID: `paper-cut-theatre` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
 
 Turn a scene with genuine depth into a small layered paper theatre. Preserve its point of view and occlusion order. Use a handful of purposeful planes rather than a generic scrapbook collage.
 

@@ -71,5 +71,51 @@
       ],
       "scope": "Single synthetic scene; not a portrait or cross-scene benchmark."
     }
+  ],
+  "updated": "2026-09-14",
+  "author": "Renee",
+  "new_direction_studies": [
+    {
+      "style": "city-five-shapes",
+      "file": "assets/examples/city-five-shapes.png",
+      "sourceImage": null,
+      "scope": "Concept study from fictional scene, not validated on user photos",
+      "generation_rounds": 1
+    },
+    {
+      "style": "courtyard-shadow-atlas",
+      "file": "assets/examples/courtyard-shadow-atlas.png",
+      "sourceImage": "assets/examples/source-courtyard.png",
+      "scope": "Synthetic source edit",
+      "generation_rounds": 1
+    },
+    {
+      "style": "walking-multiview",
+      "file": "assets/examples/walking-multiview.png",
+      "sourceImage": null,
+      "scope": "Concept study from fictional scene, not validated on user photos",
+      "generation_rounds": 1
+    },
+    {
+      "style": "miniature-journey",
+      "file": "assets/examples/miniature-journey.png",
+      "sourceImage": null,
+      "scope": "Concept study from fictional scene, not validated on user photos",
+      "generation_rounds": 2
+    },
+    {
+      "style": "landscape-strata",
+      "file": "assets/examples/landscape-strata.png",
+      "sourceImage": null,
+      "scope": "Concept study from fictional scene, not validated on user photos",
+      "generation_rounds": 1
+    },
+    {
+      "style": "souvenir-constellation",
+      "file": "assets/examples/souvenir-constellation.png",
+      "sourceImage": null,
+      "scope": "Concept study from fictional scene, not validated on user photos",
+      "generation_rounds": 1
+    }
   ]
 }

@@ -10,6 +10,7 @@ import base64
 import concurrent.futures
 import errno
 import hashlib
+import importlib.util
 import json
 import mimetypes
 import os
@@ -30,6 +31,8 @@ MAX_BODY = 16_384
 MAX_FILE = 2 * 1024 * 1024
 MAX_TOTAL = 12 * 1024 * 1024
 MAX_FILES = 120
+MAX_PREVIEW = 12 * 1024 * 1024
+PREVIEW_NAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,150}\.(?:png|jpe?g|webp|gif)$", re.I)
 CACHE_TTL = 30 * 60
 ALLOWED_LICENSES = {"MIT", "BSD-2-Clause", "BSD-3-Clause", "Apache-2.0", "ISC", "0BSD", "Unlicense"}
 SHA = re.compile(r"^[0-9a-f]{40}$")
@@ -75,6 +78,53 @@ def safe_path(value: object) -> str:
 
 def git_blob_sha(data: bytes) -> str:
     return hashlib.sha1(b"blob " + str(len(data)).encode("ascii") + b"\0" + data).hexdigest()
+
+
+def image_mime(header: bytes) -> str | None:
+    if header.startswith(b"\x89PNG\r\n\x1a\n") and len(header) >= 24 and header[12:16] == b"IHDR":
+        return "image/png"
+    if header.startswith(b"\xff\xd8\xff"):
+        return "image/jpeg"
+    if header.startswith((b"GIF87a", b"GIF89a")) and len(header) >= 10:
+        return "image/gif"
+    if len(header) >= 16 and header[:4] == b"RIFF" and header[8:12] == b"WEBP":
+        return "image/webp"
+    return None
+
+
+def source_preview(entry: str, files: dict[str, bytes]) -> tuple[str, bytes] | None:
+    """Select an actual raster referenced in the pinned skill or its README."""
+    folder = PurePosixPath(entry).parent
+    documents = [entry] + sorted(p for p in files if PurePosixPath(p).parent == folder and PurePosixPath(p).name.lower() in {"readme.md", "readme.markdown"})
+    for document in documents:
+        text = files[document].decode("utf-8", errors="replace")
+        text = re.sub(r"(?ms)^\s*(```|~~~).*?^\s*\1\s*$", "", text)
+        candidates = re.findall(r"!\[[^\]\n]*\]\(\s*(<[^>]+>|[^\s)]+)", text)
+        candidates += re.findall(r"<img\b[^>]*\bsrc\s*=\s*[\"']([^\"']+)[\"']", text, re.I)
+        for raw in candidates[:12]:
+            target = unquote(raw.strip("<>"))
+            try:
+                parsed = urlsplit(target)
+            except ValueError:
+                continue
+            if parsed.scheme or parsed.netloc or parsed.query or target.startswith("/") or "\\" in target:
+                continue
+            parts = list(PurePosixPath(document).parent.parts)
+            for part in parsed.path.split("/"):
+                if part in {"", "."}:
+                    continue
+                if part == "..":
+                    if not parts:
+                        break
+                    parts.pop()
+                else:
+                    parts.append(part)
+            else:
+                path = "/".join(parts)
+                data = files.get(path)
+                if data and PREVIEW_NAME.fullmatch(PurePosixPath(path).name) and not re.search(r"logo|badge|icon|avatar|favicon|qrcode|sponsor|alipay|wechat", PurePosixPath(path).name, re.I) and image_mime(data[:32]):
+                    return path, data
+    return None
 
 
 def decode_blob(payload: dict, expected_sha: str) -> bytes:
@@ -274,6 +324,7 @@ class Studio:
         self.github = github or GitHub()
         self.lock = threading.RLock()
         self.cache: dict[tuple[str, str], dict] = {}
+        self.offline_warning: str | None = None
 
     def _safe_local(self, path: Path) -> Path:
         try:
@@ -292,8 +343,8 @@ class Studio:
     def _mkdir(self, path: Path) -> None:
         self._safe_local(path).mkdir(parents=True, exist_ok=True, mode=0o700)
 
-    def _catalog(self, *, legacy: bool = False, canonical: bool = False) -> dict:
-        source = self.root / "catalog.json" if canonical else self.local / ("legacy-catalog.json" if legacy else "catalog.json")
+    def _catalog(self, *, legacy: bool = False, canonical: bool = False, preview: bool = False) -> dict:
+        source = self.root / "catalog.json" if canonical else self.local / ("preview-catalog.json" if preview else "legacy-catalog.json" if legacy else "catalog.json")
         path = self._safe_local(source)
         if not path.exists():
             return {"version": 1, "styles": []}
@@ -301,23 +352,97 @@ class Studio:
             if path.stat().st_size > 4 * 1024 * 1024:
                 raise ValueError()
             result = json.loads(path.read_text(encoding="utf-8"))
-            if canonical and isinstance(result, list):
+            if (canonical or preview) and isinstance(result, list):
                 result = {"styles": result}
             if not isinstance(result, dict) or not isinstance(result.get("styles"), list) or any(not isinstance(item, dict) or not isinstance(item.get("id"), str) for item in result["styles"]):
                 raise ValueError()
             return result
         except (OSError, ValueError):
-            label = "内置风格索引" if canonical else "旧风格兼容索引" if legacy else "本地目录索引"
+            label = "本地预览索引" if preview else "内置风格索引" if canonical else "旧风格兼容索引" if legacy else "本地目录索引"
             raise ImportErrorSafe(f"{label}损坏；请恢复备份后重试，现有内容未被覆盖。", 409) from None
 
     def catalog(self) -> dict:
         with self.lock:
-            merged = {item["id"]: item for item in self._catalog(legacy=True)["styles"]}
-            merged.update({item["id"]: item for item in self._catalog()["styles"]})
+            merged = {item["id"]: dict(item) for item in self._catalog(legacy=True)["styles"]}
+            for item in self._catalog()["styles"]:
+                previous = merged.get(item["id"], {})
+                combined = {**previous, **item}
+                if not item.get("image") and previous.get("image"):
+                    combined["image"] = previous["image"]
+                merged[item["id"]] = combined
+            for preview in self._catalog(preview=True)["styles"]:
+                item = merged.get(preview["id"])
+                if item is None:
+                    continue
+                for key in ("label", "summary"):
+                    if isinstance(preview.get(key), str) and preview[key].strip():
+                        item[key] = preview[key][:800 if key == "summary" else 120]
+                current = self._preview_target(item.get("image"))
+                candidate = self._preview_target(preview.get("image"))
+                if candidate and not current:
+                    item["image"] = "/local-previews/" + candidate[0].name
+                    for key in ("imageCaption", "credit"):
+                        if isinstance(preview.get(key), str):
+                            item[key] = preview[key][:500]
+            for item in merged.values():
+                preview = self._preview_target(item.get("image"))
+                if preview:
+                    item["image"] = "/local-previews/" + preview[0].name
+                elif isinstance(item.get("image"), str) and item["image"].startswith("/"):
+                    item["image"] = None
             return {"styles": list(merged.values())}
 
+    def _preview_target(self, value: object) -> tuple[Path, str] | None:
+        if not isinstance(value, str):
+            return None
+        if value.startswith("/local-previews/"):
+            name = value[len("/local-previews/"):]
+            target = self.local / "previews" / name
+        else:
+            target = Path(value)
+            name = target.name
+            if not target.is_absolute() or target.parent != self.local / "previews":
+                return None
+        if not PREVIEW_NAME.fullmatch(name) or ".." in name:
+            return None
+        try:
+            target = self._safe_local(target)
+            if not target.is_file() or not 0 < target.stat().st_size <= MAX_PREVIEW:
+                return None
+            with target.open("rb") as stream:
+                mime = image_mime(stream.read(32))
+            if mime:
+                return target, mime
+        except (ImportErrorSafe, OSError):
+            pass
+        return None
+
+    def local_preview(self, name: str) -> tuple[bytes, str]:
+        if not PREVIEW_NAME.fullmatch(name) or ".." in name:
+            raise ImportErrorSafe("本地预览不存在。", 404)
+        with self.lock:
+            rows = self._catalog(preview=True)["styles"] + self._catalog()["styles"]
+            for row in rows:
+                found = self._preview_target(row.get("image"))
+                if found and found[0].name == name:
+                    data = found[0].read_bytes()
+                    if len(data) <= MAX_PREVIEW and image_mime(data[:32]) == found[1]:
+                        return data, found[1]
+        raise ImportErrorSafe("本地预览未登记或无法读取。", 404)
+
     def status(self) -> dict:
-        return {"connected": True, "version": VERSION, "installedCount": len(self.catalog()["styles"]), "githubReady": shutil.which("gh") is not None}
+        return {"connected": True, "version": VERSION, "installedCount": len(self.catalog()["styles"]), "githubReady": shutil.which("gh") is not None, "warnings": [self.offline_warning] if self.offline_warning else []}
+
+    def refresh_offline(self) -> list[str]:
+        try:
+            specification = importlib.util.spec_from_file_location("_photo_alchemy_offline_builder", Path(__file__).with_name("build_local_gallery.py"))
+            module = importlib.util.module_from_spec(specification)
+            specification.loader.exec_module(module)
+            module.build_local_gallery(self.root, studio=self)
+            self.offline_warning = None
+        except Exception:
+            self.offline_warning = "个人离线页未更新；现有安装未受影响。可运行 python3 scripts/build_local_gallery.py 重新生成。"
+        return [self.offline_warning] if self.offline_warning else []
 
     def search(self, query: object) -> dict:
         if not isinstance(query, str) or not query.strip() or len(query) > 160 or any(ord(c) < 32 for c in query):
@@ -539,11 +664,12 @@ class Studio:
             destination = self._safe_local(self.local / "extensions" / identifier)
             files = selected["files"]
             if old and old.get("commit") == commit and destination.is_dir() and self._verify_files(destination, files):
-                return {"installed": True, "alreadyInstalled": True, "style": old, "historyPath": None}
+                return {"installed": True, "alreadyInstalled": True, "style": old, "historyPath": None, "warnings": self.refresh_offline()}
             self._mkdir(self.local / "staging")
             self._mkdir(destination.parent)
             staging = Path(tempfile.mkdtemp(prefix="import-", dir=self.local / "staging"))
             backup = None
+            created_preview = None
             promoted = False
             try:
                 for relative, content in files.items():
@@ -573,14 +699,35 @@ class Studio:
                     "manualOnly": bool((existing or {}).get("manualOnly") or (existing or {}).get("selection") == "manual-only" or any(p.endswith("agents/openai.yaml") and re.search(rb"(?m)^\s*allow_implicit_invocation:\s*false\s*$", data) for p, data in files.items())),
                     "installedAt": provenance["installedAt"],
                 }
+                for key in ("image", "imageCaption", "credit", "previewSourceUrl"):
+                    if (existing or {}).get(key):
+                        style[key] = existing[key]
+                selected_preview = source_preview(path, files)
+                if selected_preview:
+                    source_path, image_data = selected_preview
+                    extension = {"image/png": "png", "image/jpeg": "jpg", "image/webp": "webp", "image/gif": "gif"}[image_mime(image_data[:32])]
+                    name = "imported-" + hashlib.sha256(image_data).hexdigest()[:24] + "." + extension
+                    target = self._safe_local(self.local / "previews" / name)
+                    self._mkdir(target.parent)
+                    if target.exists():
+                        if target.read_bytes() != image_data:
+                            raise ImportErrorSafe("已有预览文件内容不一致，安装已停止。", 409)
+                    else:
+                        with target.open("xb") as stream:
+                            created_preview = target
+                            stream.write(image_data)
+                        target.chmod(0o600)
+                    style.update({"image": "/local-previews/" + name, "imageCaption": "上游参考图", "credit": repo, "previewSourceUrl": f"https://github.com/{repo}/blob/{commit}/{quote(source_path, safe='/')}"})
                 updated = {"version": 1, "styles": [item for item in catalog["styles"] if item["id"] != identifier] + [style]}
                 self._write_catalog(updated)
-                return {"installed": True, "alreadyInstalled": False, "style": style, "historyPath": str(backup) if backup else None}
+                return {"installed": True, "alreadyInstalled": False, "style": style, "historyPath": str(backup) if backup else None, "warnings": self.refresh_offline()}
             except Exception:
                 if promoted and destination.exists():
                     shutil.rmtree(destination)
                 if backup and (backup / "extension").exists():
                     os.replace(backup / "extension", destination)
+                if created_preview:
+                    created_preview.unlink(missing_ok=True)
                 raise
             finally:
                 if staging.exists():
@@ -677,6 +824,11 @@ class Handler(BaseHTTPRequestHandler):
                 self._json(self.server.studio.status())
             elif path == "/api/catalog":
                 self._json(self.server.studio.catalog())
+            elif path.startswith("/local-previews/"):
+                data, mime = self.server.studio.local_preview(path[len("/local-previews/"):])
+                self._headers(200, mime, len(data))
+                if self.command != "HEAD":
+                    self.wfile.write(data)
             else:
                 relative = "index.html" if path == "/" else safe_path(path.lstrip("/"))
                 if relative not in {"index.html", "gallery.js", "gallery.css", "catalog.js"} and not relative.startswith("assets/"):
@@ -764,6 +916,8 @@ def main() -> None:
     url = f"http://127.0.0.1:{args.port}/"
     print(f"Photo Alchemy Studio {VERSION}: {url}", flush=True)
     print("仅限本机；按 Ctrl+C 停止。第三方源文件不会被自动执行。", flush=True)
+    for warning in server.studio.refresh_offline():
+        print("提示：" + warning, flush=True)
     if not args.no_open:
         threading.Timer(0.3, webbrowser.open, args=(url,)).start()
     try:

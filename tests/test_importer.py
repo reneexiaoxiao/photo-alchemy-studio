@@ -15,6 +15,9 @@ from urllib.request import Request, urlopen
 SPEC = importlib.util.spec_from_file_location("studio_server", Path(__file__).resolve().parents[1] / "scripts" / "studio_server.py")
 server = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(server)
+BUILDER_SPEC = importlib.util.spec_from_file_location("build_local_gallery", Path(__file__).resolve().parents[1] / "scripts" / "build_local_gallery.py")
+builder = importlib.util.module_from_spec(BUILDER_SPEC)
+BUILDER_SPEC.loader.exec_module(builder)
 
 MIT = b'''MIT License
 
@@ -49,6 +52,7 @@ Read [the prompt](references/prompt.md), then describe the image.
 '''
 PIN_A = "a" * 40
 PIN_B = "b" * 40
+PNG = base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+j2ioAAAAASUVORK5CYII=")
 
 
 class FakeGitHub:
@@ -342,17 +346,153 @@ class ImporterTest(unittest.TestCase):
         legacy_index.write_text(json.dumps({"styles": changed}), encoding="utf-8")
         self.assertEqual(self.install()["style"]["id"], "watercolor-builtin")
 
+    def test_preview_overlay_preserves_installed_metadata_and_hides_image_path(self):
+        self.inspect()
+        installed = self.install()["style"]
+        folder = self.studio.local / "previews"
+        folder.mkdir()
+        preview = folder / "existing-watercolor.png"
+        preview.write_bytes(PNG)
+        overlays = [{"id": installed["id"], "image": str(preview), "imageCaption": "原有示例", "credit": "原作者", "summary": "轻透水彩与纸张纹理", "installed": False, "entry": "/must-not-replace/SKILL.md", "commit": PIN_B, "license": "restricted", "source": "wrong/source"}]
+        path = self.studio.local / "preview-catalog.json"
+        path.write_text(json.dumps(overlays), encoding="utf-8")
+        before = path.read_bytes()
+        result = self.studio.catalog()["styles"][0]
+        self.assertEqual(result["image"], "/local-previews/existing-watercolor.png")
+        self.assertEqual(result["summary"], overlays[0]["summary"])
+        for key in ("installed", "entry", "commit", "license", "source"):
+            self.assertEqual(result[key], installed[key])
+        self.assertNotIn(str(preview), json.dumps(result))
+        self.assertEqual(path.read_bytes(), before)
+        self.assertEqual(self.studio.local_preview("existing-watercolor.png"), (PNG, "image/png"))
+
+    def test_new_import_selects_pinned_readme_image_and_keeps_it_over_overlay(self):
+        self.github.files["styles/watercolor/README.md"] = b"# Preview\n![Logo](https://example.com/logo.png)\n![Example](examples/result.png)\n"
+        self.github.files["styles/watercolor/examples/result.png"] = PNG
+        self.inspect()
+        installed = self.install()["style"]
+        self.assertTrue(installed["image"].startswith("/local-previews/imported-"))
+        self.assertIn(PIN_A + "/styles/watercolor/examples/result.png", installed["previewSourceUrl"])
+        self.assertEqual(self.studio.local_preview(installed["image"].rsplit("/", 1)[-1]), (PNG, "image/png"))
+        old = self.studio.local / "previews" / "older-example.png"
+        old.write_bytes(PNG)
+        (self.studio.local / "preview-catalog.json").write_text(json.dumps([{"id": installed["id"], "image": str(old)}]), encoding="utf-8")
+        self.assertEqual(self.studio.catalog()["styles"][0]["image"], installed["image"])
+
+    def test_fake_image_is_not_published_as_import_preview(self):
+        self.github.files["styles/watercolor/README.md"] = b"![Example](examples/result.png)"
+        self.github.files["styles/watercolor/examples/result.png"] = b"<html><script>dangerous()</script></html>"
+        self.inspect()
+        self.assertIsNone(self.install()["style"]["image"])
+
+    def test_import_preview_file_is_removed_when_catalog_commit_fails(self):
+        self.github.files["styles/watercolor/README.md"] = b"![Example](examples/result.png)"
+        self.github.files["styles/watercolor/examples/result.png"] = PNG
+        self.inspect()
+        with patch.object(self.studio, "_write_catalog", side_effect=OSError("disk full")):
+            with self.assertRaises(OSError):
+                self.install()
+        self.assertEqual(list((self.studio.local / "previews").iterdir()), [])
+        self.assertEqual(self.studio.catalog(), {"styles": []})
+
+    def test_successful_install_automatically_exports_personal_gallery(self):
+        (self.root / "index.html").write_text('<script src="catalog.js"></script><script src="gallery.js"></script>', encoding="utf-8")
+        (self.root / "catalog.json").write_text("[]", encoding="utf-8")
+        self.inspect()
+        result = self.install()
+        self.assertEqual(result["warnings"], [])
+        self.assertTrue((self.root / "local.html").is_file())
+        content = (self.studio.local / "gallery-catalog.js").read_text(encoding="utf-8")
+        self.assertIn("window.PHOTO_ALCHEMY_PERSONAL = true", content)
+        self.assertIn(PIN_A, content)
+        self.assertIn(result["style"]["id"], content)
+
+    def test_offline_export_failure_warns_without_rolling_back_install(self):
+        (self.root / "index.html").write_text("Missing required catalog script", encoding="utf-8")
+        (self.root / "local.html").write_text("Previous personal page", encoding="utf-8")
+        self.studio._mkdir(self.studio.local)
+        previous_js = self.studio.local / "gallery-catalog.js"
+        previous_js.write_text("Previous catalog", encoding="utf-8")
+        self.inspect()
+        result = self.install()
+        self.assertTrue(result["installed"])
+        self.assertTrue(result["warnings"])
+        self.assertEqual(Path(result["style"]["entry"]).read_bytes(), SKILL)
+        self.assertEqual(self.studio.catalog()["styles"][0]["commit"], PIN_A)
+        self.assertEqual((self.root / "local.html").read_text(), "Previous personal page")
+        self.assertEqual(previous_js.read_text(), "Previous catalog")
+        self.assertEqual(self.studio.status()["warnings"], result["warnings"])
+
+
+class OfflineGalleryTest(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory()
+        self.root = Path(self.temporary.name).resolve()
+        self.studio = server.Studio(self.root, FakeGitHub())
+        self.index = '<link rel="stylesheet" href="gallery.css"><script src="catalog.js"></script><script src="gallery.js"></script>'
+        (self.root / "index.html").write_text(self.index, encoding="utf-8")
+        (self.root / "catalog.js").write_text("PUBLIC CATALOG", encoding="utf-8")
+        (self.root / "gallery.js").write_text("SHARED FRONTEND", encoding="utf-8")
+        (self.root / "gallery.css").write_text("SHARED STYLES", encoding="utf-8")
+        (self.root / "catalog.json").write_text(json.dumps([{"id": "original", "label": "Original", "image": "assets/original.png"}, {"id": "existing", "label": "Public entry", "image": None}]), encoding="utf-8")
+        self.studio._mkdir(self.studio.local / "previews")
+        preview = self.studio.local / "previews" / "reference.png"
+        preview.write_bytes(PNG)
+        (self.studio.local / "legacy-catalog.json").write_text(json.dumps({"styles": [{"id": "existing", "label": "Legacy", "entry": "/old/SKILL.md", "installed": True}]}), encoding="utf-8")
+        (self.studio.local / "preview-catalog.json").write_text(json.dumps([{"id": "existing", "image": str(preview), "summary": "纸张与轻透色彩"}]), encoding="utf-8")
+        self.studio._write_catalog({"styles": [{"id": "existing", "label": "Installed", "installed": True, "commit": PIN_B, "entry": "/installed/SKILL.md", "image": None}]})
+
+    def tearDown(self):
+        self.temporary.cleanup()
+
+    def test_offline_export_reuses_frontend_and_preserves_pin_with_relative_images(self):
+        result = builder.build_local_gallery(self.root, self.studio)
+        self.assertEqual((result["count"], result["previewCount"]), (2, 1))
+        html = (self.root / "local.html").read_text(encoding="utf-8")
+        self.assertLess(html.index('src="catalog.js"'), html.index('src=".local/gallery-catalog.js"'))
+        self.assertLess(html.index('src=".local/gallery-catalog.js"'), html.index('src="gallery.js"'))
+        script = (self.studio.local / "gallery-catalog.js").read_text(encoding="utf-8")
+        rows = json.loads(script.split("window.PHOTO_ALCHEMY_CATALOG = ", 1)[1].rstrip().removesuffix(";"))
+        installed = next(item for item in rows if item["id"] == "existing")
+        self.assertEqual(installed["image"], ".local/previews/reference.png")
+        self.assertEqual((installed["commit"], installed["entry"]), (PIN_B, "/installed/SKILL.md"))
+        self.assertNotIn(str(self.studio.local / "previews"), script)
+        self.assertEqual((self.root / "index.html").read_text(), self.index)
+        self.assertEqual((self.root / "catalog.js").read_text(), "PUBLIC CATALOG")
+        self.assertEqual((self.root / "gallery.js").read_text(), "SHARED FRONTEND")
+        self.assertEqual((self.root / "gallery.css").read_text(), "SHARED STYLES")
+
+    def test_offline_export_rejects_symlinked_output(self):
+        outside = self.root / "other-private-file.html"
+        outside.write_text("DO NOT OVERWRITE", encoding="utf-8")
+        (self.root / "local.html").symlink_to(outside)
+        with self.assertRaises(server.ImportErrorSafe):
+            builder.build_local_gallery(self.root, self.studio)
+        self.assertEqual(outside.read_text(), "DO NOT OVERWRITE")
+        self.assertFalse((self.studio.local / "gallery-catalog.js").exists())
+
 
 class HTTPTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.temporary = tempfile.TemporaryDirectory()
-        cls.root = Path(cls.temporary.name)
+        cls.root = Path(cls.temporary.name).resolve()
         (cls.root / "index.html").write_text("<!doctype html><title>Test</title>")
         (cls.root / "assets").mkdir()
         (cls.root / ".local").mkdir()
         (cls.root / ".local" / "secret.txt").write_text("PRIVATE")
         (cls.root / "assets" / "leak.txt").symlink_to(cls.root / ".local" / "secret.txt")
+        preview_dir = cls.root / ".local" / "previews"
+        preview_dir.mkdir()
+        (preview_dir / "registered.png").write_bytes(PNG)
+        (preview_dir / "unlisted.png").write_bytes(PNG)
+        (preview_dir / "disguised.png").write_text("<html>PRIVATE HTML</html>")
+        (cls.root / ".local" / "secret.png").write_bytes(PNG)
+        (preview_dir / "symlink.png").symlink_to(cls.root / ".local" / "secret.png")
+        preview_rows = [{"id": "test-" + name, "image": str((preview_dir / name).absolute())} for name in ("registered.png", "disguised.png", "symlink.png")]
+        preview_rows[0]["image"] = str((preview_dir / "registered.png").resolve())
+        preview_rows.append({"id": "outside", "image": str((cls.root / ".local" / "secret.png").resolve())})
+        (cls.root / ".local" / "preview-catalog.json").write_text(json.dumps(preview_rows))
         cls.httpd = server.StudioHTTPServer(("127.0.0.1", 0), server.Studio(cls.root, FakeGitHub()))
         cls.thread = threading.Thread(target=cls.httpd.serve_forever, daemon=True)
         cls.thread.start()
@@ -402,6 +542,19 @@ class HTTPTest(unittest.TestCase):
         self.assertEqual(self.request("/api/search", b"not json", headers)[0], 400)
         self.assertEqual(self.request("/api/search", b"[]", headers)[0], 400)
         self.assertEqual(self.request("/api/search", b"{}", {"Content-Type": "text/plain", "Origin": self.origin})[0], 415)
+
+    def test_local_preview_route_only_serves_registered_raster_files(self):
+        status, body, headers = self.request("/local-previews/registered.png")
+        self.assertEqual((status, body), (200, PNG))
+        self.assertEqual(headers["Content-Type"], "image/png")
+        self.assertEqual(headers["X-Content-Type-Options"], "nosniff")
+        self.assertIsNone(headers.get("Access-Control-Allow-Origin"))
+        for path in ["/local-previews/unlisted.png", "/local-previews/disguised.png", "/local-previews/symlink.png", "/local-previews/secret.png", "/local-previews/../secret.png", "/local-previews/%2e%2e/secret.png", "/local-previews/registered.png/extra", "/.local/previews/registered.png", "/.local/preview-catalog.json"]:
+            with self.subTest(path=path):
+                status, body, _ = self.request(path)
+                self.assertNotEqual(status, 200)
+                self.assertNotIn(b"PRIVATE", body)
+        self.assertEqual(self.request("/local-previews/registered.png", headers={"Host": "attacker.example"})[0], 403)
 
 
 if __name__ == "__main__":

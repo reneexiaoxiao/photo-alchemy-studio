@@ -945,5 +945,7 @@
     "Only the explicitly licensed Jiuerli authority images are included. No third-party sample/gallery images are included.",
     "Surreal Library original engine is not enabled. Default generation is routed through root ImageGen.",
     "Optional Jiuerli extension/regression files are absent from pinned upstream and are not claimed to be bundled."
-  ]
+  ],
+  "gallery_image_audit": "image-rights-audit.json",
+  "gallery_update": "2026-09-14: 10 community reference images now publicly included under separate per-image review. Any earlier blanket sample exclusion describes initial packaging only. Private overlay retains all 18 legacy images."
 }

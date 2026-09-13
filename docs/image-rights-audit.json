@@ -1,0 +1,388 @@
+{
+  "checkedAt": "2026-09-13T15:57:47.548200+00:00",
+  "summary": {
+    "localPreviews": 18,
+    "publicPreviews": 10,
+    "publicLinkOnly": 8,
+    "MITRepositorySamples": 7,
+    "textOnlyGeneratedSamples": 3,
+    "privatePreviewBytes": 35896044,
+    "originalOutputMatches": 18
+  },
+  "policy": "使用实际授权范围：已作为仓库自有示例随MIT发布且无冲突声明的图片可保留许可展示；不要求每张另写许可。真实的非商业/禁止分发/无许可或受限输入照片情况保留本地。没有把根MIT扩大到第三方受限内容。",
+  "supersedes": "Supersedes the initial blanket sample-image exclusion in the earlier software-oriented source audit; runtime packaging decisions are not modified by this file.",
+  "rows": [
+    {
+      "id": "minimal-zine",
+      "source": "LiamGvchi/gc-minimal-zine-poster",
+      "sourceUrl": "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+      "publicAllowed": true,
+      "image": "assets/community-previews/minimal-zine.jpg",
+      "imageLicense": "MIT",
+      "reason": "README 明确六张样例均由仓库作者创作，当前图精确匹配 Shore Pause；根 MIT 无图片排除，保留 LiamGvchi copyright 和 MIT。",
+      "evidence": [
+        "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/examples/shore-pause.jpeg",
+        "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/README.md",
+        "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/LICENSE"
+      ],
+      "originProvenance": "UPSTREAM EXAMPLE",
+      "upstreamExactMatches": [
+        {
+          "repo": "LiamGvchi/gc-minimal-zine-poster",
+          "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+          "path": "examples/shore-pause.jpeg",
+          "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/examples/shore-pause.jpeg"
+        }
+      ],
+      "visuallyChecked": true,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "muted-zine",
+      "source": "moonlin1213/muted-zine-poster-v01",
+      "sourceUrl": "https://github.com/moonlin1213/muted-zine-poster-v01",
+      "publicAllowed": true,
+      "image": "assets/community-previews/muted-zine.png",
+      "imageLicense": "Project-generated sample",
+      "reason": "生成日志确认这是纯文本 ImageGen 新建图，未附任何源照片或参考图片；现存图片与该次生成文件 SHA-256 相同。源技能文档的分发范围与此本地新建样例分开判断；公开包不因此取得或复制受限源文档。",
+      "evidence": [
+        {
+          "kind": "generation-record",
+          "promptLine": 987,
+          "copyLine": 997,
+          "inputImages": [],
+          "sha256": "3c4000fa991ede3f2634df926270f19346f5162621784a26bee5ba7a7f7adfd9"
+        }
+      ],
+      "originProvenance": "LOCAL IMAGEGEN SAMPLE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "photo-revival",
+      "source": "dacnay816y62-hub/photo-revival",
+      "sourceUrl": "https://github.com/dacnay816y62-hub/photo-revival",
+      "publicAllowed": true,
+      "image": "assets/community-previews/photo-revival.png",
+      "imageLicense": "MIT",
+      "reason": "图像与固定提交官方样例 Git blob 完全相同；它作为仓库文档/示例随根 MIT 发布，未发现独立第三方署名、图片排除或冲突许可。基于作者对仓库所作许可纳入，未宣称完成独立摄影权属调查。",
+      "evidence": [
+        "https://github.com/dacnay816y62-hub/photo-revival/blob/ca4c3c6c0f812355bd6d815d8a78652db801b7f1/examples/05_japan_road_page.png",
+        "https://github.com/dacnay816y62-hub/photo-revival/blob/ca4c3c6c0f812355bd6d815d8a78652db801b7f1/README.md",
+        "https://github.com/dacnay816y62-hub/photo-revival/blob/ca4c3c6c0f812355bd6d815d8a78652db801b7f1/LICENSE"
+      ],
+      "originProvenance": "UPSTREAM EXAMPLE",
+      "upstreamExactMatches": [
+        {
+          "repo": "dacnay816y62-hub/photo-revival",
+          "commit": "ca4c3c6c0f812355bd6d815d8a78652db801b7f1",
+          "path": "examples/05_japan_road_page.png",
+          "url": "https://github.com/dacnay816y62-hub/photo-revival/blob/ca4c3c6c0f812355bd6d815d8a78652db801b7f1/examples/05_japan_road_page.png"
+        }
+      ],
+      "visuallyChecked": true,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "pixel-bitmap",
+      "source": "v92388375-gif/pixel-style-poster-skill",
+      "sourceUrl": "https://github.com/v92388375-gif/pixel-style-poster-skill",
+      "publicAllowed": true,
+      "image": "assets/community-previews/pixel-bitmap.png",
+      "imageLicense": "MIT",
+      "reason": "图像与固定提交官方样例 Git blob 完全相同；它作为仓库文档/示例随根 MIT 发布，未发现独立第三方署名、图片排除或冲突许可。基于作者对仓库所作许可纳入，未宣称完成独立摄影权属调查。",
+      "evidence": [
+        "https://github.com/v92388375-gif/pixel-style-poster-skill/blob/b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b/examples/deep-teal-butterfly.png",
+        "https://github.com/v92388375-gif/pixel-style-poster-skill/blob/b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b/README.md",
+        "https://github.com/v92388375-gif/pixel-style-poster-skill/blob/b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b/LICENSE"
+      ],
+      "originProvenance": "UPSTREAM EXAMPLE",
+      "upstreamExactMatches": [
+        {
+          "repo": "v92388375-gif/pixel-style-poster-skill",
+          "commit": "b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b",
+          "path": "examples/deep-teal-butterfly.png",
+          "url": "https://github.com/v92388375-gif/pixel-style-poster-skill/blob/b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b/examples/deep-teal-butterfly.png"
+        }
+      ],
+      "visuallyChecked": true,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "deconstructed-duotone",
+      "source": "Lixorn/deconstructed-duotone-poster",
+      "sourceUrl": "https://github.com/Lixorn/deconstructed-duotone-poster",
+      "publicAllowed": true,
+      "image": "assets/community-previews/deconstructed-duotone.webp",
+      "imageLicense": "MIT",
+      "reason": "图像与固定提交官方样例 Git blob 完全相同；它作为仓库文档/示例随根 MIT 发布，未发现独立第三方署名、图片排除或冲突许可。基于作者对仓库所作许可纳入，未宣称完成独立摄影权属调查。",
+      "evidence": [
+        "https://github.com/Lixorn/deconstructed-duotone-poster/blob/0393d269ff82ef7044a6c6effd36473c4f983a33/examples/purple-canopy.webp",
+        "https://github.com/Lixorn/deconstructed-duotone-poster/blob/0393d269ff82ef7044a6c6effd36473c4f983a33/README.md",
+        "https://github.com/Lixorn/deconstructed-duotone-poster/blob/0393d269ff82ef7044a6c6effd36473c4f983a33/LICENSE"
+      ],
+      "originProvenance": "UPSTREAM EXAMPLE",
+      "upstreamExactMatches": [
+        {
+          "repo": "Lixorn/deconstructed-duotone-poster",
+          "commit": "0393d269ff82ef7044a6c6effd36473c4f983a33",
+          "path": "examples/purple-canopy.webp",
+          "url": "https://github.com/Lixorn/deconstructed-duotone-poster/blob/0393d269ff82ef7044a6c6effd36473c4f983a33/examples/purple-canopy.webp"
+        }
+      ],
+      "visuallyChecked": true,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "morandi-cinematic",
+      "source": "Zeejay0/gathered-scenes-zine-skill",
+      "sourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+      "publicAllowed": false,
+      "image": null,
+      "imageLicense": "Gathered Scenes Zine Personal Non-Commercial License 1.0",
+      "reason": "来源按个人非商业条款分发，通用公开包没有满足其组织/商业限制的授权；只保留本地既有预览。",
+      "evidence": [
+        "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE"
+      ],
+      "originProvenance": "MATERIAL REFERENCE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "scene-distillation",
+      "source": "Zeejay0/gathered-scenes-zine-skill",
+      "sourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+      "publicAllowed": false,
+      "image": null,
+      "imageLicense": "Gathered Scenes Zine Personal Non-Commercial License 1.0",
+      "reason": "来源按个人非商业条款分发，通用公开包没有满足其组织/商业限制的授权；只保留本地既有预览。",
+      "evidence": [
+        "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE"
+      ],
+      "originProvenance": "UPSTREAM EXAMPLE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "gathered-scenes",
+      "source": "Zeejay0/gathered-scenes-zine-skill",
+      "sourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+      "publicAllowed": false,
+      "image": null,
+      "imageLicense": "Gathered Scenes Zine Personal Non-Commercial License 1.0",
+      "reason": "来源按个人非商业条款分发，通用公开包没有满足其组织/商业限制的授权；只保留本地既有预览。",
+      "evidence": [
+        "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE"
+      ],
+      "originProvenance": "UPSTREAM EXAMPLE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "zine-blend",
+      "source": "BruceZhang111/Zine-Blend",
+      "sourceUrl": "https://github.com/BruceZhang111/Zine-Blend",
+      "publicAllowed": true,
+      "image": "assets/community-previews/zine-blend.png",
+      "imageLicense": "Project-generated sample",
+      "reason": "生成日志确认这是纯文本 ImageGen 新建图，未附任何源照片或参考图片；现存图片与该次生成文件 SHA-256 相同。源技能文档的分发范围与此本地新建样例分开判断；公开包不因此取得或复制受限源文档。",
+      "evidence": [
+        {
+          "kind": "generation-record",
+          "promptLine": 565,
+          "copyLine": 600,
+          "inputImages": [],
+          "sha256": "825b1ee0febd90479b81410d6585b01f78af4dae9edbe67169ac3c3936babc26"
+        }
+      ],
+      "originProvenance": "LOCAL IMAGEGEN SAMPLE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "dual-field-poster",
+      "source": "RedSkill a-yuan-dual-field-poster",
+      "sourceUrl": null,
+      "publicAllowed": true,
+      "image": "assets/community-previews/dual-field-poster.png",
+      "imageLicense": "Project-generated sample",
+      "reason": "生成日志确认这是纯文本 ImageGen 新建图，未附任何源照片或参考图片；现存图片与该次生成文件 SHA-256 相同。源技能文档的分发范围与此本地新建样例分开判断；公开包不因此取得或复制受限源文档。",
+      "evidence": [
+        {
+          "kind": "generation-record",
+          "promptLine": 570,
+          "copyLine": 600,
+          "inputImages": [],
+          "sha256": "a8e5da21b5b1797af35c20e8dc595ba359e078801564a67085c6afafa9de2fd8"
+        }
+      ],
+      "originProvenance": "LOCAL IMAGEGEN SAMPLE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "threefold-memory",
+      "source": "Starryear/Starryear-Threefold-Memory",
+      "sourceUrl": "https://github.com/Starryear/Starryear-Threefold-Memory",
+      "publicAllowed": false,
+      "image": null,
+      "imageLicense": "No license found",
+      "reason": "未找到覆盖该上游样例的明确公开再分发许可。",
+      "evidence": [
+        "https://github.com/Starryear/Starryear-Threefold-Memory"
+      ],
+      "originProvenance": "UPSTREAM EXAMPLE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "travel-abstraction",
+      "source": "Evianis/travel-photo-abstraction",
+      "sourceUrl": "https://github.com/Evianis/travel-photo-abstraction",
+      "publicAllowed": false,
+      "image": null,
+      "imageLicense": "Travel Photo Abstraction Source-Available License 1.0",
+      "reason": "Source-available；禁止再分发。",
+      "evidence": [
+        "https://github.com/Evianis/travel-photo-abstraction/blob/96e387635edf05bc7e798428a5db11dbf48f46c1/LICENSE"
+      ],
+      "originProvenance": "BUNDLED STYLE REFERENCE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "photo-relic",
+      "source": "wnby/photo-relic-editorial",
+      "sourceUrl": "https://github.com/wnby/photo-relic-editorial",
+      "publicAllowed": true,
+      "image": "assets/community-previews/photo-relic.png",
+      "imageLicense": "MIT",
+      "reason": "图像与固定提交官方样例 Git blob 完全相同；它作为仓库文档/示例随根 MIT 发布，未发现独立第三方署名、图片排除或冲突许可。基于作者对仓库所作许可纳入，未宣称完成独立摄影权属调查。",
+      "evidence": [
+        "https://github.com/wnby/photo-relic-editorial/blob/2232da16afddc7940e2e2f280bfb85aa62da1bae/examples/paper-beijing/corner-tower-water.png",
+        "https://github.com/wnby/photo-relic-editorial/blob/2232da16afddc7940e2e2f280bfb85aa62da1bae/README.md",
+        "https://github.com/wnby/photo-relic-editorial/blob/2232da16afddc7940e2e2f280bfb85aa62da1bae/LICENSE"
+      ],
+      "originProvenance": "UPSTREAM EXAMPLE",
+      "upstreamExactMatches": [
+        {
+          "repo": "wnby/photo-relic-editorial",
+          "commit": "2232da16afddc7940e2e2f280bfb85aa62da1bae",
+          "path": "examples/paper-beijing/corner-tower-water.png",
+          "url": "https://github.com/wnby/photo-relic-editorial/blob/2232da16afddc7940e2e2f280bfb85aa62da1bae/examples/paper-beijing/corner-tower-water.png"
+        }
+      ],
+      "visuallyChecked": true,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "photo-abstract",
+      "source": "ZzzLc0405/photo-abstract-editorial",
+      "sourceUrl": "https://github.com/ZzzLc0405/photo-abstract-editorial",
+      "publicAllowed": false,
+      "image": null,
+      "imageLicense": "Custom personal/research/non-commercial terms",
+      "reason": "定制非商业条款且存在 README 徽章与实际许可差异；未把它改标成通用图片授权。",
+      "evidence": [
+        "https://github.com/ZzzLc0405/photo-abstract-editorial/blob/c7904b70c9829f614b37064d0005149b8a2037dc/LICENSE.md"
+      ],
+      "originProvenance": "UPSTREAM EXAMPLE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "visual-memory",
+      "source": "TanShilongMario/visual-memory-translator-SKILL",
+      "sourceUrl": "https://github.com/TanShilongMario/visual-memory-translator-SKILL",
+      "publicAllowed": true,
+      "image": "assets/community-previews/visual-memory.png",
+      "imageLicense": "MIT",
+      "reason": "图像与固定提交官方样例 Git blob 完全相同；它作为仓库文档/示例随根 MIT 发布，未发现独立第三方署名、图片排除或冲突许可。基于作者对仓库所作许可纳入，未宣称完成独立摄影权属调查。 此图含源人物照片，许可判断依上游公开样张分发声明；不用于代言或身份推断，也不额外主张肖像授权。",
+      "evidence": [
+        "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/outputs/paddleboard-style-preview-6-grid-v1.2.png",
+        "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/README.md",
+        "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/LICENSE"
+      ],
+      "originProvenance": "UPSTREAM EXAMPLE",
+      "upstreamExactMatches": [
+        {
+          "repo": "TanShilongMario/visual-memory-translator-SKILL",
+          "commit": "62978de54401235adb9823e10e4f258397805bca",
+          "path": "outputs/paddleboard-style-preview-6-grid-v1.2.png",
+          "url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/outputs/paddleboard-style-preview-6-grid-v1.2.png"
+        }
+      ],
+      "visuallyChecked": true,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "photo-postcard",
+      "source": "Whiplashzeb/photo-to-zine-postcard",
+      "sourceUrl": "https://github.com/Whiplashzeb/photo-to-zine-postcard",
+      "publicAllowed": true,
+      "image": "assets/community-previews/photo-postcard.png",
+      "imageLicense": "MIT",
+      "reason": "图像与固定提交官方样例 Git blob 完全相同；它作为仓库文档/示例随根 MIT 发布，未发现独立第三方署名、图片排除或冲突许可。基于作者对仓库所作许可纳入，未宣称完成独立摄影权属调查。 examples/README 明确称这些为官方生成输出。",
+      "evidence": [
+        "https://github.com/Whiplashzeb/photo-to-zine-postcard/blob/0091403bccb219d1be78c5be8552de29a6446f0a/assets/lake-at-dusk.png",
+        "https://github.com/Whiplashzeb/photo-to-zine-postcard/blob/0091403bccb219d1be78c5be8552de29a6446f0a/README.md",
+        "https://github.com/Whiplashzeb/photo-to-zine-postcard/blob/0091403bccb219d1be78c5be8552de29a6446f0a/LICENSE",
+        "https://github.com/Whiplashzeb/photo-to-zine-postcard/blob/0091403bccb219d1be78c5be8552de29a6446f0a/examples/README.md"
+      ],
+      "originProvenance": "LOCAL INSTALLED EXAMPLE",
+      "upstreamExactMatches": [
+        {
+          "repo": "Whiplashzeb/photo-to-zine-postcard",
+          "commit": "0091403bccb219d1be78c5be8552de29a6446f0a",
+          "path": "assets/lake-at-dusk.png",
+          "url": "https://github.com/Whiplashzeb/photo-to-zine-postcard/blob/0091403bccb219d1be78c5be8552de29a6446f0a/assets/lake-at-dusk.png"
+        }
+      ],
+      "visuallyChecked": true,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "surreal-library",
+      "source": "hbmartin/skills",
+      "sourceUrl": "https://github.com/hbmartin/skills",
+      "publicAllowed": false,
+      "image": null,
+      "imageLicense": "Apache-2.0",
+      "reason": "本地生成记录明确使用 Zeejay0 非商业许可仓库的 source.jpg，属于该受限照片的再创作；本地生成不解除输入照片限制。",
+      "evidence": [
+        "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/examples/image-distillation/01-time-waves-back/source.jpg",
+        "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE"
+      ],
+      "originProvenance": "LOCAL IMAGEGEN SAMPLE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    },
+    {
+      "id": "jiuerli-sketch",
+      "source": "18810320381-del/jiuerli-visual-director",
+      "sourceUrl": "https://github.com/18810320381-del/jiuerli-visual-director",
+      "publicAllowed": false,
+      "image": null,
+      "imageLicense": "MIT",
+      "reason": "本地生成记录明确使用 Zeejay0 非商业许可仓库的 source.jpg，属于该受限照片的再创作；本地生成不解除输入照片限制。",
+      "evidence": [
+        "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/examples/image-distillation/01-time-waves-back/source.jpg",
+        "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE"
+      ],
+      "originProvenance": "LOCAL IMAGEGEN SAMPLE",
+      "upstreamExactMatches": [],
+      "visuallyChecked": false,
+      "originalOutputMatchesInstalled": true
+    }
+  ]
+}

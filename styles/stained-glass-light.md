@@ -1,6 +1,6 @@
 # Stained Glass Light · 透光彩玻璃
 
-ID: `stained-glass-light` · Original workflow by Photo Alchemy Studio, AI-assisted · MIT.
+ID: `stained-glass-light` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
 
 Rebuild a photograph as a contemporary stained-glass panel. Light and the joining network create the image. Best for a strong arch, backlit plant, coast or coherent architectural scene.
 

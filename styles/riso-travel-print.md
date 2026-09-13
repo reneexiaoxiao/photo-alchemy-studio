@@ -1,6 +1,6 @@
 # Riso Travel Print · 套色旅行版画
 
-ID: `riso-travel-print` · Original workflow by Photo Alchemy Studio, AI-assisted · MIT.
+ID: `riso-travel-print` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
 
 Recompose travel photography into a bold limited-ink art print. Choose it for light/shadow structure, distinct silhouettes and scenes that deserve a stronger shareable crop. Preserve the source's spatial relations; the surfaces become printmaking marks.
 

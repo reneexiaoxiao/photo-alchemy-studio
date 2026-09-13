@@ -1,6 +1,6 @@
 # Embroidered Patch · 刺绣纪念章
 
-ID: `embroidered-patch` · Original workflow by Photo Alchemy Studio, AI-assisted · MIT.
+ID: `embroidered-patch` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
 
 Make a travel photo feel like a collectible stitched keepsake. Reduce detail into meaningful thread shapes while retaining the source's identifying arrangement. Best for distinctive doors, plants, pets and small scene stories; avoid automatic use for close facial likeness.
 
