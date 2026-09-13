@@ -1,27 +1,45 @@
-# 微缩游记 · miniature-journey
+# 多视点微缩 · miniature-journey
 
-ID: `miniature-journey` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-打散远近比例，把渡轮、街区与一杯茶画进一条可以慢慢读的旅途。
+把多个可见片段放进一张可以逐处阅读的微缩图。以局部视点、重要性尺度和精细小笔触构成叙事；不依赖任何国家的建筑或历史装饰。
 
-## Input and fidelity
+## 固定语法
 
-One rich scene or 2–4 related travel photos with architecture, water, paths or memorable objects. This is artistic reinterpretation. Inspect the actual input before generation, record 3–5 source anchors and distinguish subjects from style references. Country names are inspiration tags, not evidence of where a photo was taken. Never substitute the gallery's fictional sample for the user's photo. Do not invent people, place names, dates or signs; exact-face or exact-pixel requests need a compatible workflow.
+- 在同一连续平面中组织 3–6 个来源节点，有主节点和安静停顿；位置依观看逻辑，不宣称地图准确。
+- 打开原照透视，让各节点以自身可见轮廓和局部方向成立；大小按叙事重要性变化，整体不服从一个消失点。
+- 细笔触轮廓和少量平涂色面统一全图；细节集中在节点，连接区域疏朗。不出现独立照片贴片或等格故事板。
 
-## Composition method
+## 读图与适配
 
-Create a flattened narrative plane rather than camera perspective. A source path, waterline or street becomes the organizing curve. Put 3–6 observed moments at mixed frontal/profile/top views; scale by memory importance with explicit artistic distortion. Preserve unique subjects once unless the user requests a sequence. Delicate individually painted detail on restrained gouache fields. This is a contemporary interpretation of miniature storytelling, not a historical facsimile. Do not import religious, national or exotic symbols because of destination.
+先列出输入里确实可见的事件/物体/局部及关系，选择一个可读的观看路径。节点不足时可用全貌、局部和接触关系，但不能新增动作或隐藏视角。所谓多视点允许旋转、扁平化可见片段，不授权发明物体背面或未拍到的俯视图。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 单张丰富场景 | 展开前中后景，使小而重要的节点放大；保留实际邻接/遮挡关系的来源记录 |
+| 单物体有多处细节 | 全貌作主节点，2–3 个细节作明显的放大观察，不能冒充更多实体 |
+| 多张相关照片 | 用真实共通方向、活动或形色连接，节点彼此呼应，不画未经提供的行程 |
+| 密集建筑/人群 | 只选几个可辨节点，删减重复背景；不能虚构新人物补热闹 |
+| 稀疏/细节不足 | 减少节点和面积，若不足以形成多中心关系就改选其他方法 |
+| 强光或低对比 | 每个节点保留自己的受光关系，平涂强调局部辨识；不统一成固定金色夕照 |
 
-“Reimagine the supplied photo moments as a contemporary miniature travel narrative. Flatten distance into [observed organizing path]. Use multiple simultaneous viewpoints for [source anchors], scale [personal object] by memory importance. Fine painted contour, jewel color accents, sparse decorative details only from input; no camera horizon, no pseudo-historical text or new landmarks.”
+颜色从输入提取，有主色、支撑色和少量重点即可；不规定宝石色、赭石或金边。横向输入可变成连续展开的图，纵向关系可逐层阅读，不固定古卷形式。
 
-Fill bracketed slots with observed facts before passing the prompt to the built-in image tool. Default to one 3:4 shareable artwork, or preserve the user's requested ratio. Read the target photo first. Never promise a specific image model version that the tool does not expose.
+## 跨题材规则
 
-## Failure boundaries
+- **建筑/街景**：保留建筑轮廓和实际入口，以局部方向组合，不补宗教建筑、旗帜或历史人物。
+- **风景**：前景细节、远景轮廓、水线/路径可形成节点；纯净无细节的地平线通常不适配。
+- **器物**：全貌、把手、开口或使用痕迹可作微缩观察；不补功能图解与内部零件。
+- **食物**：餐盘、食物与已存在器具组成观看路径；单件可用切面细节，不编造制作流程。
+- **植物**：从整体株形读到枝叶局部，不能凭空补花果或生长阶段。
+- **宠物/人物**：明确允许重绘时用一次主要姿态及可见环境细节，不能无授权重复成动作序列；精确身份请求转照片保留流程。
 
-Ordinary perspective landscape in oil paint; generic Ottoman ornament; invented mosques/flags; fake historical script; an itinerary represented as geographically accurate.
+## 提示词骨架
 
-## Review
+“将提供的[来源节点列表]重构为一张当代微缩叙事画。以[主节点]为视觉起点，按[真实可解释的关系]经过[次节点]到[安静停顿]。展开透视，让各节点依据原图可见面和局部方向成立，按重要性改变尺度；[全貌/局部]关系清楚。细笔触轮廓、[源色]平涂、连接区疏朗。禁止单一摄影消失点、照片贴片、未见视角、新事件、异国装饰、历史文字或地图准确性暗示。”
 
-Several simultaneous viewpoints read together; there is a visual beginning, middle and quiet stopping point; anchors survive, invented symbols and text do not. Check full size and thumbnail. Make at most one focused correction before showing an unresolved limitation. The gallery example is a direction study; it is not proof of success on every photo.
+一次接受 1–5 张。将实际输入传给图像工具，遵循 [风格语法](../docs/style-grammar.md) 的身份和来源规则。本方法为整图绘制；当代叙事方法不声称复制任何特定历史流派。
+
+## 验收与修正
+
+至少三个来源节点可逐一对照，多局部视点读在同一画面中，整体/细节引用不被误认作重复实体。若只是普通风景插画，展开一个远近尺度关系；若太像故事板，撤掉框格、减少节点并接回连续平面。最多一次纠正，不足以支撑叙事的素材不硬做。

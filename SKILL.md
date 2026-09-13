@@ -1,6 +1,6 @@
 ---
 name: photo-alchemy
-description: Transform travel and everyday photos into shareable artwork; browse a style gallery, choose an an original abstract, narrative, or material workflow, and add source-attributed community photo skills.
+description: Transform travel and everyday photos into shareable artwork; browse a style gallery, choose an original abstract, narrative, or material workflow, and add source-attributed community photo skills.
 ---
 
 # Photo Alchemy Studio
@@ -19,28 +19,30 @@ One photo-art entry, many ways of seeing: abstraction, narrative composition and
 - Inspect at full size and at approximately 240 px thumbnail size. The source anchors and the chosen compositional idea should read first. Check identity/anchors, object count, unwanted writing, crop and the selected workflow's signature. Make one focused correction if needed; if it still fails, show the issue and stop the retry loop.
 - Deliver the rendered artwork, style ID and one short observation. Keep production prompts optional. A gallery sample demonstrates a direction, not success on the user's photo.
 
+## Transferable style selection
+
+For original workflows, read `docs/style-grammar.md` and the selected `styles/<id>.md`. Fixed rules define the visual method; palette, orientation, density, fragment count and layout follow the actual input. Gallery destinations and objects are examples, never mandatory additions. Read `style-contracts.json` for required features and preservation conflicts. `scripts/style_selector.py recommend --features ...` excludes incompatible or unmatched methods and favors different visual families. With incomplete photo analysis, do not claim the shortlist is an image-quality evaluation.
+
+A style's matching subject alone is insufficient: light relations need observed shadows, transmission or reflection; layer methods need actual occlusion or contour layers; narrative methods need enough visible fragments. Never add hidden views or geographic facts to satisfy a method. Check inputCount in the contract; selected one-photo styles process supplied photos independently.
+
 ## Original modules
 
 These workflow implementations are designed and written by **Renee**, with AI assistance. Their traditional artistic media are not inventions of the project.
 
-| ID | Read | Suitable source | Main limit |
-|---|---|---|---|
-| `mosaic-tiles` | `styles/mosaic-tiles.md` | Architecture, coast, gardens, distinct color blocks | Do not treat it as an identity-preserving portrait filter |
-| `riso-travel-print` | `styles/riso-travel-print.md` | Street, signage-free scenes, strong light/shadow | Very small details become ink shapes |
-| `paper-cut-theatre` | `styles/paper-cut-theatre.md` | Mountains, forests, layered streets | Flat scenes may not support convincing depth |
-| `embroidered-patch` | `styles/embroidered-patch.md` | Memorable subjects, pets, travel souvenirs | Detailed faces are unsuitable for automatic selection |
-| `stained-glass-light` | `styles/stained-glass-light.md` | Architecture, plants, windows and backlight | Retains geometry, redraws surfaces completely |
+| ID | Workflow | Source condition |
+|---|---|---|
+| `souvenir-constellation` | [碎片星图](styles/souvenir-constellation.md) | 想把多个细节或全貌与局部组织成私人关系 |
+| `city-five-shapes` | [五形提炼](styles/city-five-shapes.md) | 想把复杂照片压缩成能一眼认出的图形关系 |
+| `landscape-strata` | [轮廓层谱](styles/landscape-strata.md) | 想突出真实叠层、轮廓走势或重复曲线 |
+| `walking-multiview` | [多视角接景](styles/walking-multiview.md) | 想让不同片段沿一条具体视觉线相接 |
+| `courtyard-shadow-atlas` | [光影提炼](styles/courtyard-shadow-atlas.md) | 原图有清楚光影边界、透光轮廓或成对反射 |
+| `miniature-journey` | [多视点微缩](styles/miniature-journey.md) | 想把丰富的可见片段做成可逐处阅读的微缩图 |
+| `mosaic-tiles` | [马赛克瓷砖](styles/mosaic-tiles.md) | 想保留主体轮廓并获得有组织的镶嵌质感 |
+| `embroidered-patch` | [刺绣纪念章](styles/embroidered-patch.md) | 想把一个主体或紧密场景收成可辨识的刺绣章 |
+| `riso-travel-print` | [套色版画](styles/riso-travel-print.md) | 想用鲜明形面与套色关系提升照片的图形感 |
+| `paper-cut-theatre` | [纸雕层景](styles/paper-cut-theatre.md) | 原图有可辨前后层次、开口或重叠关系 |
+| `stained-glass-light` | [透光彩玻璃](styles/stained-glass-light.md) | 想把清楚的形面与色彩转成透光作品 |
 
-Community sources and their original authors are listed in `catalog.json` and `THIRD_PARTY.md`. Entries marked “source link” are not bundled or installed. A public repository is not itself a redistribution license. Keep restricted sources out of this project's public files.
+Community sources retain their original contracts, authors and licenses in `catalog.json` and `THIRD_PARTY.md`. Sources marked link-only are not bundled. Public image permissions and workflow redistribution permissions are separate.
 
-- `city-five-shapes` · 城市五形: read `styles/city-five-shapes.md`; 把街道压成五个大形状，只留下最能认出这个地方的几个细节。
-
-- `courtyard-shadow-atlas` · 庭院光影谱: read `styles/courtyard-shadow-atlas.md`; 让影子成为主角，用拱形、光缝和少量照片碎片重新组织庭院。
-
-- `walking-multiview` · 漫游多视角: read `styles/walking-multiview.md`; 把同一天的几个视角接成一段不可能的散步，让楼梯通向水果与市场。
-
-- `miniature-journey` · 微缩游记: read `styles/miniature-journey.md`; 打散远近比例，把渡轮、街区与一杯茶画进一条可以慢慢读的旅途。
-
-- `landscape-strata` · 风景地层: read `styles/landscape-strata.md`; 提取山脊、海崖与岩石的轮廓，把风景展开为有节奏的地层色带。
-
-- `souvenir-constellation` · 旅行碎片星图: read `styles/souvenir-constellation.md`; 挑出食物、杯子与小物件，用比例和呼应关系留住一天的私人记忆。
+The gallery contains actual input-to-output transfer studies for two styles over three synthetic photo subjects. See `docs/transfer-review.md` for what worked and what remains incomplete. The remaining examples do not establish cross-subject reliability.

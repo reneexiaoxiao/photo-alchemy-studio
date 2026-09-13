@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "styles": [
+    {
+      "id": "mosaic-tiles",
+      "family": "directional-tessellation",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "directional-lines",
+        "strong-color"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "砖片沿真实轮廓与走势铺排",
+        "识别处细切、安静面大块",
+        "有限釉色组合明暗，接缝参与造形"
+      ],
+      "adaptation": "砖形、铺排方向和尺度随曲率、主体密度及源图空隙变化，颜色从输入归并。",
+      "useWhen": "想保留主体轮廓并获得有组织的镶嵌质感",
+      "avoidWhen": "需精确身份、原像素或大量可读小字时"
+    },
+    {
+      "id": "embroidered-patch",
+      "family": "directional-stitch",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "single-subject",
+        "clear-silhouette",
+        "object",
+        "plant",
+        "pet",
+        "strong-color"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "一个主轮廓与少量支撑关系",
+        "针法与针向承担具体形面",
+        "完整包边与真实线股，拒绝布上印图"
+      ],
+      "adaptation": "章形沿源图长轴或外形变化，针法按几何边缘、有机面与细线分工。",
+      "useWhen": "想把一个主体或紧密场景收成可辨识的刺绣章",
+      "avoidWhen": "主体太细碎或需要精确脸部、文字、像素时"
+    },
+    {
+      "id": "riso-travel-print",
+      "family": "spot-ink-separation",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-shadows",
+        "strong-color",
+        "strong-geometry",
+        "negative-space"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "先归并主形，再分配有限专色",
+        "叠印交界产生次色，纸面留白有职责",
+        "颗粒与错版局部出现，焦点轮廓稳定"
+      ],
+      "adaptation": "色版数量、明暗分工与留白随源图结构变化，不固定暖冷配方或竖幅。",
+      "useWhen": "想用鲜明形面与套色关系提升照片的图形感",
+      "avoidWhen": "需要精确身份、照片原貌或原字逐字保留时"
+    },
+    {
+      "id": "paper-cut-theatre",
+      "family": "occlusion-paper-relief",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "layered-depth",
+        "clear-silhouette",
+        "negative-space",
+        "strong-geometry"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "layered-depth"
+      ],
+      "signature": [
+        "纸层由真实遮挡顺序提取",
+        "负形切口能见到正确后层",
+        "平卡纸与浅层间影构成深度"
+      ],
+      "adaptation": "根据可见前后关系选择层数和间距，单物只采用真实重叠，不补造内部。",
+      "useWhen": "原图有可辨前后层次、开口或重叠关系",
+      "avoidWhen": "没有可用深度层次，或要求精确身份与原像素时"
+    },
+    {
+      "id": "stained-glass-light",
+      "family": "structural-glass-network",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "backlight",
+        "strong-color",
+        "plant"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "接合线沿主要结构形成连贯网络",
+        "大色面为主，关键细部少量小片",
+        "一致克制的透光，线网始终可辨"
+      ],
+      "adaptation": "分线跟随几何或有机结构，玻璃色来自源图，细密程度由识别需要决定。",
+      "useWhen": "想把清楚的形面与色彩转成透光作品",
+      "avoidWhen": "细节或身份必须精确保留，或线网会切碎主体时"
+    },
+    {
+      "id": "city-five-shapes",
+      "family": "interlocking-shape-reduction",
+      "direction": "abstract",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "strong-color",
+        "negative-space",
+        "single-subject",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "clear-silhouette",
+        "strong-geometry"
+      ],
+      "signature": [
+        "约五个主形通过共边和负形咬合",
+        "完整识别形与少量关键标记保留来源",
+        "主形内删除摄影纹理和体积渐层"
+      ],
+      "adaptation": "主轴、负形、分形与颜色随输入变化，密集场景先合并背景，单主体保住完整轮廓。",
+      "useWhen": "想把复杂照片压缩成能一眼认出的图形关系",
+      "avoidWhen": "源图缺乏可读骨架，或身份与原像素必须精确保留时"
+    },
+    {
+      "id": "courtyard-shadow-atlas",
+      "family": "light-boundary-recomposition",
+      "direction": "abstract",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "strong-shadows",
+        "backlight",
+        "reflections",
+        "negative-space",
+        "directional-lines",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "strong-shadows",
+        "backlight",
+        "reflections"
+      ],
+      "signature": [
+        "选真实投影、透光或反射为主关系",
+        "放大连贯光影面，保留接触与方向",
+        "少量小来源证据依附边界，不留整面摄影背景"
+      ],
+      "adaptation": "按真实光学关系选择分支，可放大光影并缩小证据，拓扑保留而像素位置可重组。",
+      "useWhen": "原图有清楚光影边界、透光轮廓或成对反射",
+      "avoidWhen": "没有可读光学关系，或必须保留精确身份与原像素时"
+    },
+    {
+      "id": "landscape-strata",
+      "family": "contour-band-expansion",
+      "direction": "abstract",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant"
+      ],
+      "bestFeatures": [
+        "contour-layers",
+        "layered-depth",
+        "repeated-patterns",
+        "directional-lines",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "contour-layers",
+        "layered-depth",
+        "repeated-patterns"
+      ],
+      "signature": [
+        "独特总轮廓保持来源识别",
+        "真实层带以不等宽和间隔展开",
+        "默认平面，拒绝均匀条纹与虚构剖面"
+      ],
+      "adaptation": "层带沿源图水平、纵向、放射或闭合结构变化，近远与遮挡次序始终可追溯。",
+      "useWhen": "想突出真实叠层、轮廓走势或重复曲线",
+      "avoidWhen": "只有孤立轮廓、没有层带依据，或精确身份要求高时"
+    },
+    {
+      "id": "souvenir-constellation",
+      "family": "relational-fragment-collage",
+      "direction": "narrative",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 5
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "multiple-subjects",
+        "multiple-photos",
+        "fine-details",
+        "object",
+        "food",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "multiple-subjects",
+        "multiple-photos",
+        "fine-details"
+      ],
+      "signature": [
+        "一个主片段与少量次片段不等尺度",
+        "具体形色呼应决定位置和观看路径",
+        "全部片段可追溯，连接不依赖装饰线"
+      ],
+      "adaptation": "单图可用全貌与真实细节，多图按视觉呼应筛选，片段数量与留白不按照片张数平均。",
+      "useWhen": "想把多个细节或全貌与局部组织成私人关系",
+      "avoidWhen": "素材不足以构成关系，或需要精确身份与原像素时"
+    },
+    {
+      "id": "walking-multiview",
+      "family": "continuous-view-montage",
+      "direction": "narrative",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 5
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "directional-lines",
+        "multiple-photos",
+        "fine-details",
+        "multiple-subjects",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "directional-lines",
+        "multiple-photos",
+        "fine-details"
+      ],
+      "signature": [
+        "主视图与次视图尺度分明",
+        "真实边缘或方向形成至少一处接缝",
+        "观看连续、裁切可见，拒绝伪真实全景"
+      ],
+      "adaptation": "沿输入水平线、斜线或曲线接景，单图用真实局部跨尺度连接，不生成未见视角。",
+      "useWhen": "想让不同片段沿一条具体视觉线相接",
+      "avoidWhen": "找不到可解释接缝，或必须准确还原地点与身份时"
+    },
+    {
+      "id": "miniature-journey",
+      "family": "polycentric-painted-narrative",
+      "direction": "narrative",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 5
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "multiple-subjects",
+        "multiple-photos",
+        "fine-details",
+        "layered-depth",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "multiple-subjects",
+        "multiple-photos",
+        "fine-details"
+      ],
+      "signature": [
+        "连续平面里有主次与安静停顿",
+        "局部视点与重要性尺度展开透视",
+        "细笔触统一节点，连接区域疏朗"
+      ],
+      "adaptation": "按可见节点组织观看而非地理路线，单图可展开全貌与细节，不能新增隐藏视角。",
+      "useWhen": "想把丰富的可见片段做成可逐处阅读的微缩图",
+      "avoidWhen": "源图过于单薄或必须精确保留人物、像素与地理关系时"
+    }
+  ]
+}

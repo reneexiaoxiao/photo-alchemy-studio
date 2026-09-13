@@ -1,27 +1,43 @@
-# 旅行碎片星图 · souvenir-constellation
+# 碎片星图 · souvenir-constellation
 
-ID: `souvenir-constellation` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-挑出食物、杯子与小物件，用比例和呼应关系留住一天的私人记忆。
+从照片里找出形、色或动作之间的视觉呼应，把日常事物排成一组有主次的关系。星图指观看路径，不默认画星星、星座线或旅行手账。
 
-## Input and fidelity
+## 固定语法
 
-2–6 travel detail photos, or a single image containing several meaningful objects. This is artistic reinterpretation. Inspect the actual input before generation, record 3–5 source anchors and distinguish subjects from style references. Country names are inspiration tags, not evidence of where a photo was taken. Never substitute the gallery's fictional sample for the user's photo. Do not invent people, place names, dates or signs; exact-face or exact-pixel requests need a compatible workflow.
+- 一个主片段与 2–5 个次片段形成不等尺度关系；每个片段必须来自输入，一张含多个细节的照片也可以用。
+- 至少一组可具体指出的视觉呼应决定摆放，例如轮廓相似、方向延续、颜色回声或大小反差；不能靠随机散点制造“关系”。
+- 保留摄影感或局部实物感，以安静底场隔开片段；连接优先靠距离、朝向和重叠，只有确实帮助理解时才画极少细线。
 
-## Composition method
+## 读图与适配
 
-Select 4–7 actually present fragments. Give one memorable object 40–50% of visual attention, not necessarily physical area, and connect others through 2–3 concrete visual rhymes: pastry folds/shell ridges, coffee-ring/shore curve, tile blue/sea blue. Arrange a loose path with unequal scales, generous ground, tiny pencil connections only where meaningful. User-provided receipts may be cropped but redact personal/transaction identifiers before sharing. Do not invent stamps, dates or inscriptions.
+给候选片段记来源、识别锚点和与其他片段的关系，再选主角。单张可取全貌加真实局部，但要让尺度说明这是同一物体的观察，而非凭空多出一个实体。多个无共同视觉线索的照片不硬拼。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 单一物体、细节可辨 | 用一次全貌加两个实际局部，建立整体/细部呼应；不补背面和未见附件 |
+| 多主体、形态相近 | 让最独特者做主角，其他形成递进或方向接力；避免等大标本墙 |
+| 颜色差异强 | 主色一处集中，少量同源色回应；底色从安静区域选择，不能所有物体染成同色 |
+| 低对比、近单色 | 用轮廓和比例差组织，保留细节质感；不要另加彩色符号解闷 |
+| 多张、内容密集 | 只留支持主关系的片段，不能因输入张数而平均分配面积 |
+| 横长/纵长素材 | 顺真实轮廓形成横向游移或纵向递进；圆物也不强制绕圆心排列 |
 
-“Create an intimate travel constellation from these supplied details only: [list per input]. Hero [object]; let [specific two shape/color rhymes] guide placement. Unequal scales, quiet source-compatible ground, sparse connecting lines, photographic-looking fragments. No fake ticket/date/location, no generic symbols, no new objects.”
+## 跨题材规则
 
-Fill bracketed slots with observed facts before passing the prompt to the built-in image tool. Default to one 3:4 shareable artwork, or preserve the user's requested ratio. Read the target photo first. Never promise a specific image model version that the tool does not expose.
+- **建筑/街景**：门把、窗影、地面与建筑全貌可形成尺度对照；不得把片段伪称地图路线。
+- **风景**：总景、局部石纹和水线可形成形色呼应；完整风景不能拆成几个不相关矩形。
+- **器物**：把手与弧边、磨损与小细节做全貌/局部关系；原有文字不清晰时不补写。
+- **食物**：可用食物整体与切面、餐具或实际同框小物，不能新增配菜和杯子。
+- **植物**：叶形、叶脉与枝条形成尺度节奏，保留真实物种可见特征，不编造花果。
+- **宠物/人物**：只在明确允许生成重构时使用，主角全貌只出现一次，局部需明显是细节引用；精确身份或原像素要求转照片保留工作流。
 
-## Failure boundaries
+## 提示词骨架
 
-Equal sticker grids, generic travel-icon decorations, fabricated receipts and named itinerary; every small object given equal weight.
+“只从提供的输入中提取[片段列表及来源]，以[主片段]为主，围绕[具体形态/方向/颜色呼应]组织不等尺度星图。[全貌与局部关系]须清楚，按[构图分支]形成连续观看路径。保留片段的摄影感与[识别锚点]，底场为[源图兼容的安静色]，通过间距和朝向连接。无等大贴纸网格、星星符号、虚构票据/日期/地点、新物体或额外文案。”
 
-## Review
+一次接受 1–5 张图片，单图含足够可用细节即可。按 [风格语法](../docs/style-grammar.md) 传入实际照片；`hybrid` 表示视觉混合，不表示像素级保留。优先根据片段走势选择与原图兼容的画幅。
 
-Every object belongs to the inputs; the main memory reads first; visual rhymes are visible and the collage does not look like a shop advertisement. Check full size and thumbnail. Make at most one focused correction before showing an unresolved limitation. The gallery example is a direction study; it is not proof of success on every photo.
+## 验收与修正
+
+每片可追溯来源，主角先被看见，至少一组呼应不用文字解释也能察觉。若像电商陈列，拉开尺度并删除无关片段；若像随机拼贴，重选关系而非加装饰线。最多一次纠正，素材不足时明确减少片段或换法。

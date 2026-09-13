@@ -4,6 +4,7 @@ from pathlib import Path
 import argparse
 import json
 import sys
+from selection_rules import family
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -12,6 +13,19 @@ def build(check=False):
     community = ROOT/'community-catalog.json'
     if community.exists():
         entries += json.loads(community.read_text())
+    contracts_path = ROOT/'style-contracts.json'
+    contracts = {}
+    if contracts_path.exists():
+        contracts = {item['id']:item for item in json.loads(contracts_path.read_text())['styles']}
+    trials_path = ROOT/'transfer-examples.json'
+    trials = {item['id']:item for item in json.loads(trials_path.read_text())} if trials_path.exists() else {}
+    for item in entries:
+        if item['id'] in contracts:
+            item['contract'] = contracts[item['id']]
+            item['features'] = item['contract']['bestFeatures']
+            item['subjects'] = item['contract'].get('subjects', [])
+        if item['id'] in trials:
+            item['examples'] = trials[item['id']]['examples']
     previews_path = ROOT/'gallery-previews.json'
     if previews_path.exists():
         previews = json.loads(previews_path.read_text())
@@ -25,6 +39,7 @@ def build(check=False):
                     item[key] = preview[key]
     ids = set()
     for item in entries:
+        item['family'] = family(item)
         if item['id'] in ids:
             raise ValueError('Duplicate style ID: '+item['id'])
         ids.add(item['id'])
@@ -33,6 +48,11 @@ def build(check=False):
                 path = (ROOT/item[key]).resolve()
                 if not path.is_relative_to(ROOT) or not path.is_file():
                     raise ValueError('Missing or unsafe '+key+': '+item[key])
+        for example in item.get('examples', []):
+            for key in ('image', 'sourceImage'):
+                path = (ROOT/example[key]).resolve()
+                if not path.is_relative_to(ROOT) or not path.is_file():
+                    raise ValueError('Missing or unsafe trial image: '+example[key])
         if item.get('installed') and not item.get('entry'):
             raise ValueError('Installed style has no entry: '+item['id'])
     payload=json.dumps(entries,ensure_ascii=False,indent=2)+'\n'

@@ -1,21 +1,40 @@
-# Embroidered Patch · 刺绣纪念章
+# 刺绣纪念章 · embroidered-patch
 
-ID: `embroidered-patch` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-Make a travel photo feel like a collectible stitched keepsake. Reduce detail into meaningful thread shapes while retaining the source's identifying arrangement. Best for distinctive doors, plants, pets and small scene stories; avoid automatic use for close facial likeness.
+把照片里最值得保留的一个主体或关系收进一枚刺绣章。形状由针脚方向和疏密构成，章形跟随输入，不把所有照片塞进圆形旅游徽章。
 
-## Material decisions
+## 固定语法
 
-Choose a patch silhouette from a source shape when useful: an arch, a hill contour, an oval framing a plant. Do not force every scene into a circular tourist badge. Put the main subject inside at generous scale, with one supporting landmark and limited background.
+- 一个主要轮廓，加最多一个确实必要的环境关系；合并背景，保留识别负形和显著色块。
+- 针法承担结构：长短针铺有机色面、缎面针收边、链式/平针走线，小结只在真实小簇处使用。
+- 线迹随物体方向改变，边缘包缝形成完整物件；表面必须由线构成，不能像照片印在织物上。
 
-Use 6–9 thread colors. Give stitch types actual roles: satin stitches along geometric edges; long-and-short stitches for broad irregular masses; chain or running stitch for water and paths; French knots for compact blossom details. Change stitch direction with object direction. Retain count and arrangement of signature objects. Avoid the appearance of an image printed onto woven fabric.
+## 读图与适配
 
-Default 3:4 photograph of one flat embroidered patch on a quiet complementary cloth, patch occupying 80–90% of the frame. Bound merrow edge, tangible thread filaments, shallow relief, gentle daylight. No beads, invented emblems, flags, names, destinations, dates or lettering unless provided.
+选主轮廓、朝向、关键数量及一至两个身份细节，判断缩成章后还能否认出。再选章形、针脚流向和源色线组。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 高窄/长条主体 | 章形顺长轴，不强塞圆框；包边不能切掉耳、叶尖或把手 |
+| 有机单主体 | 采用随形边缘或能容纳完整轮廓的椭圆，背景少量留布 |
+| 有层次的场景 | 只留主场景和一个支撑平面，次景压缩成宽针色块 |
+| 多主体 | 选真实相互关联的一簇，保留关键个数，不能做满章小图标 |
+| 细节丰富 | 先合并色面再选择针法，微小纹理从属于轮廓而非逐像素缝制 |
+| 强光/弱光 | 源图光向决定色组深浅，绣线高光保持克制；弱光依轮廓，不制造戏剧光 |
 
-“Translate the supplied photograph into a finely embroidered souvenir patch shaped by [source silhouette]. Preserve [observed anchors and positions]. Use [source-led thread palette]; satin stitches describe [edge], long-and-short stitches describe [mass], chain stitch describes [line], French knots articulate [small focal clusters]. Photograph the tactile patch straight on against [quiet cloth], with a narrow bound edge and restrained relief. No printed texture, plastic 3D, added tourist symbols, text or extra objects.”
+源色通常归并为 6–9 种线色，不固定复古配色。成品默认单枚平置刺绣章和安静底布，可按输入横竖比安排，边缘完整且可辨；不添加品牌、旗帜、地点、年份或假徽记。
 
-## Review
+## 跨题材规则
 
-Inspect stitch direction and true thread structure. Check whether the patch still recalls the source at thumbnail size. Simplification is allowed; changing the number of focal objects or inventing facial detail is not.
+建筑保留轮廓与开口；风景压缩为主地貌与一条方向线；器物突出把手/开口与使用痕迹；食物保留数量和切面特征；植物用针向区分叶面和枝干，花结只用于真实花簇。宠物仅在明确允许重绘时保留体态、耳形和毛色块；人物近脸或高度精确身份不适合此尺度，应改选照片保留方向。
+
+## 提示词骨架
+
+“将输入的[主轮廓与一个支撑关系]提炼为单枚刺绣章，章形顺应[源图外形/长轴]，完整保留[身份锚点和数量]。[针法A]构成[源图形面]，[针法B]沿[实际走势]，[针法C]只强调[必要小细节]。采用[源色线组]，针向清楚、浅浮起线股、完整包缝边，在[安静底布]上正面呈现。无照片印花、塑料立体、通用圆徽章模板、额外图标或字。”
+
+按 [风格语法](../docs/style-grammar.md) 引用实际输入。整图重绘；材料看起来真实不意味着源图身份或像素已精确保留。
+
+## 验收与修正
+
+章形、针向、色块三者共同服务识别；缩略图能看清主体，近看有真实线股。若像布上印照片，删去连续摄影明暗并改针向；若满是小图案，删至主要关系。最多一次针对性纠正，不添加无来源纪念文字。

@@ -1,21 +1,40 @@
-# Stained Glass Light · 透光彩玻璃
+# 透光彩玻璃 · stained-glass-light
 
-ID: `stained-glass-light` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-Rebuild a photograph as a contemporary stained-glass panel. Light and the joining network create the image. Best for a strong arch, backlit plant, coast or coherent architectural scene.
+用有结构的接合线和透光色面重构照片。彩玻璃的风格由线网如何承载形态、光如何穿过大面决定，不要求教堂、拱窗或任何特定地点。
 
-## Material decisions
+## 固定语法
 
-Plan the main joining lines from actual scene boundaries before subdividing fields. Use thin dark lead cames to carry the source geometry; add only a few structurally useful subdivisions in broad glass fields. Avoid cell-noise tessellation. Tile edges in a ceramic mosaic and lead lines in glass need different grammars.
+- 先沿主要轮廓、遮挡和负形布置连贯的接合线，再对过大的面做少量必要分割；不使用随机细胞网。
+- 大块完整玻璃承载安静色面，小片只服务关键细节；线网与透光共同保持识别。
+- 单一可解释的透光方向，玻璃内部可有适度波纹/乳浊差异，但不能用光晕遮住接合线。
 
-Choose 5–8 source-derived glass colors. Use cathedral glass for clear fields, restrained rippled or seeded glass for water, and softly opalescent glass for light stone/cloud. Keep the scene readable through large uninterrupted color panes. Let a consistent light direction illuminate the glass without bloom hiding the lead network.
+## 读图与适配
 
-Default portrait 3:4 flat frontal backlit panel, full scene, no church context or religious ornament unless present in the source. Optional narrow frame follows the composition. No invented architecture, extra foliage, room mockup, tourist typography or bevelled crystal render.
+记录主体边界、连接点、关键负形、明暗和色彩分区。接合线的首要任务是保存关系，不是给所有照片边缘都描黑。彩玻璃背光是成品材料表现，不应被宣称为原照片拍摄光线。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 几何/重复节奏 | 接合线跟随实际结构，保留间距差和关键开口，不统一成宗教窗格 |
+| 有机/分叉 | 顺真实分叉和弧边布线，宽阔区域少分割，细部不可变成全幅噪点 |
+| 单主体/近景 | 用完整大面保住主体，在轮廓转折处分片，不把表情或器物开口切碎 |
+| 多主体/复杂背景 | 焦点处细、背景处粗，保留关键数量与遮挡；不增加新对象补空 |
+| 强逆光 | 保留真实亮暗和剪影关系，用透光层次加强已有结构 |
+| 普通光/低对比 | 从轮廓和源色组织玻璃，再赋予温和材料透光，不虚构源场景里的太阳或窗 |
 
-“Reconstruct this source photo as a refined contemporary stained-glass panel viewed straight on. Preserve [spatial anchors]. Let thin lead cames follow [observed structural boundaries] with economical extra subdivisions. Use [source palette], clear luminous panes for [field], subtle ripple glass for [water], and opalescent glass for [stone or cloud]. Maintain a strong legible silhouette and controlled daylight transmission. No random Voronoi cells, ceramic grout, neon glow, religious motifs, invented scenery or text.”
+源色通常合并为 5–8 种玻璃色，允许近单色；水或柔和面可少量波纹，厚实面可乳浊，不强制每张出现这些材料。默认正面完整玻璃作品，无室内摆拍、宗教装饰 或晶体切面。
 
-## Review
+## 跨题材规则
 
-Look for a coherent lead network, light transmitted through glass, and distinct source geometry. If excessive subdivisions obscure the subject, remove divisions rather than increasing outlines or brightness.
+建筑取开口与形面关系；风景取天际线、水面和坡向；器物取外形与负形，避免把把手切断；食物保留形态数量，切面可作色片；植物按枝叶连接排线，不凭空加花。宠物/人物只在明确允许重绘时用体态和特征色块，线网不得穿碎身份细节；近景精确身份要求换方法。
+
+## 提示词骨架
+
+“把输入照片重构为当代彩玻璃作品。保留[锚点、数量与关系]，纤细接合线先沿[真实结构边界]连通，只在[大面]增加必要分割。用[源色组]大玻璃面承载[主要形面]，[识别位置]少量小片；以克制一致的材料透光表现玻璃。保持[独特轮廓与负形]完整。无随机蜂窝、全幅碎片、陶瓷砖缝、霓虹光晕、宗教符号、新景物、文字或室内样机。”
+
+按 [风格语法](../docs/style-grammar.md) 传入实际照片。完整重画不保证原像素、精确身份或文字。
+
+## 验收与修正
+
+线网是否解释了源图结构，大色面是否让主体在缩略图清楚可辨，光是否穿过玻璃而非涂成发光特效。若分割过密，删除次要分线；若像瓷砖，改细接合线和连续透光而非增加亮度。最多一次针对性纠正，保留源图失败时说明边界。

@@ -1,27 +1,45 @@
-# 城市五形 · city-five-shapes
+# 五形提炼 · city-five-shapes
 
-ID: `city-five-shapes` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-把街道压成五个大形状，只留下最能认出这个地方的几个细节。
+把照片压缩为约五个互相咬合的主形，让一组有辨识度的关系取代繁复细节。五形是视觉预算，不是把每张图切成五块多边形；主体可以来自任何地点，也可以是一件物品。
 
-## Input and fidelity
+## 固定语法
 
-One photograph with a decisive silhouette and clear large masses. This is artistic reinterpretation. Inspect the actual input before generation, record 3–5 source anchors and distinguish subjects from style references. Country names are inspiration tags, not evidence of where a photo was taken. Never substitute the gallery's fictional sample for the user's photo. Do not invent people, place names, dates or signs; exact-face or exact-pixel requests need a compatible workflow.
+1. 用 4–6 个主形建立一幅画：至少一个完整识别形、一个承担方向的支撑形，以及一个有作用的负形。小的识别标记不计为主形。
+2. 主形通过共边、穿插或留白咬合，不能变成互不相干的色样。保留原图最重要的数量、朝向和相对位置。
+3. 主形内不保留照片表面纹理或光滑体积渐层，细长边缘/枝干也须归并为形；完整识别形不得被画幅意外裁断。只允许 2–4 处承担识别的小缺口、短线或色块。细节集中在一处，其他区域安静。
 
-## Composition method
+## 读图与适配
 
-Reduce the scene to five DOMINANT masses, not exactly five total marks. Pick three recognition anchors first; allocate one large shape to each structural area and let 2–4 small marks carry identity. Keep relative orientation, the main vanishing direction and object counts. Derive a 4–6 color palette from the source. Aim for 60% quiet field, 30% structure, 10% recognition detail. Do not add a tram or tiles just because a country is named.
+先记录最大整体轮廓、两个不能丢的识别锚点、最有张力的空隙/交界和主视线方向。把这些映射到主形，最后才决定颜色；禁止先画五个几何形再把照片塞进去。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 纵向集中、单主体 | 完整主体轮廓做最大主形，利用一侧真实空隙作反形；不自动居中 |
+| 横向展开、有景深 | 保留水平关系，前/中/远景各压成不等宽形；用真实斜线或缺口打破条带 |
+| 强透视、有方向 | 压缩透视细节，保留消失方向和关键开口，让主形向同一视觉节点汇拢 |
+| 多主体、背景繁密 | 保留关键数量；同组对象可成一个视觉簇，但用负形保留分界，背景合成连续场 |
+| 强光影 | 明/暗可各占一个主形，主体识别形仍须成立，不能只剩通用阴影 |
+| 弱光、低对比 | 依靠轮廓和遮挡分形，扩大已存在的明度差；没有可读骨架时改选其他方法 |
 
-“Distill this actual photo into five dominant interlocking shapes. Preserve [observed three anchors] and [direction]. Abstract [background areas] into [source colors]; reserve tiny detail only for [recognition marks]. Bold asymmetry, controlled negative space, no new objects or text.”
+颜色保留源图明暗排序和一个显著色差，可用 3–5 个色面加底色，黑白输入可继续黑白。不固定蓝白、红黄配方，也不固定留白比例。
 
-Fill bracketed slots with observed facts before passing the prompt to the built-in image tool. Default to one 3:4 shareable artwork, or preserve the user's requested ratio. Read the target photo first. Never promise a specific image model version that the tool does not expose.
+## 跨题材规则
 
-## Failure boundaries
+- **建筑/街景**：轮廓、入口负形和基座关系优先；窗阵压缩成真实节奏，不补通用拱门。
+- **风景**：保留独特天际线、坡向和地面锚点；远景合并，不能把所有山画成三角形。
+- **器物**：外轮廓、把手/开口和接触面是主形；品牌文字不能用随机符号代替。
+- **食物**：形态、摆放数量、切口或蒂部承担身份；盘面可作反形，不增加配菜。
+- **植物**：枝干方向组织叶团，保留可辨叶形与主要分叉；细叶可成簇，独立大叶保留数量。
+- **宠物/人物**：只在用户允许重绘时用体态、耳形/发型和色块表达，保留朝向；必须精确身份时选照片保留工作流。
 
-A filter-painted photo with all small objects intact; decorative arbitrary polygons; reducing a recognizable building to generic blocks.
+## 提示词骨架
 
-## Review
+“将提供的这张照片提炼为 4–6 个咬合的主形。必须能认出[具体锚点A]、[锚点B]及[相对位置/数量/朝向]。把[主体轮廓]作为主形，[真实空隙]作为负形，[支撑方向]组织其余形状；按[所选构图分支]重组。主形用[源色及明暗关系]平涂，删除摄影表面纹理，仅在[识别位置]保留[2–4处实际细节]。缩略图首先读到[主形关系]。不要替换成新场景、任意三角块、色样板、装饰图标或文字。”
 
-Distinctive facade edges, hill street or horizon remain recognizable at thumbnail size; coarse area hierarchy carries the image before texture. Check full size and thumbnail. Make at most one focused correction before showing an unresolved limitation. The gallery example is a direction study; it is not proof of success on every photo.
+填入可见事实后，将实际照片传给图像工具。优先保留原长宽比；不能从图鉴样本继承主体、颜色或地点。完整输入/保留规则见 [风格语法](../docs/style-grammar.md)。本方法为整图重画，不承诺原像素、精确人脸或文字保留。
+
+## 验收与修正
+
+缩到手机列表大小，主形应先于纹理可见；与原图对照仍能指出两个独特锚点和一个关系。去掉地点标签后也应成立。像照片滤镜时删掉内部纹理和体积渐层，不能只简化大面却保留整条细部摄影纹理；主体触边被裁时先恢复完整识别形；像通用几何海报时恢复一个关键负形及其比例，不靠补景点修复。最多一次针对性纠正，仍失真则说明限制；样例不代替跨输入检验。

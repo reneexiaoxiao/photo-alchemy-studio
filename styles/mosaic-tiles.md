@@ -1,21 +1,40 @@
-# Mosaic Tiles · 马赛克瓷砖
+# 马赛克瓷砖 · mosaic-tiles
 
-ID: `mosaic-tiles` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-Turn a photographed place into an authored ceramic tessera mural with a strong thumbnail silhouette. Best for arches, sea fronts, stepped streets, gardens and colored doors. Medium semantic fidelity; the whole scene is redrawn.
+把输入照片重构为沿形铺排的陶瓷镶嵌画。辨识点是砖片方向、大小与接缝共同组织形态，而不是在照片上覆盖一层方格。
 
-## Material decisions
+## 固定语法
 
-Read the source's directional structure before choosing tile shapes. Use wedge tesserae around arches, elongated pieces along water or paths, larger quiet pieces in walls and sky, and smaller pieces only where a focal contour needs them. Grout lines belong to the scene's structure. A uniform square mosaic filter fails this style.
+- 主体轮廓与关键负形决定铺排方向；轮廓处细、安静面粗，至少能看出两种有目的的砖片尺度。
+- 砖片是真正构成形状的单元，砖缝随着曲率和走势转向；不能用均匀像素格或随机裂纹代替。
+- 釉色是有限的源色归并，明暗由砖片组合体现；微小釉面变化只作次要质感，不保留连续摄影表面。
 
-Keep 6–9 glaze colors derived from the source, with one dominant field and one accent. Use thin ivory or source-appropriate grout, modest hand-cut variation, slightly uneven glaze and restrained crazing. The result should resemble a deliberately assembled ceramic object. Do not use random cracks or glitter to simulate craft.
+## 读图与适配
 
-Default: 3:4 full-bleed flat frontal artwork, no room mockup, souvenir labels, fictitious inscriptions or location names. Preserve key relative positions, object counts, arch proportions and light/shadow division. Texture may simplify minor background details but cannot invent architectural parts.
+先记录主轮廓、关键空隙、方向场、颜色关系和重要数量，再划分需要精细铺排与大块安静区域。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 几何/直边 | 规则长片沿边，转角处分段收束；不能所有面都同向 |
+| 曲线/有机形 | 扇形或短弧片沿曲率走，细小区域用楔形片闭合 |
+| 横向流动/远景 | 大片承载背景，较长砖片延续水线、坡向或走势 |
+| 单主体/近景 | 主体占足够尺度，背景整合为大块场；重要负形用砖缝与色差保住 |
+| 多主体/密集 | 保留焦点数量和关系，次要纹理归并；不靠全画面小碎砖求细节 |
+| 强光/低对比 | 强光分成源图亮暗组；低对比依靠轮廓与相邻釉色分离，不加虚构光束 |
 
-“Rebuild this photograph entirely as a hand-cut glazed ceramic tessera mural. Preserve [observed anchors]. Tile orientation follows [specific scene directions]; finer cuts clarify [focal contours] and broad tiles quiet [background regions]. Use [source-derived palette], coherent grout spacing, subtle glaze variation and natural shallow relief. Make [main silhouette] read immediately at thumbnail size. No photo fragments, uniform pixel grid, invented landmarks, decorative motifs or text.”
+色盘由源图决定，通常归并为 6–9 个釉色即可，黑白可用灰阶；砖缝根据邻色选择安静中性色，不固定蓝白或奶油色。默认正面完整作品，保留输入比例，不添加室内展示场景。
 
-## Review
+## 跨题材规则
 
-Check that grout participates in the composition, not just overlays a photograph; the focal silhouette survives zooming out; source objects and their relative sizes remain recognizable. For close portraits, request a less reductive choice or follow explicit redraw permission.
+建筑沿结构边界；风景沿坡向/水线；器物沿轮廓、把手与接触面；食物沿外形和真实切面且数量不变；植物沿枝叶生长方向且独立大叶不增减。宠物仅在明确允许重绘时以体态、耳形和毛色块识别，不追逐每根毛；人物近脸或精确身份要求改选照片保留方法。
+
+## 提示词骨架
+
+“将提供照片整体重构为手工陶瓷镶嵌画，保留[识别锚点、数量和相对位置]。砖片沿[真实方向场]铺排，[关键轮廓/负形]用细小切片，[安静区域]用较大砖片。以[源色组]有限釉色组合明暗，接缝有连续走势，少量手切不规则和浅釉面起伏。完整保留[识别形]。无照片贴面、均匀方格、随机裂纹、闪粉、新物体、符号或文字。”
+
+实际输入必须随提示词传入，遵循 [风格语法](../docs/style-grammar.md)。整图重画不承诺原像素、精确人脸或文字保留。
+
+## 验收与修正
+
+缩略图先见主体，近看砖缝确实参与造形；关键空隙和数量仍对应源图。若像马赛克滤镜，先改铺排方向和尺度，再减少摄影纹理；若碎片过密，只细化识别处。最多一次针对性纠正，不能借增加景物改善“丰富度”。

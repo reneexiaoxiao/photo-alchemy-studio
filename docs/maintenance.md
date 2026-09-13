@@ -43,3 +43,11 @@
 只有一套 index.html / gallery.js / gallery.css。build_local_gallery.py 从它们生成被Git忽略的 local.html 与 .local/gallery-catalog.js；服务启动和安装后自动更新。目录变更先跑 build_catalog.py，再跑 build_local_gallery.py。个人页直接打开即可看全部图片；安装和检查更新仍需启动本地服务。
 
 原创工作流署名 Renee，保留 AI 辅助说明。新增样张优先使用不同题材；只在明确要做对照试验时统一底图。概念试作、真实照片转译和社区原图分别标注。不要用新样例覆盖社区原参考图。
+
+## 风格规则与跨输入样例
+
+新增原创方法时同时更新 `originals.json`、`styles/<id>.md` 和 `style-contracts.json`。把固定视觉语法与随照片变化的参数分开；国家、示例物件和示例配色不能成为必要条件。兼容性逻辑位于 `scripts/selection_rules.py`，新标签沿用英文规范名；不要用标签数量伪装画面质量评分。需要原像素或精确身份时检查退出条件。
+
+有实际输入编辑记录才在 `transfer-examples.json` 增加对照。每个样例记录输入、输出和局限；与方向试作区分，不以一张演示图宣称通用。复制图片后运行目录构建和个人页构建；公共原图许可与 Skill 许可分别复核。
+
+`python3 scripts/launch_studio.py` 或根目录 `.command` 后台启动并自动打开浏览器；重复打开复用同一图库服务。运行记录与日志在忽略的 `.local/` 中，不提交公开。

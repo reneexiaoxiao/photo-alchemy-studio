@@ -1,0 +1,54 @@
+[
+  {
+    "id": "city-five-shapes",
+    "examples": [
+      {
+        "label": "食物",
+        "image": "assets/transfer/five-food.png",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "梨与碟子的关系保留；梨面仍有体积感，尚未完全平面化。"
+      },
+      {
+        "label": "植物",
+        "image": "assets/transfer/five-plant.png",
+        "sourceImage": "assets/transfer/source-plant.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "两片叶子与投影次序保留，树枝与叶面改为平面色块。"
+      },
+      {
+        "label": "建筑",
+        "image": "assets/transfer/five-architecture.png",
+        "sourceImage": "assets/examples/source-courtyard.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "保留三处开口的节奏与斜向水池；细节合并为主形。"
+      }
+    ]
+  },
+  {
+    "id": "courtyard-shadow-atlas",
+    "examples": [
+      {
+        "label": "食物",
+        "image": "assets/transfer/light-food.png",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "放大投影、缩小来源物件；保留一梨、一碟、两颗杏仁。"
+      },
+      {
+        "label": "植物",
+        "image": "assets/transfer/light-plant.png",
+        "sourceImage": "assets/transfer/source-plant.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "以两片大投影与少量叶片证据重组；仍有轻微明暗渐变。"
+      },
+      {
+        "label": "建筑",
+        "image": "assets/transfer/light-architecture.png",
+        "sourceImage": "assets/examples/source-courtyard.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "采用倒影分支，保留三处开口的对应节奏；属于艺术重组。"
+      }
+    ]
+  }
+]

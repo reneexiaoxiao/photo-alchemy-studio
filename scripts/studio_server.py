@@ -27,6 +27,7 @@ import uuid
 import webbrowser
 
 VERSION = "1.0.0"
+APP_ID = "photo-alchemy-studio"
 MAX_BODY = 16_384
 MAX_FILE = 2 * 1024 * 1024
 MAX_TOTAL = 12 * 1024 * 1024
@@ -431,7 +432,7 @@ class Studio:
         raise ImportErrorSafe("本地预览未登记或无法读取。", 404)
 
     def status(self) -> dict:
-        return {"connected": True, "version": VERSION, "installedCount": len(self.catalog()["styles"]), "githubReady": shutil.which("gh") is not None, "warnings": [self.offline_warning] if self.offline_warning else []}
+        return {"connected": True, "appId": APP_ID, "rootFingerprint": hashlib.sha256(str(self.root).encode("utf-8")).hexdigest(), "pid": os.getpid(), "version": VERSION, "installedCount": len(self.catalog()["styles"]), "githubReady": shutil.which("gh") is not None, "warnings": [self.offline_warning] if self.offline_warning else []}
 
     def refresh_offline(self) -> list[str]:
         try:

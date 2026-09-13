@@ -1,27 +1,43 @@
-# 漫游多视角 · walking-multiview
+# 多视角接景 · walking-multiview
 
-ID: `walking-multiview` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-把同一天的几个视角接成一段不可能的散步，让楼梯通向水果与市场。
+让不同照片或同一照片里的真实局部沿一条线、一处边缘或一个动作相接，组成一次连续观看。它的辨识点是跨片段的空间接缝，不是景点数量或旅行主题。
 
-## Input and fidelity
+## 固定语法
 
-Prefer 2–4 photos of one outing. One photo may be reused via actual crops, never invented unseen views. This is artistic reinterpretation. Inspect the actual input before generation, record 3–5 source anchors and distinguish subjects from style references. Country names are inspiration tags, not evidence of where a photo was taken. Never substitute the gallery's fictional sample for the user's photo. Do not invent people, place names, dates or signs; exact-face or exact-pixel requests need a compatible workflow.
+- 一幅主视图承担现实锚点，1–3 个次视图以不同尺度接入；不能变成均分宫格。
+- 至少一处“有依据的接缝”：轮廓继续、方向相接、遮挡对位或形状转折。接缝必须从两侧实际输入中找到。
+- 观看路径连续，但局部边界保留裁切或拼接的可见性，使作品读为创意蒙太奇，不能冒充真实全景或地理重建。
 
-## Composition method
+## 读图与适配
 
-List which details come from each input. Find a shared line or shape: stair diagonal becomes fruit cut, canopy stripe continues into a facade. Use one dominant view and 2–3 secondary crops at different scales. Join these into one impossible but legible space with hard or torn photo boundaries appropriate to the input. Label it a creative montage, not a map or reconstruction of where the user walked. Do not claim pixel preservation from ImageGen; use another workflow if exact photo pixels are required.
+记录每张图贡献的片段、方向和识别锚点，先找接缝再选布局。单张图可用真实全貌与局部构成跨尺度连接，不能生成未拍到的背面或另一个机位。没有可相接结构时改用碎片星图，而不画虚构道路连接。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 强水平线 | 水线、桌沿或墙线横向接续，但用尺度跳跃保留拼贴感 |
+| 强斜线/动作 | 沿斜线穿过画幅，次视图跟随走向；不反转人物动作来硬接 |
+| 曲线/圆弧 | 在实际转折处接另一弧面，保留物体身份，不能扭曲器物使其合缝 |
+| 繁密多图 | 主图占最大注意力，只选能延续主线的局部，删掉其余 |
+| 稀疏单图 | 用一次全貌和一两个实际细节作尺度接景，保留安静段落，不复制主体 |
+| 光色差很大 | 把差异留在可见接缝两侧，用一小处共享色协调；不强制统一天气或重画光源 |
 
-“Recompose these supplied photos as one multi-view travel montage. Input1 contributes [anchor]; input2 [anchor]; input3 [anchor]. Let [shared contour] connect across scale changes. One dominant photographic-looking view, asymmetrical crops, restrained drawn connecting contours, no equal panels, no unseen landmarks, no invented text.”
+## 跨题材规则
 
-Fill bracketed slots with observed facts before passing the prompt to the built-in image tool. Default to one 3:4 shareable artwork, or preserve the user's requested ratio. Read the target photo first. Never promise a specific image model version that the tool does not expose.
+- **建筑/街景**：阶梯、屋檐、道路可相接；不能新增街区，也不能声称是可导航路线。
+- **风景**：地平线、山脊或水流线跨尺度衔接，独特山形不变，不制造真实全景错觉。
+- **器物**：器物全貌与把手/折角/纹路局部可以接景；保持几何，不补隐藏结构。
+- **食物**：切口、盘沿、卷曲与桌线可接续，所有食材来自原图，不制造新的菜品。
+- **植物**：枝向、叶缘与局部叶脉连成路径；不把不同来源叶片伪装成同一真实植物。
+- **宠物/人物**：允许重构时只保留一个完整主体，动作方向不变；不得重复人或宠物来制造连续事件。精确保留身份时换法。
 
-## Failure boundaries
+## 提示词骨架
 
-Equal photo grids, fake travel tickets, generic tourist objects, duplicating a recognizable person, fabricated itinerary or impossible view presented as real.
+“把提供的[主视图及来源]和[1–3个实际局部及来源]连接为一个连续的摄影感蒙太奇。[接缝A]通过[双方实际共有的边缘/方向]接到[接缝B]，按[所选路径]穿行画幅。保留[锚点与相对关系]，尺度有主次，拼接边缘可见，画面读为创意组合。保留[有意义的光色差]，不增未见视角、道路、人物、地标、文字，不做均分照片网格。”
 
-## Review
+一次接受 1–5 张，按 [风格语法](../docs/style-grammar.md) 引用实际输入并区分重构/真实记录。混合重构不保证原像素。画幅跟随主要连接方向，不固定竖版。
 
-Each fragment can be traced to a supplied photo; a single continuous visual route replaces a card grid; scale changes are deliberate and not confusing. Check full size and thumbnail. Make at most one focused correction before showing an unresolved limitation. The gallery example is a direction study; it is not proof of success on every photo.
+## 验收与修正
+
+接缝两侧均能追溯到输入，视线可连续通过且能区分主/次视图。若像卡片拼贴，减少面板，找一处真接缝；若像伪全景，加强可见裁切边界。最多一次纠正；接不起来就换方法，不补拍摄事实。

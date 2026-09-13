@@ -1,27 +1,45 @@
-# 庭院光影谱 · courtyard-shadow-atlas
+# 光影提炼 · courtyard-shadow-atlas
 
-ID: `courtyard-shadow-atlas` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-让影子成为主角，用拱形、光缝和少量照片碎片重新组织庭院。
+把真实存在的明暗边界变成画面骨架，让投影、透光或反射承担主体结构。方法由光的形态决定，不要求庭院、拱廊或阳光城市。
 
-## Input and fidelity
+## 固定语法
 
-A photo with readable cast shadows, reflected water or repeated architectural openings. This is artistic reinterpretation. Inspect the actual input before generation, record 3–5 source anchors and distinguish subjects from style references. Country names are inspiration tags, not evidence of where a photo was taken. Never substitute the gallery's fictional sample for the user's photo. Do not invent people, place names, dates or signs; exact-face or exact-pixel requests need a compatible workflow.
+1. 选择一种可读的光学关系：投影与物体、透光与轮廓、反射与原形。一次只以其中一种为主。
+2. 将它提炼为 2–4 个连贯明暗大面，保留方向、边界特征和接触关系；面内大幅简化，边界承担信息。
+3. 留 1–3 个小的来源细节作为证据，接在大面边缘或内部切口上；摄影感片段与抽象面共构一图，不能排列成卡片。大面应明显主导，不能留下整片摄影墙面、桌面或整盘实物来承托一个被涂平的主体。
 
-## Composition method
+## 读图与适配
 
-Identify the REAL shadow boundary and repeated light rhythm. Expand 2–3 shadow shapes, flatten perspective where needed, then preserve no more than three small photographic-looking evidence fragments: water ripples, foliage, a surface edge. The fragments must connect to the big graphic shapes, not sit in unrelated cards. For weak source shadows choose another workflow; never fabricate an architectural system. Full redraw can resemble photographic fragments but cannot promise exact original pixels.
+区分受光表面、光孔、反光与背景，区分投影、自身暗面与深色材质。记录投射方向、边缘软硬、最特别的转折和两个来源锚点。深色盘子本身不能被误判成投影。保留的是数量、接触、方向和对应关系，不是每个源像素的位置；允许明确的艺术重构把光影面放大、证据片段缩小或重新排布，接触和光向不能因此矛盾。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 一物体和长投影 | 影子成为主要延展形，保留物体接触点及独特轮廓；可减背景，不能换光向 |
+| 重复孔洞/多个投影 | 保留真实的不等距节奏，合并次要面；不把所有开口标准化 |
+| 叶片/薄物逆光 | 透亮内区与轮廓构成正负形，保留叶数、枝向和遮挡；不补窗影 |
+| 水/镜面反射 | 保留原形与反形的对应轴、断裂和波动，一稳定形对照一组松动形 |
+| 满画面、细节多 | 选择一个连续光影系统，其余并成安静场，只留最说明尺度的小细节 |
+| 稀疏、单点光源 | 扩大真实边界的构图作用并保留空白，不加对象填充 |
 
-“Translate the supplied photo into an abstract light-and-shadow composition. Keep [shadow contour], [opening rhythm], [small source detail]. Most of the scene becomes [source-derived dark/light fields]. Preserve just [selected fragments] as photographic-looking accents. Radically reduce perspective; no new landmarks, no decorative lettering.”
+没有投影可选真实透光或反射分支；三种条件都没有时换方法，不能凭空补夕阳。颜色来自光暗相对冷暖和明度，允许彩色或黑白，不固定钴蓝/暖白。
 
-Fill bracketed slots with observed facts before passing the prompt to the built-in image tool. Default to one 3:4 shareable artwork, or preserve the user's requested ratio. Read the target photo first. Never promise a specific image model version that the tool does not expose.
+## 跨题材规则
 
-## Failure boundaries
+- **建筑/街景**：开口、墙折和投影交界组织画面，保留数量或特有节奏，不补拱廊。
+- **风景**：山体投影、水面反光、林间光斑须有连贯结构；单纯云霞渐变不足以支持此法。
+- **器物**：物体与桌面投影共构主形，把手、缺口或接触点至少留一项。
+- **食物**：蒂/切面/堆叠与投影构成焦点；盘沿与食物暗面分开，数量不变。
+- **植物**：叶片与墙上叶影可形成尺度对话，保持枝的连接、主要叶数和投影方向。
+- **宠物/人物**：用户允许重绘时表达体态剪影与投影，不改成另一种行为；近脸或身份必须准确时换方法。
 
-Merely enhancing exposure in the same photo; three equal cards; filling every area with surface texture; inventing extra arches.
+## 提示词骨架
 
-## Review
+“以提供照片中的[真实投影/透光/反射关系]重构一幅抽象光影作品。保留[锚点A]、[锚点B]及[数量/接触点/方向]。将[具体明暗边界]展开为 2–4 个连贯大面，保留[独特转折/节奏/对应轴]，按[构图分支]组织画幅，允许[光影面]扩大、[实物证据]缩小，在[接触/方向/对应关系]不变的前提下重排。[来源细节1–3项]作为小的摄影感证据嵌在大面边界，其余纹理删减。沿用[原图光暗颜色及明度关系]。不要只提高照片对比度，不添加光孔、窗影、建筑、图标、字或物体；[深色实体]不可误作投影。”
 
-The cast-shadow structure is the hero; original openings and light direction can still be traced. Compare with input and check added geometry. Check full size and thumbnail. Make at most one focused correction before showing an unresolved limitation. The gallery example is a direction study; it is not proof of success on every photo.
+填入观察后传入实际照片；不能用样例代替。优先原长宽比，依照光影方向选择横向延展或竖向穿行。完整规则见 [风格语法](../docs/style-grammar.md)。这是摄影感证据与抽象形态的混合重构，不承诺原像素、精确身份或文字保留。
+
+## 验收与修正
+
+对照原图：大面能否追溯到真实边界；光向、接触关系和细节是否成立。缩略图先读到光的关系。若只是曝光滤镜或仅把主体涂平、仍保留整面摄影背景，扩大真实光影面并缩小来源证据，删除整面摄影纹理，再重新组织边界；若漂亮但失去来源依据，撤回新增光影，只留真实系统。最多一次针对性纠正；不适配就换方法，不宣称已普适验证。

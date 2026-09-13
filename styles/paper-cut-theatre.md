@@ -1,21 +1,40 @@
-# Paper Cut Theatre · 纸雕风景剧场
+# 纸雕层景 · paper-cut-theatre
 
-ID: `paper-cut-theatre` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-Turn a scene with genuine depth into a small layered paper theatre. Preserve its point of view and occlusion order. Use a handful of purposeful planes rather than a generic scrapbook collage.
+以原图可见的前后遮挡和负形搭成浅层纸雕。立体感来自层片间的间隔、切口和阴影；不能把任意平面照片变成立体模型再贴纸纹。
 
-## Material decisions
+## 固定语法
 
-Derive 4–7 planes from observed foreground, middle subject, distant scene and sky. Assign each a cut-paper silhouette; layer order must follow source depth. Preserve openings, negative spaces, stairs and the intervals between objects. Do not turn every contour into an additional layer.
+- 从真实遮挡关系提取 3–7 个有职责的平面，前后顺序不颠倒，关键开口真实穿透到后层。
+- 每层是近乎平的卡纸剪影，厚度克制、切边清楚；不做圆雕、黏土或折纸动物。
+- 一致的制作光照解释层间浅影，源图原有明暗可以在纸色上表达；两个光学层次不能互相混淆。
 
-Use visibly flat, separated cardstock sheets, with flat pot/plant silhouettes and a cut-out arch exposing a recessed door plane; avoid volumetric stone or clay sculpture with paper texture. Use pigmented matte papers from the photo's palette, visible fiber only close up, crisp hand-cut edges and small consistent shadows between planes. One directional light should explain every shadow. A paper frame may echo a source arch or window; do not add an unrelated stage, curtains, miniature people or fantasy architecture.
+## 读图与适配
 
-Default 3:4 view, almost straight on, with enough relief to see depth but no exaggerated oblique room mockup. Artwork occupies 85–95% of the image. Paper slots and bridges should look physically plausible. Use finer cutwork only for the main foliage or defining architectural detail.
+先列出前/中/后遮挡、负形和识别轮廓，再决定层数。两层可见关系也可辅以底纸构成三层；没有明确层次时换法，不能按物体轮廓发明背面。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 深景、横向展开 | 前中后层不等厚地间隔，保留天际线和横向关系，不强裁竖幅 |
+| 框景/孔洞 | 真实开口成为前层切口，后景从中显露；不额外添舞台或窗框 |
+| 近景物与背景 | 只分可见的主体、接触/支撑与底景，避免每条纹路都一层 |
+| 有机细边 | 细切工集中在识别处，细枝可依源图简化，纸桥须可成立 |
+| 多主体/繁密 | 保留关键遮挡，合并同深度次要对象；不能偷偷移位来腾层数 |
+| 强光/弱光 | 源图强阴影用色纸形面表达；层间制作光保持单一柔和方向，不改变对象位置 |
 
-“Reconstruct this photograph as a hand-cut layered paper theatre. Keep [observed spatial anchors], with planes ordered [foreground through background]. Render [key negative spaces] as actual cutouts. Use [palette] matte pigmented paper, precise cut edges, slight fiber and shallow consistent cast shadows from [source light direction]. Build depth through occlusion, spacing and paper thickness, not blurred photographic scenery. No unrelated collage scraps, invented objects, printed-photo inserts, cartoon figures, lettering or dramatic 3D room mockup.”
+源色转为哑光纸色，黑白也可用灰阶；不固定蓝绿/奶油。画幅服从输入关系，基本正面完整作品，避免夸张透视展示台。
 
-## Review
+## 跨题材规则
 
-Check layer order, sightlines through openings, source silhouette and shadow consistency. Avoid automatic selection for a flat object photograph without clear depth. An attractive theatre with a different skyline fails source fidelity.
+建筑可用前檐/开口/后墙；风景可用真实前景与山脊；器物可用实际套叠、重叠和负形，孤立平物不优先；食物可用盘沿与堆叠，不能补内部结构；植物保留枝叶前后层及主要叶数。宠物/人物仅明确允许重绘且轮廓适合时考虑，精确身份换方法；不能为纸雕便利改姿势。
+
+## 提示词骨架
+
+“将输入重构为浅层纸雕，层序为[实际前景→中景→后景]，完整保留[轮廓、数量、遮挡关系]。[关键负形]是实际纸上切口，露出[源图后层]。每层用[源色]哑光平卡纸，薄切边、克制纤维、[单一方向]柔和制作光形成浅层间影。以平面间距表达深度，不做体积雕塑。无照片贴片、虚构背面、额外舞台/窗框、黏土形体或文字。”
+
+按 [风格语法](../docs/style-grammar.md) 引用实际源图，整体重画不承诺原像素或身份精确保留。
+
+## 验收与修正
+
+观察每个开口能否合理见到后层，遮挡顺序和独特轮廓是否吻合。若像厚石雕，降低形体体积并显出平纸层间隙；若像普通拼贴，恢复前后顺序和切口。最多一次纠正，没有可用深度关系的输入改选其他风格。

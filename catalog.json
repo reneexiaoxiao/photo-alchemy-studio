@@ -1,156 +1,550 @@
 [
   {
     "id": "souvenir-constellation",
-    "label": "旅行碎片星图",
+    "label": "碎片星图",
     "origin": "original",
     "author": "Renee",
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "挑出食物、杯子与小物件，用比例和呼应关系留住一天的私人记忆。",
+    "summary": "把全貌与细节编排成有主次的关系，用形状和色彩的呼应引导观看。",
     "best": [
-      "食物",
-      "旅行小物",
-      "多张照片"
+      "多物件",
+      "局部细节",
+      "形色呼应"
     ],
     "fidelity": "medium",
     "direction": "narrative",
-    "destinations": [
-      "葡萄牙",
-      "西班牙",
-      "土耳其"
-    ],
     "image": "assets/examples/souvenir-constellation.png",
     "entry": "styles/souvenir-constellation.md",
     "installed": true,
-    "imageCaption": "方向试作 · 虚构旅行场景"
+    "imageCaption": "方向试作 · 虚构旅行场景",
+    "contract": {
+      "id": "souvenir-constellation",
+      "family": "relational-fragment-collage",
+      "direction": "narrative",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 5
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "multiple-subjects",
+        "multiple-photos",
+        "fine-details",
+        "object",
+        "food",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "multiple-subjects",
+        "multiple-photos",
+        "fine-details"
+      ],
+      "signature": [
+        "一个主片段与少量次片段不等尺度",
+        "具体形色呼应决定位置和观看路径",
+        "全部片段可追溯，连接不依赖装饰线"
+      ],
+      "adaptation": "单图可用全貌与真实细节，多图按视觉呼应筛选，片段数量与留白不按照片张数平均。",
+      "useWhen": "想把多个细节或全貌与局部组织成私人关系",
+      "avoidWhen": "素材不足以构成关系，或需要精确身份与原像素时"
+    },
+    "features": [
+      "multiple-subjects",
+      "multiple-photos",
+      "fine-details",
+      "object",
+      "food",
+      "editorial"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "family": "relational-fragment-collage"
   },
   {
     "id": "city-five-shapes",
-    "label": "城市五形",
+    "label": "五形提炼",
     "origin": "original",
     "author": "Renee",
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "把街道压成五个大形状，只留下最能认出这个地方的几个细节。",
+    "summary": "把复杂照片压缩为少量互相咬合的主形，保留完整轮廓和关键辨识点。",
     "best": [
-      "街巷",
-      "建筑",
-      "强轮廓"
+      "轮廓清晰",
+      "结构鲜明",
+      "可抽象"
     ],
     "fidelity": "low",
     "direction": "abstract",
-    "destinations": [
-      "葡萄牙",
-      "西班牙"
-    ],
-    "image": "assets/examples/city-five-shapes.png",
+    "image": "assets/transfer/five-plant.png",
     "entry": "styles/city-five-shapes.md",
     "installed": true,
-    "imageCaption": "方向试作 · 虚构旅行场景"
+    "imageCaption": "跨题材试作 · 合成植物照片",
+    "sourceImage": "assets/transfer/source-plant.png",
+    "contract": {
+      "id": "city-five-shapes",
+      "family": "interlocking-shape-reduction",
+      "direction": "abstract",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "strong-color",
+        "negative-space",
+        "single-subject",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "clear-silhouette",
+        "strong-geometry"
+      ],
+      "signature": [
+        "约五个主形通过共边和负形咬合",
+        "完整识别形与少量关键标记保留来源",
+        "主形内删除摄影纹理和体积渐层"
+      ],
+      "adaptation": "主轴、负形、分形与颜色随输入变化，密集场景先合并背景，单主体保住完整轮廓。",
+      "useWhen": "想把复杂照片压缩成能一眼认出的图形关系",
+      "avoidWhen": "源图缺乏可读骨架，或身份与原像素必须精确保留时"
+    },
+    "features": [
+      "clear-silhouette",
+      "strong-geometry",
+      "strong-color",
+      "negative-space",
+      "single-subject",
+      "abstract-friendly"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "食物",
+        "image": "assets/transfer/five-food.png",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "梨与碟子的关系保留；梨面仍有体积感，尚未完全平面化。"
+      },
+      {
+        "label": "植物",
+        "image": "assets/transfer/five-plant.png",
+        "sourceImage": "assets/transfer/source-plant.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "两片叶子与投影次序保留，树枝与叶面改为平面色块。"
+      },
+      {
+        "label": "建筑",
+        "image": "assets/transfer/five-architecture.png",
+        "sourceImage": "assets/examples/source-courtyard.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "保留三处开口的节奏与斜向水池；细节合并为主形。"
+      }
+    ],
+    "family": "interlocking-shape-reduction"
   },
   {
     "id": "landscape-strata",
-    "label": "风景地层",
+    "label": "轮廓层谱",
     "origin": "original",
     "author": "Renee",
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "提取山脊、海崖与岩石的轮廓，把风景展开为有节奏的地层色带。",
+    "summary": "沿照片本身的叠层与走势展开不等宽色带，让轮廓成为画面的节奏。",
     "best": [
-      "岩石地貌",
-      "山谷",
-      "海崖"
+      "重复层次",
+      "轮廓走势",
+      "遮挡关系"
     ],
     "fidelity": "low",
     "direction": "abstract",
-    "destinations": [
-      "土耳其",
-      "葡萄牙",
-      "西班牙"
-    ],
     "image": "assets/examples/landscape-strata.png",
     "entry": "styles/landscape-strata.md",
     "installed": true,
-    "imageCaption": "方向试作 · 虚构旅行场景"
+    "imageCaption": "方向试作 · 虚构旅行场景",
+    "contract": {
+      "id": "landscape-strata",
+      "family": "contour-band-expansion",
+      "direction": "abstract",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant"
+      ],
+      "bestFeatures": [
+        "contour-layers",
+        "layered-depth",
+        "repeated-patterns",
+        "directional-lines",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "contour-layers",
+        "layered-depth",
+        "repeated-patterns"
+      ],
+      "signature": [
+        "独特总轮廓保持来源识别",
+        "真实层带以不等宽和间隔展开",
+        "默认平面，拒绝均匀条纹与虚构剖面"
+      ],
+      "adaptation": "层带沿源图水平、纵向、放射或闭合结构变化，近远与遮挡次序始终可追溯。",
+      "useWhen": "想突出真实叠层、轮廓走势或重复曲线",
+      "avoidWhen": "只有孤立轮廓、没有层带依据，或精确身份要求高时"
+    },
+    "features": [
+      "contour-layers",
+      "layered-depth",
+      "repeated-patterns",
+      "directional-lines",
+      "abstract-friendly"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant"
+    ],
+    "family": "contour-band-expansion"
   },
   {
     "id": "walking-multiview",
-    "label": "漫游多视角",
+    "label": "多视角接景",
     "origin": "original",
     "author": "Renee",
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "把同一天的几个视角接成一段不可能的散步，让楼梯通向水果与市场。",
+    "summary": "借一条真实边缘接起不同视角或比例，让多个照片片段连成一段观看。",
     "best": [
-      "市场",
-      "街巷",
-      "多张照片"
+      "方向线",
+      "多图",
+      "全貌与细节"
     ],
     "fidelity": "medium",
     "direction": "narrative",
-    "destinations": [
-      "西班牙",
-      "葡萄牙"
-    ],
     "image": "assets/examples/walking-multiview.png",
     "entry": "styles/walking-multiview.md",
     "installed": true,
-    "imageCaption": "方向试作 · 虚构旅行场景"
+    "imageCaption": "方向试作 · 虚构旅行场景",
+    "contract": {
+      "id": "walking-multiview",
+      "family": "continuous-view-montage",
+      "direction": "narrative",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 5
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "directional-lines",
+        "multiple-photos",
+        "fine-details",
+        "multiple-subjects",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "directional-lines",
+        "multiple-photos",
+        "fine-details"
+      ],
+      "signature": [
+        "主视图与次视图尺度分明",
+        "真实边缘或方向形成至少一处接缝",
+        "观看连续、裁切可见，拒绝伪真实全景"
+      ],
+      "adaptation": "沿输入水平线、斜线或曲线接景，单图用真实局部跨尺度连接，不生成未见视角。",
+      "useWhen": "想让不同片段沿一条具体视觉线相接",
+      "avoidWhen": "找不到可解释接缝，或必须准确还原地点与身份时"
+    },
+    "features": [
+      "directional-lines",
+      "multiple-photos",
+      "fine-details",
+      "multiple-subjects",
+      "editorial"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "family": "continuous-view-montage"
   },
   {
     "id": "courtyard-shadow-atlas",
-    "label": "庭院光影谱",
+    "label": "光影提炼",
     "origin": "original",
     "author": "Renee",
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "让影子成为主角，用拱形、光缝和少量照片碎片重新组织庭院。",
+    "summary": "让照片里已有的投影、透光或倒影主导构图，以少量来源细节点明关系。",
     "best": [
-      "庭院",
-      "拱廊",
-      "强光影"
+      "真实光影",
+      "反射",
+      "留白"
     ],
     "fidelity": "low",
     "direction": "abstract",
-    "destinations": [
-      "西班牙",
-      "葡萄牙",
-      "土耳其"
-    ],
-    "image": "assets/examples/courtyard-shadow-atlas.png",
+    "image": "assets/transfer/light-food.png",
     "entry": "styles/courtyard-shadow-atlas.md",
     "installed": true,
-    "imageCaption": "照片转译样例 · 虚构庭院场景",
-    "sourceImage": "assets/examples/source-courtyard.png"
+    "imageCaption": "跨题材试作 · 合成食物照片",
+    "sourceImage": "assets/transfer/source-food.png",
+    "contract": {
+      "id": "courtyard-shadow-atlas",
+      "family": "light-boundary-recomposition",
+      "direction": "abstract",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "strong-shadows",
+        "backlight",
+        "reflections",
+        "negative-space",
+        "directional-lines",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "strong-shadows",
+        "backlight",
+        "reflections"
+      ],
+      "signature": [
+        "选真实投影、透光或反射为主关系",
+        "放大连贯光影面，保留接触与方向",
+        "少量小来源证据依附边界，不留整面摄影背景"
+      ],
+      "adaptation": "按真实光学关系选择分支，可放大光影并缩小证据，拓扑保留而像素位置可重组。",
+      "useWhen": "原图有清楚光影边界、透光轮廓或成对反射",
+      "avoidWhen": "没有可读光学关系，或必须保留精确身份与原像素时"
+    },
+    "features": [
+      "strong-shadows",
+      "backlight",
+      "reflections",
+      "negative-space",
+      "directional-lines",
+      "abstract-friendly"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "食物",
+        "image": "assets/transfer/light-food.png",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "放大投影、缩小来源物件；保留一梨、一碟、两颗杏仁。"
+      },
+      {
+        "label": "植物",
+        "image": "assets/transfer/light-plant.png",
+        "sourceImage": "assets/transfer/source-plant.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "以两片大投影与少量叶片证据重组；仍有轻微明暗渐变。"
+      },
+      {
+        "label": "建筑",
+        "image": "assets/transfer/light-architecture.png",
+        "sourceImage": "assets/examples/source-courtyard.png",
+        "caption": "跨题材试作 · 合成测试照片",
+        "note": "采用倒影分支，保留三处开口的对应节奏；属于艺术重组。"
+      }
+    ],
+    "family": "light-boundary-recomposition"
   },
   {
     "id": "miniature-journey",
-    "label": "微缩游记",
+    "label": "多视点微缩",
     "origin": "original",
     "author": "Renee",
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "打散远近比例，把渡轮、街区与一杯茶画进一条可以慢慢读的旅途。",
+    "summary": "把可见片段展开成连续的细笔触画面，以重要性而非远近决定尺度。",
     "best": [
-      "街区",
-      "水岸",
-      "旅行片段"
+      "丰富场景",
+      "多图",
+      "局部细节"
     ],
     "fidelity": "medium",
     "direction": "narrative",
-    "destinations": [
-      "土耳其"
-    ],
     "image": "assets/examples/miniature-journey.png",
     "entry": "styles/miniature-journey.md",
     "installed": true,
-    "imageCaption": "方向试作 · 虚构旅行场景"
+    "imageCaption": "方向试作 · 虚构旅行场景",
+    "contract": {
+      "id": "miniature-journey",
+      "family": "polycentric-painted-narrative",
+      "direction": "narrative",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 5
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "multiple-subjects",
+        "multiple-photos",
+        "fine-details",
+        "layered-depth",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "multiple-subjects",
+        "multiple-photos",
+        "fine-details"
+      ],
+      "signature": [
+        "连续平面里有主次与安静停顿",
+        "局部视点与重要性尺度展开透视",
+        "细笔触统一节点，连接区域疏朗"
+      ],
+      "adaptation": "按可见节点组织观看而非地理路线，单图可展开全貌与细节，不能新增隐藏视角。",
+      "useWhen": "想把丰富的可见片段做成可逐处阅读的微缩图",
+      "avoidWhen": "源图过于单薄或必须精确保留人物、像素与地理关系时"
+    },
+    "features": [
+      "multiple-subjects",
+      "multiple-photos",
+      "fine-details",
+      "layered-depth",
+      "editorial"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "family": "polycentric-painted-narrative"
   },
   {
     "id": "mosaic-tiles",
@@ -159,11 +553,11 @@
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "让砖片顺着拱门、水流和轮廓铺排，把旅行片段变成一块有触感的陶瓷壁画。",
+    "summary": "让瓷片沿实际轮廓铺排，以疏密、釉色与灰缝重新组织照片。",
     "best": [
-      "建筑",
-      "海边",
-      "花园"
+      "轮廓清晰",
+      "色块分明",
+      "方向线"
     ],
     "fidelity": "medium",
     "image": "assets/examples/mosaic-tiles.png",
@@ -173,11 +567,62 @@
     "direction": "material",
     "sourceImage": "assets/examples/source-coast.png",
     "imageCaption": "照片转译样例 · 虚构海岸场景",
-    "destinations": [
-      "葡萄牙",
-      "西班牙",
-      "土耳其"
-    ]
+    "contract": {
+      "id": "mosaic-tiles",
+      "family": "directional-tessellation",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "directional-lines",
+        "strong-color"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "砖片沿真实轮廓与走势铺排",
+        "识别处细切、安静面大块",
+        "有限釉色组合明暗，接缝参与造形"
+      ],
+      "adaptation": "砖形、铺排方向和尺度随曲率、主体密度及源图空隙变化，颜色从输入归并。",
+      "useWhen": "想保留主体轮廓并获得有组织的镶嵌质感",
+      "avoidWhen": "需精确身份、原像素或大量可读小字时"
+    },
+    "features": [
+      "clear-silhouette",
+      "strong-geometry",
+      "directional-lines",
+      "strong-color"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "family": "directional-tessellation"
   },
   {
     "id": "embroidered-patch",
@@ -186,11 +631,11 @@
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "把最想记住的场景收进一枚织物徽章，让线迹、花结和包边成为记忆的质地。",
+    "summary": "把一个主体或紧密场景化为织物章，让针向、针法与包边一起造形。",
     "best": [
-      "纪念物",
-      "植物",
-      "宠物"
+      "主角明确",
+      "轮廓清晰",
+      "紧密场景"
     ],
     "fidelity": "medium",
     "image": "assets/examples/embroidered-patch.png",
@@ -200,24 +645,79 @@
     "direction": "material",
     "sourceImage": "assets/examples/source-coast.png",
     "imageCaption": "照片转译样例 · 虚构海岸场景",
-    "destinations": [
-      "葡萄牙",
-      "西班牙",
-      "土耳其"
-    ]
+    "contract": {
+      "id": "embroidered-patch",
+      "family": "directional-stitch",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "single-subject",
+        "clear-silhouette",
+        "object",
+        "plant",
+        "pet",
+        "strong-color"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "一个主轮廓与少量支撑关系",
+        "针法与针向承担具体形面",
+        "完整包边与真实线股，拒绝布上印图"
+      ],
+      "adaptation": "章形沿源图长轴或外形变化，针法按几何边缘、有机面与细线分工。",
+      "useWhen": "想把一个主体或紧密场景收成可辨识的刺绣章",
+      "avoidWhen": "主体太细碎或需要精确脸部、文字、像素时"
+    },
+    "features": [
+      "single-subject",
+      "clear-silhouette",
+      "object",
+      "plant",
+      "pet",
+      "strong-color"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "family": "directional-stitch"
   },
   {
     "id": "riso-travel-print",
-    "label": "套色旅行版画",
+    "label": "套色版画",
     "origin": "original",
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "将光影分成几块鲜明的油墨，让颜色叠印、纸面颗粒和大胆轮廓重新组织画面。",
+    "summary": "先归并主形，再分配有限油墨，以叠印、留白和局部错版建立图形感。",
     "best": [
-      "街景",
-      "强光影",
-      "建筑"
+      "鲜明色彩",
+      "轮廓清晰",
+      "光影"
     ],
     "fidelity": "medium",
     "image": "assets/examples/riso-travel-print.png",
@@ -227,24 +727,77 @@
     "direction": "material",
     "sourceImage": "assets/examples/source-coast.png",
     "imageCaption": "照片转译样例 · 虚构海岸场景",
-    "destinations": [
-      "葡萄牙",
-      "西班牙",
-      "土耳其"
-    ]
+    "contract": {
+      "id": "riso-travel-print",
+      "family": "spot-ink-separation",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-shadows",
+        "strong-color",
+        "strong-geometry",
+        "negative-space"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "先归并主形，再分配有限专色",
+        "叠印交界产生次色，纸面留白有职责",
+        "颗粒与错版局部出现，焦点轮廓稳定"
+      ],
+      "adaptation": "色版数量、明暗分工与留白随源图结构变化，不固定暖冷配方或竖幅。",
+      "useWhen": "想用鲜明形面与套色关系提升照片的图形感",
+      "avoidWhen": "需要精确身份、照片原貌或原字逐字保留时"
+    },
+    "features": [
+      "clear-silhouette",
+      "strong-shadows",
+      "strong-color",
+      "strong-geometry",
+      "negative-space"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "family": "spot-ink-separation"
   },
   {
     "id": "paper-cut-theatre",
-    "label": "纸雕风景剧场",
+    "label": "纸雕层景",
     "origin": "original",
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "沿着真实的远近关系叠起纸层，把山路、街巷和树影变成一座小小的立体舞台。",
+    "summary": "从照片真实的遮挡关系提取纸层，用负形切口与层间投影重建深度。",
     "best": [
-      "层次丰富",
-      "山林",
-      "街巷"
+      "前后层次",
+      "遮挡关系",
+      "负形"
     ],
     "fidelity": "medium",
     "image": "assets/examples/paper-cut-theatre.png",
@@ -254,11 +807,64 @@
     "direction": "material",
     "sourceImage": "assets/examples/source-coast.png",
     "imageCaption": "照片转译样例 · 虚构海岸场景",
-    "destinations": [
-      "葡萄牙",
-      "西班牙",
-      "土耳其"
-    ]
+    "contract": {
+      "id": "paper-cut-theatre",
+      "family": "occlusion-paper-relief",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "layered-depth",
+        "clear-silhouette",
+        "negative-space",
+        "strong-geometry"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "layered-depth"
+      ],
+      "signature": [
+        "纸层由真实遮挡顺序提取",
+        "负形切口能见到正确后层",
+        "平卡纸与浅层间影构成深度"
+      ],
+      "adaptation": "根据可见前后关系选择层数和间距，单物只采用真实重叠，不补造内部。",
+      "useWhen": "原图有可辨前后层次、开口或重叠关系",
+      "avoidWhen": "没有可用深度层次，或要求精确身份与原像素时"
+    },
+    "features": [
+      "layered-depth",
+      "clear-silhouette",
+      "negative-space",
+      "strong-geometry"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "family": "occlusion-paper-relief"
   },
   {
     "id": "stained-glass-light",
@@ -267,10 +873,10 @@
     "source": "Renee / Photo Alchemy Studio",
     "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
     "license": "MIT",
-    "summary": "用铅线接住场景的结构，让天空、水面和墙体变成会透光的彩色玻璃。",
+    "summary": "沿形面结构组织接合线，用大块源图色彩与克制透光构成连贯玻璃网络。",
     "best": [
-      "建筑",
-      "逆光",
+      "形面清楚",
+      "结构鲜明",
       "植物"
     ],
     "fidelity": "medium",
@@ -281,11 +887,64 @@
     "direction": "material",
     "sourceImage": "assets/examples/source-coast.png",
     "imageCaption": "照片转译样例 · 虚构海岸场景",
-    "destinations": [
-      "葡萄牙",
-      "西班牙",
-      "土耳其"
-    ]
+    "contract": {
+      "id": "stained-glass-light",
+      "family": "structural-glass-network",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "backlight",
+        "strong-color",
+        "plant"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "接合线沿主要结构形成连贯网络",
+        "大色面为主，关键细部少量小片",
+        "一致克制的透光，线网始终可辨"
+      ],
+      "adaptation": "分线跟随几何或有机结构，玻璃色来自源图，细密程度由识别需要决定。",
+      "useWhen": "想把清楚的形面与色彩转成透光作品",
+      "avoidWhen": "细节或身份必须精确保留，或线网会切碎主体时"
+    },
+    "features": [
+      "clear-silhouette",
+      "strong-geometry",
+      "backlight",
+      "strong-color",
+      "plant"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "family": "structural-glass-network"
   },
   {
     "id": "minimal-zine",
@@ -312,7 +971,8 @@
     "direction": "abstract",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/examples/shore-pause.jpeg",
-    "credit": "Copyright (c) 2026 LiamGvchi"
+    "credit": "Copyright (c) 2026 LiamGvchi",
+    "family": "sparse-paper"
   },
   {
     "id": "muted-zine",
@@ -339,7 +999,8 @@
     "direction": "abstract",
     "imageCaption": "本地生成样例 · 无外部输入图片",
     "imageSourceUrl": "https://github.com/moonlin1213/muted-zine-poster-v01",
-    "credit": "Photo Alchemy Studio · ImageGen 生成样例"
+    "credit": "Photo Alchemy Studio · ImageGen 生成样例",
+    "family": "sparse-paper"
   },
   {
     "id": "photo-revival",
@@ -366,7 +1027,8 @@
     "direction": "material",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/dacnay816y62-hub/photo-revival/blob/ca4c3c6c0f812355bd6d815d8a78652db801b7f1/examples/05_japan_road_page.png",
-    "credit": "Copyright (c) 2026 FANTASY"
+    "credit": "Copyright (c) 2026 FANTASY",
+    "family": "small-illustration"
   },
   {
     "id": "pixel-bitmap",
@@ -393,7 +1055,8 @@
     "direction": "material",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/v92388375-gif/pixel-style-poster-skill/blob/b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b/examples/deep-teal-butterfly.png",
-    "credit": "Copyright (c) 2026"
+    "credit": "Copyright (c) 2026",
+    "family": "halftone"
   },
   {
     "id": "deconstructed-duotone",
@@ -415,7 +1078,8 @@
     "direction": "abstract",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/Lixorn/deconstructed-duotone-poster/blob/0393d269ff82ef7044a6c6effd36473c4f983a33/examples/purple-canopy.webp",
-    "credit": "Copyright (c) 2026 Lixorn"
+    "credit": "Copyright (c) 2026 Lixorn",
+    "family": "grid-abstraction"
   },
   {
     "id": "morandi-cinematic",
@@ -435,7 +1099,8 @@
       "仅允许完全免费、个人非商业、同条款分享；修改文件须标注修改。禁止代表公司、雇主、机构等组织使用，禁止商业工作流、收费服务及商业交付中使用输出。"
     ],
     "direction": "narrative",
-    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill"
+    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+    "family": "photo-editorial"
   },
   {
     "id": "scene-distillation",
@@ -455,7 +1120,8 @@
       "仅允许完全免费、个人非商业、同条款分享；修改文件须标注修改。禁止代表公司、雇主、机构等组织使用，禁止商业工作流、收费服务及商业交付中使用输出。"
     ],
     "direction": "abstract",
-    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill"
+    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+    "family": "semantic-abstraction"
   },
   {
     "id": "gathered-scenes",
@@ -475,7 +1141,8 @@
       "仅允许完全免费、个人非商业、同条款分享；修改文件须标注修改。禁止代表公司、雇主、机构等组织使用，禁止商业工作流、收费服务及商业交付中使用输出。"
     ],
     "direction": "narrative",
-    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill"
+    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+    "family": "photo-collage"
   },
   {
     "id": "zine-blend",
@@ -497,7 +1164,8 @@
     "direction": "narrative",
     "imageCaption": "本地生成样例 · 无外部输入图片",
     "imageSourceUrl": "https://github.com/BruceZhang111/Zine-Blend",
-    "credit": "Photo Alchemy Studio · ImageGen 生成样例"
+    "credit": "Photo Alchemy Studio · ImageGen 生成样例",
+    "family": "photo-collage"
   },
   {
     "id": "dual-field-poster",
@@ -518,7 +1186,8 @@
     ],
     "direction": "narrative",
     "imageCaption": "本地生成样例 · 无外部输入图片",
-    "credit": "Photo Alchemy Studio · ImageGen 生成样例"
+    "credit": "Photo Alchemy Studio · ImageGen 生成样例",
+    "family": "photo-print"
   },
   {
     "id": "threefold-memory",
@@ -538,7 +1207,8 @@
       "固定提交和当前 main 均未找到 LICENSE 或 README 许可声明。不要将其 SKILL、归纳改写文档或有实质来源依赖的配套实现直接套入新 MIT。"
     ],
     "direction": "narrative",
-    "imageSourceUrl": "https://github.com/Starryear/Starryear-Threefold-Memory"
+    "imageSourceUrl": "https://github.com/Starryear/Starryear-Threefold-Memory",
+    "family": "sequence"
   },
   {
     "id": "travel-abstraction",
@@ -558,7 +1228,8 @@
       "禁止再分发。"
     ],
     "direction": "abstract",
-    "imageSourceUrl": "https://github.com/Evianis/travel-photo-abstraction"
+    "imageSourceUrl": "https://github.com/Evianis/travel-photo-abstraction",
+    "family": "photo-abstraction"
   },
   {
     "id": "photo-relic",
@@ -585,7 +1256,8 @@
     "direction": "narrative",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/wnby/photo-relic-editorial/blob/2232da16afddc7940e2e2f280bfb85aa62da1bae/examples/paper-beijing/corner-tower-water.png",
-    "credit": "Copyright (c) 2026 wnby"
+    "credit": "Copyright (c) 2026 wnby",
+    "family": "photo-editorial"
   },
   {
     "id": "photo-abstract",
@@ -605,7 +1277,8 @@
       "LICENSE.md 只明确个人、学习、研究与非商业使用；商业用途、企业应用、再授权与商业分发须另获授权。README 的 CC BY-NC-SA 4.0 徽章与实际定制许可不一致；成果分享邀请不等于授予源码通用再分发。"
     ],
     "direction": "abstract",
-    "imageSourceUrl": "https://github.com/ZzzLc0405/photo-abstract-editorial"
+    "imageSourceUrl": "https://github.com/ZzzLc0405/photo-abstract-editorial",
+    "family": "photo-abstraction"
   },
   {
     "id": "visual-memory",
@@ -632,7 +1305,8 @@
     "direction": "narrative",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/outputs/paddleboard-style-preview-6-grid-v1.2.png",
-    "credit": "Copyright (c) 2026 Visual Memory Translator contributors"
+    "credit": "Copyright (c) 2026 Visual Memory Translator contributors",
+    "family": "memory-collage"
   },
   {
     "id": "photo-postcard",
@@ -659,7 +1333,8 @@
     "direction": "narrative",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/Whiplashzeb/photo-to-zine-postcard/blob/0091403bccb219d1be78c5be8552de29a6446f0a/assets/lake-at-dusk.png",
-    "credit": "Copyright (c) 2026 Enbozhao"
+    "credit": "Copyright (c) 2026 Enbozhao",
+    "family": "postcard"
   },
   {
     "id": "surreal-library",
@@ -684,7 +1359,8 @@
     ],
     "sourcePath": "photo-alchemy/SKILL.md",
     "direction": "material",
-    "imageSourceUrl": "https://github.com/hbmartin/skills"
+    "imageSourceUrl": "https://github.com/hbmartin/skills",
+    "family": "medium-experiment"
   },
   {
     "id": "jiuerli-sketch",
@@ -712,6 +1388,7 @@
     ],
     "sourcePath": "jiuerli-visual-director/skills/jiuerli-visual-director/SKILL.md",
     "direction": "narrative",
-    "imageSourceUrl": "https://github.com/18810320381-del/jiuerli-visual-director"
+    "imageSourceUrl": "https://github.com/18810320381-del/jiuerli-visual-director",
+    "family": "jiuerli-sketch"
   }
 ]

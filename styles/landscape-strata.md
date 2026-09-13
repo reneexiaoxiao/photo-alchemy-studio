@@ -1,27 +1,45 @@
-# 风景地层 · landscape-strata
+# 轮廓层谱 · landscape-strata
 
-ID: `landscape-strata` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-提取山脊、海崖与岩石的轮廓，把风景展开为有节奏的地层色带。
+把一张照片里真实存在的遮挡线、叠层或重复曲线展开为不等宽的形带。视觉节奏来自源图的轮廓关系，不要求山地，更不把任何物体都画成地质剖面。
 
-## Input and fidelity
+## 固定语法
 
-Landscapes with layered ridges, valleys, sea cliffs or highly distinctive rock profiles. This is artistic reinterpretation. Inspect the actual input before generation, record 3–5 source anchors and distinguish subjects from style references. Country names are inspiration tags, not evidence of where a photo was taken. Never substitute the gallery's fictional sample for the user's photo. Do not invent people, place names, dates or signs; exact-face or exact-pixel requests need a compatible workflow.
+- 一条独特的总轮廓保住识别，3–7 组有来源的边界承载层次；重要层数与排列不能凭空更改。
+- 形带宽窄、弯曲和间隔随输入变化；近处可展开，远处可压缩，但遮挡先后和主要转折不逆转。
+- 在一个小区域保留识别细节，其余靠颜色关系与间隔表达；默认平面，无纸层厚度或实体材料模拟。
 
-## Composition method
+## 读图与适配
 
-Trace the true top silhouette and 3–7 dominant depth/contour boundaries. Compress the scene into uneven flowing bands, with a fine-grained distant recognition zone and enlarged near contours. Preserve one recognisable feature exactly in count and relative arrangement. Derive a small palette from rock, vegetation and light; at most one narrow photographic-looking grain accent. Bands express visual contours, not a scientific geological cross-section; do not invent ages or composition.
+先标出边界是遮挡、物体结构、色面交界还是反射；不要把随机表面纹理当真实层次。挑出最不可替代的轮廓，再判断层带沿水平、垂直、放射或闭合方向排列。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 横向景深 | 主轮廓沿横向展开，近宽远窄但避免等距平行条纹 |
+| 纵向堆叠 | 保留上下次序，以宽度、偏移和缺口形成节奏，不改成横向山景 |
+| 同心/卷曲 | 跟随实际中心和开口，允许局部展开，但不发明看不见的内部截面 |
+| 有机交叉 | 保留主要交叉点与前后关系，合并次级细线，避免每条都成为带 |
+| 细节密集或多主体 | 选择共享一个轮廓走势的主体簇，其余安静处理；重要独立主体不合并消失 |
+| 弱光或低对比 | 依靠实际遮挡与结构线；可拉开已有明度，不能画不存在的层纹 |
 
-“Distill this supplied terrain into rhythmic contour bands. Preserve [observed unique silhouette/count] above. Expand [near ridge curves] while compressing [distance layers]. Source-derived [palette], unequal band widths, one tiny texture fragment if useful, no balloons or added structures, no scientific labels.”
+调色沿用源图的颜色排序，可合并为少量颜色；用色面间隔呈现深浅，不规定土黄、陶红或海蓝。若只有孤立轮廓、没有层带关系，应改选五形提炼。
 
-Fill bracketed slots with observed facts before passing the prompt to the built-in image tool. Default to one 3:4 shareable artwork, or preserve the user's requested ratio. Read the target photo first. Never promise a specific image model version that the tool does not expose.
+## 跨题材规则
 
-## Failure boundaries
+- **建筑/街景**：叠檐、台阶、立面退进可成层谱；平墙上普通窗格更适合其他方法。
+- **风景**：山脊、潮线、沙丘或林冠须追随真实坡向与天际线，不能替换成通用山。
+- **器物**：可用碗盘叠放、贝壳螺旋、布褶或器物套叠；不补造物体内部。
+- **食物**：切开的糕点、菜叶、面条卷曲或明确堆叠可以提炼；不改变可见层次、份数或切面。
+- **植物**：叶片叠压、花瓣轮序、真实树冠层次可用；不能把一片平叶编成多层。
+- **宠物/人物**：通常不优先。只有用户明确接受抽象且服装/毛束的可见层次才是主题时考虑；身份要求高时转照片保留方向。
 
-Uniform stripes unrelated to the photo; a paper-cut material mockup; generic mountains replacing source rocks; geological labels with fabricated facts.
+## 提示词骨架
 
-## Review
+“从提供照片中提炼[真实遮挡/叠层/曲线系统]。保留[独特总轮廓]及[关键数量、次序、转折]；将[实际边界]展开成不等宽形带，沿[水平/纵向/放射/闭合]组织，[近处]展开而[次要处]压缩。颜色沿用[源图颜色排序]，仅[识别位置]留少量细节。平面表达，无浮雕厚度、均匀条纹、虚构内部剖面、无关地貌或文字。”
 
-The terrain silhouette and major slopes match the source; spacing and color carry depth; a viewer can distinguish this landscape from a generic banded pattern. Check full size and thumbnail. Make at most one focused correction before showing an unresolved limitation. The gallery example is a direction study; it is not proof of success on every photo.
+将实际输入传给图像工具，优先源图比例；依据 [风格语法](../docs/style-grammar.md) 记录锚点与保留要求。本方法整图重画，不承诺原像素或精确身份。
+
+## 验收与修正
+
+每组带都能指回一个实际边界；遮挡次序和独特外缘仍对得上。若像通用条纹装饰，恢复不等间距与关键交叉；若像纸雕，撤掉厚度和投影。最多一次针对性纠正；没有足够源层次时换方法。

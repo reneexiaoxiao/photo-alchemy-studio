@@ -1,21 +1,40 @@
-# Riso Travel Print · 套色旅行版画
+# 套色版画 · riso-travel-print
 
-ID: `riso-travel-print` · Original workflow design and writing by **Renee**, AI-assisted · MIT.
+原创工作流设计与文字：**Renee**，AI-assisted · MIT。
 
-Recompose travel photography into a bold limited-ink art print. Choose it for light/shadow structure, distinct silhouettes and scenes that deserve a stronger shareable crop. Preserve the source's spatial relations; the surfaces become printmaking marks.
+把输入照片的形面和明暗关系拆成几种油墨，再用叠印重新组合。主角是有结构作用的色版，不是给旅行照片换成固定橙蓝色。
 
-## Material decisions
+## 固定语法
 
-Choose three source-led spot inks plus paper. Assign each a structural job: dark ink for the focal silhouette, a warm ink for sunlit mass, and a cool ink for depth or motion. Their translucent overlaps produce secondary colors. Translate tonal gradients into grain, sparse halftone or open paper; do not apply equal grain everywhere.
+- 先简化成主形，再分配 2–4 种专色及纸面；每一色版承担明确形面或深浅关系。
+- 次生颜色从透明叠印相交处产生，留白作为真正未印区域；不得用全色照片上加颗粒冒充套色。
+- 颗粒、网点和少量错版只出现在需要它们的区域，焦点轮廓保持可读；纹理不能平均覆盖全画面。
 
-Rebuild the main masses as simplified ink silhouettes before applying grain; discard photographic stone or wood texture. Use one dominant scene, not a grid of unrelated crops. Let a stair, branch, shoreline or shadow guide a strong asymmetrical composition. A narrow irregular unprinted edge is optional; default portrait 3:4 with the scene occupying most of the page. Small registration offsets may occur along a few edges, never displace a face or landmark beyond recognition.
+## 读图与适配
 
-Default textless. If a user supplies a short title, treat it as a deliberate second compositional anchor; do not fabricate a destination, year, edition number, ticket or slogan.
+记录最重要的轮廓、明暗排序、源图色差和一条构图方向。决定哪些相邻面可以共版，哪些边界必须靠空白或另一色分开。明度低的色不必总是冷色，受光面也不必总是暖色。
 
-## Prompt kernel
+| 输入结构 | 加工方法 |
+|---|---|
+| 高反差 | 一主色承担暗形，纸面保留亮区，另一色把识别位置拉开 |
+| 低反差/阴天 | 根据遮挡与源色归并形面，适量放大已有色差，不凭空加硬投影 |
+| 强几何 | 用连贯大片和精准负形，少量错版只放次要边缘 |
+| 有机细轮廓 | 保留外缘与关键分叉，内部明暗归并，用局部网点承接柔和变化 |
+| 密集/多主体 | 选择一个主形群，次景合为安静色版；数量和遮挡不变 |
+| 单物/稀疏 | 由轮廓和接触面决定重心，不加标题填空；画幅不强制居中竖版 |
 
-“Translate the supplied photograph into a three-spot-ink travel art print on tactile uncoated paper. Keep [observed anchors and relations]. Give [ink 1] to [structural mass], [ink 2] to [light area], and [ink 3] to [depth field]. Build secondary colors through translucent overprint, with directional print grain and restrained localized misregistration. Organize the composition around [source line or shape], leaving clean paper where it improves hierarchy. No vector-flat plastic surfaces, all-over distressed overlay, generic travel-poster scenery or added text.”
+调色取源图主要关系，可以使用灰黑两版、暖暖两版或其他组合；纸色由画面空白关系选择。默认无字，不编造地点、年份、版次或签名。
 
-## Review
+## 跨题材规则
 
-At thumbnail size, see a purposeful color separation and focal hierarchy before texture. If it reads as a photograph with a colored filter, redraw the massing. Highly detailed portrait likeness or verbatim signage may require a photo-preserving style instead.
+建筑用结构面和开口；风景用天际线/坡向和深度；器物用外形、开口与接触面；食物用形态、份数和切面色差；植物用枝叶轮廓与有序分叉。宠物/人物只有明确允许重绘时才以体态和特征色块处理，错版不得移开眼、耳、脸或身份锚点；精确身份需求换方法。
+
+## 提示词骨架
+
+“把提供照片重构为[2–4种源色]专色版画。保留[来源锚点和关系]，先将[实际形面]简化为油墨轮廓，再由[色版1]承担[职责]、[色版2]承担[职责]、纸面承担[亮区/负形]。透明交叠在[实际相交位置]产生次色，颗粒/网点只用于[必要过渡区]，仅[次要边缘]轻微错版。沿[源图方向]构图。无摄影纹理残留、全幅做旧、固定旅游配色、新场景或文字。”
+
+传入实际照片并遵循 [风格语法](../docs/style-grammar.md)。这是整体重画，不能满足原像素和精确身份要求。
+
+## 验收与修正
+
+先看色版分工与主形，再看颗粒；移除纹理后也应成立。若像调色滤镜，重新归并形面；若交叠只是渐变，改为明确色版相交。最多一次针对性纠正，绝不靠添加地标强化风格。
