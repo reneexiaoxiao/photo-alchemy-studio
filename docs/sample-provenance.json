@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-13",
+  "generator": "Codex built-in ImageGen",
+  "reported_image_model": null,
+  "model_note": "The tool did not expose an exact model identity; no Image 2.5 verification claim.",
+  "input": "assets/examples/source-coast.png",
+  "input_origin": "Generated fictional coastal scene, no real person or private user photograph.",
+  "outputs": [
+    {
+      "style": "mosaic-tiles",
+      "file": "assets/examples/mosaic-tiles.png",
+      "generation_rounds": 1,
+      "checked": [
+        "source anchors",
+        "three focal pots",
+        "relative arrangement",
+        "material signature",
+        "thumbnail legibility"
+      ],
+      "scope": "Single synthetic scene; not a portrait or cross-scene benchmark."
+    },
+    {
+      "style": "embroidered-patch",
+      "file": "assets/examples/embroidered-patch.png",
+      "generation_rounds": 1,
+      "checked": [
+        "source anchors",
+        "three focal pots",
+        "relative arrangement",
+        "material signature",
+        "thumbnail legibility"
+      ],
+      "scope": "Single synthetic scene; not a portrait or cross-scene benchmark."
+    },
+    {
+      "style": "riso-travel-print",
+      "file": "assets/examples/riso-travel-print.png",
+      "generation_rounds": 2,
+      "checked": [
+        "source anchors",
+        "three focal pots",
+        "relative arrangement",
+        "material signature",
+        "thumbnail legibility"
+      ],
+      "scope": "Single synthetic scene; not a portrait or cross-scene benchmark."
+    },
+    {
+      "style": "paper-cut-theatre",
+      "file": "assets/examples/paper-cut-theatre.png",
+      "generation_rounds": 2,
+      "checked": [
+        "source anchors",
+        "three focal pots",
+        "relative arrangement",
+        "material signature",
+        "thumbnail legibility"
+      ],
+      "scope": "Single synthetic scene; not a portrait or cross-scene benchmark."
+    },
+    {
+      "style": "stained-glass-light",
+      "file": "assets/examples/stained-glass-light.png",
+      "generation_rounds": 1,
+      "checked": [
+        "source anchors",
+        "three focal pots",
+        "relative arrangement",
+        "material signature",
+        "thumbnail legibility"
+      ],
+      "scope": "Single synthetic scene; not a portrait or cross-scene benchmark."
+    }
+  ]
+}

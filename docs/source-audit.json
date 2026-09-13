@@ -1,0 +1,949 @@
+{
+  "checked_at": "2026-09-13T15:09:25.142910+00:00",
+  "scope": "Public community packaging only. No installed paths, user photographs, or restricted-source text included.",
+  "summary": {
+    "catalog_styles": 18,
+    "bundled_modules": 9,
+    "source_link_styles": 9,
+    "upstream_software_sources_with_permission": 10,
+    "packaged_software_sources": 9,
+    "packaged_authority_images": 3
+  },
+  "sources": [
+    {
+      "source": "LiamGvchi/gc-minimal-zine-poster",
+      "repo": "LiamGvchi/gc-minimal-zine-poster",
+      "repo_url": "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+      "default_branch": "main",
+      "pinned_commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "verified_current_commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e",
+      "license": "MIT",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/LICENSE",
+          "blob_sha": "f29859bcfac21ee9054b7d9214c3da79ba958e6a"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026 LiamGvchi"
+      ],
+      "public_bundle_allowed": true,
+      "attribution_requirements": [
+        "保留完整原 MIT 文本和以下原 copyright 行；全部或实质性部分的复制均须携带。",
+        "Copyright (c) 2026 LiamGvchi"
+      ]
+    },
+    {
+      "source": "moonlin1213/muted-zine-poster-v01",
+      "repo": "moonlin1213/muted-zine-poster-v01",
+      "repo_url": "https://github.com/moonlin1213/muted-zine-poster-v01",
+      "default_branch": "main",
+      "pinned_commit": "4a180244eb8d2eb5c1b234bbfe3ed6c45e867c88",
+      "verified_current_commit": "4a180244eb8d2eb5c1b234bbfe3ed6c45e867c88",
+      "license": "MIT",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/moonlin1213/muted-zine-poster-v01/blob/4a180244eb8d2eb5c1b234bbfe3ed6c45e867c88/LICENSE",
+          "blob_sha": "996b243b28211303a8ad4af76d244615c4dd46e1"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026 LiamGvchi",
+        "Copyright (c) 2026 Moon"
+      ],
+      "public_bundle_allowed": true,
+      "attribution_requirements": [
+        "保留完整原 MIT 文本和以下原 copyright 行；全部或实质性部分的复制均须携带。",
+        "Copyright (c) 2026 LiamGvchi",
+        "Copyright (c) 2026 Moon"
+      ]
+    },
+    {
+      "source": "dacnay816y62-hub/photo-revival",
+      "repo": "dacnay816y62-hub/photo-revival",
+      "repo_url": "https://github.com/dacnay816y62-hub/photo-revival",
+      "default_branch": "main",
+      "pinned_commit": "ca4c3c6c0f812355bd6d815d8a78652db801b7f1",
+      "verified_current_commit": "5574fa2f6fa8fa52b232d7836b7960bf6b5753f6",
+      "license": "MIT",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/dacnay816y62-hub/photo-revival/blob/ca4c3c6c0f812355bd6d815d8a78652db801b7f1/LICENSE",
+          "blob_sha": "659299ec0969ee2ef293d205c4e78be6530ba310"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026 FANTASY"
+      ],
+      "public_bundle_allowed": true,
+      "attribution_requirements": [
+        "保留完整原 MIT 文本和以下原 copyright 行；全部或实质性部分的复制均须携带。",
+        "Copyright (c) 2026 FANTASY"
+      ]
+    },
+    {
+      "source": "v92388375-gif/pixel-style-poster-skill",
+      "repo": "v92388375-gif/pixel-style-poster-skill",
+      "repo_url": "https://github.com/v92388375-gif/pixel-style-poster-skill",
+      "default_branch": "main",
+      "pinned_commit": "b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b",
+      "verified_current_commit": "b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b",
+      "license": "MIT",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/v92388375-gif/pixel-style-poster-skill/blob/b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b/LICENSE",
+          "blob_sha": "14fac913ccf80234b1848540089a3bbcb6e5283d"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026"
+      ],
+      "public_bundle_allowed": true,
+      "attribution_requirements": [
+        "保留完整原 MIT 文本和以下原 copyright 行；全部或实质性部分的复制均须携带。",
+        "Copyright (c) 2026"
+      ]
+    },
+    {
+      "source": "Lixorn/deconstructed-duotone-poster",
+      "repo": "Lixorn/deconstructed-duotone-poster",
+      "repo_url": "https://github.com/Lixorn/deconstructed-duotone-poster",
+      "default_branch": "main",
+      "pinned_commit": "0393d269ff82ef7044a6c6effd36473c4f983a33",
+      "verified_current_commit": "0393d269ff82ef7044a6c6effd36473c4f983a33",
+      "license": "MIT",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/Lixorn/deconstructed-duotone-poster/blob/0393d269ff82ef7044a6c6effd36473c4f983a33/LICENSE",
+          "blob_sha": "817ff244a21167fe55c3af92c2089feb7ccf847c"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026 Lixorn"
+      ],
+      "public_bundle_allowed": true,
+      "attribution_requirements": [
+        "保留完整原 MIT 文本和以下原 copyright 行；全部或实质性部分的复制均须携带。",
+        "Copyright (c) 2026 Lixorn"
+      ]
+    },
+    {
+      "source": "Zeejay0/gathered-scenes-zine-skill",
+      "repo": "Zeejay0/gathered-scenes-zine-skill",
+      "repo_url": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+      "default_branch": "main",
+      "pinned_commit": "eae9a62e20cb570c0adabc94cb189b1c91b7be99",
+      "verified_current_commit": "b9edb836c9dd5c5d80995e89ebcaba34b75fd58f",
+      "license": "Gathered Scenes Zine Personal Non-Commercial License 1.0",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE",
+          "blob_sha": "ac7b03ce03422d3895f85e3eb2139c28057c1829"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026 Zeejay0. All rights reserved."
+      ],
+      "public_bundle_allowed": false,
+      "attribution_requirements": [
+        "保留 Zeejay0、完整原许可、copyright、attribution、source；若单独依该许可分享，原条款必须完整可见。"
+      ]
+    },
+    {
+      "source": "BruceZhang111/Zine-Blend",
+      "repo": "BruceZhang111/Zine-Blend",
+      "repo_url": "https://github.com/BruceZhang111/Zine-Blend",
+      "default_branch": "main",
+      "pinned_commit": "d6204e537b8ae9d1253561295d36b8d359c9c656",
+      "verified_current_commit": "d6204e537b8ae9d1253561295d36b8d359c9c656",
+      "license": "No license found",
+      "license_at_pinned": [],
+      "copyright_notices": [],
+      "public_bundle_allowed": false,
+      "attribution_requirements": [
+        "链接明确标注 BruceZhang111/Zine-Blend；署名不构成复制许可。"
+      ]
+    },
+    {
+      "source": "Starryear/Starryear-Threefold-Memory",
+      "repo": "Starryear/Starryear-Threefold-Memory",
+      "repo_url": "https://github.com/Starryear/Starryear-Threefold-Memory",
+      "default_branch": "main",
+      "pinned_commit": "ef9e16993ebe989439ff5e670018ecaafca81990",
+      "verified_current_commit": "188cfdf3b9e6b3cfc17f414ec952367e622815a9",
+      "license": "No license found",
+      "license_at_pinned": [],
+      "copyright_notices": [],
+      "public_bundle_allowed": false,
+      "attribution_requirements": [
+        "链接明确标注 Starryear/Starryear-Threefold-Memory；署名不构成复制许可。"
+      ]
+    },
+    {
+      "source": "Evianis/travel-photo-abstraction",
+      "repo": "Evianis/travel-photo-abstraction",
+      "repo_url": "https://github.com/Evianis/travel-photo-abstraction",
+      "default_branch": "main",
+      "pinned_commit": "96e387635edf05bc7e798428a5db11dbf48f46c1",
+      "verified_current_commit": "96e387635edf05bc7e798428a5db11dbf48f46c1",
+      "license": "Travel Photo Abstraction Source-Available License 1.0",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/Evianis/travel-photo-abstraction/blob/96e387635edf05bc7e798428a5db11dbf48f46c1/LICENSE",
+          "blob_sha": "dbda649e8c8b026ecd65751db0cf5d1b1b77b46e"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026 Evianis"
+      ],
+      "public_bundle_allowed": false,
+      "attribution_requirements": [
+        "本人原样副本须保留 Evianis 及原许可；不得冒用作者/项目名为修改版或派生品背书。"
+      ]
+    },
+    {
+      "source": "wnby/photo-relic-editorial",
+      "repo": "wnby/photo-relic-editorial",
+      "repo_url": "https://github.com/wnby/photo-relic-editorial",
+      "default_branch": "main",
+      "pinned_commit": "2232da16afddc7940e2e2f280bfb85aa62da1bae",
+      "verified_current_commit": "2232da16afddc7940e2e2f280bfb85aa62da1bae",
+      "license": "MIT",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/wnby/photo-relic-editorial/blob/2232da16afddc7940e2e2f280bfb85aa62da1bae/LICENSE",
+          "blob_sha": "76aa5a419728f1cc5576f0a8b6b76e4d0938a84f"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026 wnby"
+      ],
+      "public_bundle_allowed": true,
+      "attribution_requirements": [
+        "保留完整原 MIT 文本和以下原 copyright 行；全部或实质性部分的复制均须携带。",
+        "Copyright (c) 2026 wnby"
+      ]
+    },
+    {
+      "source": "ZzzLc0405/photo-abstract-editorial",
+      "repo": "ZzzLc0405/photo-abstract-editorial",
+      "repo_url": "https://github.com/ZzzLc0405/photo-abstract-editorial",
+      "default_branch": "main",
+      "pinned_commit": "c7904b70c9829f614b37064d0005149b8a2037dc",
+      "verified_current_commit": "49e55073d6d0330274d31f75d27f5dd6eb35fd6d",
+      "license": "Custom personal/research/non-commercial terms",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE.md",
+          "url": "https://github.com/ZzzLc0405/photo-abstract-editorial/blob/c7904b70c9829f614b37064d0005149b8a2037dc/LICENSE.md",
+          "blob_sha": "e232d1931b0413bd3fb030e07a5ffdfe2711c3bb"
+        }
+      ],
+      "copyright_notices": [],
+      "public_bundle_allowed": false,
+      "attribution_requirements": [
+        "保留 ZzzLlc0405 来源；作者希望署名并 @AM.。该感谢请求不能替代公开打包授权。"
+      ]
+    },
+    {
+      "source": "TanShilongMario/visual-memory-translator-SKILL",
+      "repo": "TanShilongMario/visual-memory-translator-SKILL",
+      "repo_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL",
+      "default_branch": "main",
+      "pinned_commit": "62978de54401235adb9823e10e4f258397805bca",
+      "verified_current_commit": "98a18ef20ba98a124161be7b8caa8e0a7cdaf13b",
+      "license": "MIT",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/LICENSE",
+          "blob_sha": "362bc4ddc3ae202ef8fc9a03c5e43e6a63d4597f"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026 Visual Memory Translator contributors"
+      ],
+      "public_bundle_allowed": true,
+      "attribution_requirements": [
+        "保留完整原 MIT 文本和以下原 copyright 行；全部或实质性部分的复制均须携带。",
+        "Copyright (c) 2026 Visual Memory Translator contributors"
+      ]
+    },
+    {
+      "source": "hbmartin/skills/photo-alchemy",
+      "repo": "hbmartin/skills",
+      "repo_url": "https://github.com/hbmartin/skills",
+      "default_branch": "main",
+      "pinned_commit": "bbf3e8c6215c5c8743bcf1848cb1cde1b51f8254",
+      "verified_current_commit": "bbf3e8c6215c5c8743bcf1848cb1cde1b51f8254",
+      "license": "Apache-2.0",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/hbmartin/skills/blob/bbf3e8c6215c5c8743bcf1848cb1cde1b51f8254/LICENSE",
+          "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+        }
+      ],
+      "copyright_notices": [],
+      "public_bundle_allowed": true,
+      "attribution_requirements": [
+        "随包保留完整 Apache-2.0 许可证。",
+        "保留适用 copyright、patent、trademark、attribution 原声明；修改文件显著标注修改。",
+        "如携入来源有 NOTICE，保留适用 NOTICE；本次相关树未发现独立 NOTICE 文件。",
+        "不得把第三方 Apache-2.0 内容仅标成 MIT；自有新代码可以另标 MIT，并明确第三方例外。"
+      ]
+    },
+    {
+      "source": "18810320381-del/jiuerli-visual-director",
+      "repo": "18810320381-del/jiuerli-visual-director",
+      "repo_url": "https://github.com/18810320381-del/jiuerli-visual-director",
+      "default_branch": "main",
+      "pinned_commit": "988077a3e861da6c835621e670298fddb7d1137b",
+      "verified_current_commit": "988077a3e861da6c835621e670298fddb7d1137b",
+      "license": "MIT",
+      "license_at_pinned": [
+        {
+          "path": "jiuerli-visual-director/LICENSE",
+          "url": "https://github.com/18810320381-del/jiuerli-visual-director/blob/988077a3e861da6c835621e670298fddb7d1137b/jiuerli-visual-director/LICENSE",
+          "blob_sha": "f9a5df843a89014bb8fefd400b4357a598c77cae"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026 Jiuerli"
+      ],
+      "public_bundle_allowed": true,
+      "attribution_requirements": [
+        "保留完整原 MIT 文本和以下原 copyright 行；全部或实质性部分的复制均须携带。",
+        "Copyright (c) 2026 Jiuerli"
+      ]
+    },
+    {
+      "source": "Existing local photo-to-zine-postcard",
+      "repo": "Whiplashzeb/photo-to-zine-postcard",
+      "repo_url": "https://github.com/Whiplashzeb/photo-to-zine-postcard",
+      "default_branch": "main",
+      "pinned_commit": "0091403bccb219d1be78c5be8552de29a6446f0a",
+      "verified_current_commit": "0091403bccb219d1be78c5be8552de29a6446f0a",
+      "license": "MIT",
+      "license_at_pinned": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/Whiplashzeb/photo-to-zine-postcard/blob/0091403bccb219d1be78c5be8552de29a6446f0a/LICENSE",
+          "blob_sha": "bd8322894388b37ecf067d1c19d7f214df05545d"
+        }
+      ],
+      "copyright_notices": [
+        "Copyright (c) 2026 Enbozhao"
+      ],
+      "public_bundle_allowed": true,
+      "attribution_requirements": [
+        "保留完整 MIT 文本。",
+        "Copyright (c) 2026 Enbozhao"
+      ]
+    },
+    {
+      "source": "RedSkill a-yuan-dual-field-poster",
+      "pinned_version": "1.0.0",
+      "manifest_sha256": "eaa0a780e16246660b6245ca0fcab554079990ba9ea6e82b3c64f27d5e848023",
+      "license": "Unknown / no explicit grant verified",
+      "license_at_pinned": [],
+      "public_bundle_allowed": false,
+      "attribution_requirements": [
+        "来源尚无法完整归属；不得凭 registry 可安装性推断公开打包许可。"
+      ]
+    }
+  ],
+  "catalog_decisions": [
+    {
+      "id": "minimal-zine",
+      "source": "LiamGvchi/gc-minimal-zine-poster",
+      "entry": "community/minimal-zine/SOURCE.md",
+      "installed": true,
+      "packageStatus": "bundled",
+      "requires": [
+        "内置 ImageGen 与用户有权使用的输入素材。"
+      ]
+    },
+    {
+      "id": "muted-zine",
+      "source": "moonlin1213/muted-zine-poster-v01",
+      "entry": "community/muted-zine/SOURCE.md",
+      "installed": true,
+      "packageStatus": "bundled",
+      "requires": [
+        "内置 ImageGen 与用户有权使用的输入素材。"
+      ]
+    },
+    {
+      "id": "photo-revival",
+      "source": "dacnay816y62-hub/photo-revival",
+      "entry": "community/photo-revival/SOURCE.md",
+      "installed": true,
+      "packageStatus": "bundled",
+      "requires": [
+        "内置 ImageGen 与用户有权使用的输入素材。"
+      ]
+    },
+    {
+      "id": "pixel-bitmap",
+      "source": "v92388375-gif/pixel-style-poster-skill",
+      "entry": "community/pixel-bitmap/SOURCE.md",
+      "installed": true,
+      "packageStatus": "bundled",
+      "requires": [
+        "内置 ImageGen 与用户有权使用的输入素材。"
+      ]
+    },
+    {
+      "id": "deconstructed-duotone",
+      "source": "Lixorn/deconstructed-duotone-poster",
+      "entry": null,
+      "installed": false,
+      "packageStatus": "source-link",
+      "requires": [
+        "固定上游每次生成必须附带匹配的 layout-guide PNG；本包未收录这些未另行确权的图片，不能完整离线运行。"
+      ]
+    },
+    {
+      "id": "morandi-cinematic",
+      "source": "Zeejay0/gathered-scenes-zine-skill",
+      "entry": null,
+      "installed": false,
+      "packageStatus": "source-link",
+      "requires": [
+        "仅允许完全免费、个人非商业、同条款分享；修改文件须标注修改。禁止代表公司、雇主、机构等组织使用，禁止商业工作流、收费服务及商业交付中使用输出。"
+      ]
+    },
+    {
+      "id": "scene-distillation",
+      "source": "Zeejay0/gathered-scenes-zine-skill",
+      "entry": null,
+      "installed": false,
+      "packageStatus": "source-link",
+      "requires": [
+        "仅允许完全免费、个人非商业、同条款分享；修改文件须标注修改。禁止代表公司、雇主、机构等组织使用，禁止商业工作流、收费服务及商业交付中使用输出。"
+      ]
+    },
+    {
+      "id": "gathered-scenes",
+      "source": "Zeejay0/gathered-scenes-zine-skill",
+      "entry": null,
+      "installed": false,
+      "packageStatus": "source-link",
+      "requires": [
+        "仅允许完全免费、个人非商业、同条款分享；修改文件须标注修改。禁止代表公司、雇主、机构等组织使用，禁止商业工作流、收费服务及商业交付中使用输出。"
+      ]
+    },
+    {
+      "id": "zine-blend",
+      "source": "BruceZhang111/Zine-Blend",
+      "entry": null,
+      "installed": false,
+      "packageStatus": "source-link",
+      "requires": [
+        "已核对固定提交完整树及 README/SKILL 未找到许可证或公开再分发授权。公开可浏览、可 fork 不等于可另行打包分发。"
+      ]
+    },
+    {
+      "id": "dual-field-poster",
+      "source": "RedSkill a-yuan-dual-field-poster",
+      "entry": null,
+      "installed": false,
+      "packageStatus": "source-link",
+      "requires": [
+        "缺少可核验来源与再分发许可。"
+      ]
+    },
+    {
+      "id": "threefold-memory",
+      "source": "Starryear/Starryear-Threefold-Memory",
+      "entry": null,
+      "installed": false,
+      "packageStatus": "source-link",
+      "requires": [
+        "固定提交和当前 main 均未找到 LICENSE 或 README 许可声明。不要将其 SKILL、归纳改写文档或有实质来源依赖的配套实现直接套入新 MIT。"
+      ]
+    },
+    {
+      "id": "travel-abstraction",
+      "source": "Evianis/travel-photo-abstraction",
+      "entry": null,
+      "installed": false,
+      "packageStatus": "source-link",
+      "requires": [
+        "禁止再分发。"
+      ]
+    },
+    {
+      "id": "photo-relic",
+      "source": "wnby/photo-relic-editorial",
+      "entry": "community/photo-relic/SOURCE.md",
+      "installed": true,
+      "packageStatus": "bundled",
+      "requires": [
+        "内置 ImageGen 与用户有权使用的输入素材。"
+      ]
+    },
+    {
+      "id": "photo-abstract",
+      "source": "ZzzLc0405/photo-abstract-editorial",
+      "entry": null,
+      "installed": false,
+      "packageStatus": "source-link",
+      "requires": [
+        "LICENSE.md 只明确个人、学习、研究与非商业使用；商业用途、企业应用、再授权与商业分发须另获授权。README 的 CC BY-NC-SA 4.0 徽章与实际定制许可不一致；成果分享邀请不等于授予源码通用再分发。"
+      ]
+    },
+    {
+      "id": "visual-memory",
+      "source": "TanShilongMario/visual-memory-translator-SKILL",
+      "entry": "community/visual-memory/SOURCE.md",
+      "installed": true,
+      "packageStatus": "bundled",
+      "requires": [
+        "内置 ImageGen 与用户有权使用的输入素材。"
+      ]
+    },
+    {
+      "id": "photo-postcard",
+      "source": "Whiplashzeb/photo-to-zine-postcard",
+      "entry": "community/photo-postcard/SOURCE.md",
+      "installed": true,
+      "packageStatus": "bundled",
+      "requires": [
+        "内置 ImageGen 与用户有权使用的输入素材。"
+      ]
+    },
+    {
+      "id": "surreal-library",
+      "source": "hbmartin/skills",
+      "entry": "community/surreal-library/SOURCE.md",
+      "installed": true,
+      "packageStatus": "bundled",
+      "requires": [
+        "默认由根技能使用内置 ImageGen。",
+        "原 imagemine/Claude/Gemini/Apple Photos 引擎仅作为来源说明，未安装、未启用；不得运行源码中的安装与系统写入示例。"
+      ]
+    },
+    {
+      "id": "jiuerli-sketch",
+      "source": "18810320381-del/jiuerli-visual-director",
+      "entry": "community/jiuerli-sketch/SOURCE.md",
+      "installed": true,
+      "packageStatus": "bundled",
+      "requires": [
+        "使用内置 ImageGen，附带该模块 assets/ 中三张已授权 authority 图。",
+        "只在明确选择本风格时执行；原源规定单次生成，不重试。",
+        "用户明确请求扩展规则或回归文档时需另行提供原文件；固定上游没有这两份可选文件。"
+      ]
+    }
+  ],
+  "packaged_upstream_files": [
+    {
+      "package_path": "community/minimal-zine/LICENSE",
+      "upstream_path": "LICENSE",
+      "upstream_url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/LICENSE",
+      "upstream_blob_sha": "f29859bcfac21ee9054b7d9214c3da79ba958e6a",
+      "packaged_sha256": "d15c81ae8fa9a0b4b1db46c66e4490cc92e4898fb1f55e030559fbd2a2e2a232",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/minimal-zine/SOURCE.md",
+      "upstream_path": "SKILL.md",
+      "upstream_url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/SKILL.md",
+      "upstream_blob_sha": "a025e5b026ee8f351d53a8b279359c19584c1de6",
+      "packaged_sha256": "89c7dc90c9aa80ba020c55e54b7de2fa2b49b49d20c240b150cd79ebea59775d",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/minimal-zine/references/prompt-compiler.md",
+      "upstream_path": "references/prompt-compiler.md",
+      "upstream_url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/references/prompt-compiler.md",
+      "upstream_blob_sha": "5ce9bebfffd4857c252f6e8147d2f2954134ca01",
+      "packaged_sha256": "dbb79043c183051740735f6a604e7db18bf9974a79ea7b9846f638c73fd81784",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/minimal-zine/references/quality-gate.md",
+      "upstream_path": "references/quality-gate.md",
+      "upstream_url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/references/quality-gate.md",
+      "upstream_blob_sha": "a04ef6387a53f819b05c188e63c2c38d5dbfff75",
+      "packaged_sha256": "642952c568cddb7cecad13d1783d179494b4c839ef3d31e1e5e55bf9d8cedc5e",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/minimal-zine/references/reference-analysis.md",
+      "upstream_path": "references/reference-analysis.md",
+      "upstream_url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/references/reference-analysis.md",
+      "upstream_blob_sha": "2a51c697da214b70ce9ddaa9b5919f6cf11f52b4",
+      "packaged_sha256": "e555d645efed396ec61d8a89d588a014473787becf555645c29c48eea382ad61",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/minimal-zine/references/style-system.md",
+      "upstream_path": "references/style-system.md",
+      "upstream_url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/references/style-system.md",
+      "upstream_blob_sha": "916f75d80df9c38f78f65673c8d203b30f3c53d3",
+      "packaged_sha256": "904890bd4a08c3883ae2d2c7c00c04816eaaba3022891f6cf1d181dc1b401504",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/minimal-zine/references/variation-engine.md",
+      "upstream_path": "references/variation-engine.md",
+      "upstream_url": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/references/variation-engine.md",
+      "upstream_blob_sha": "a0a5239b7ef7f1e3515835dc6144a5f85c647ceb",
+      "packaged_sha256": "f48d3e0cdf803ed9d931d4bfb278ccf842da29255333c1d0573e98e404d99735",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/muted-zine/LICENSE",
+      "upstream_path": "LICENSE",
+      "upstream_url": "https://github.com/moonlin1213/muted-zine-poster-v01/blob/4a180244eb8d2eb5c1b234bbfe3ed6c45e867c88/LICENSE",
+      "upstream_blob_sha": "996b243b28211303a8ad4af76d244615c4dd46e1",
+      "packaged_sha256": "1e168a7404db0cd3a941c98e5f846ae4dc5b1bc28f4f7b0f5f714a77da7e1c90",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/muted-zine/SOURCE.md",
+      "upstream_path": "SKILL.md",
+      "upstream_url": "https://github.com/moonlin1213/muted-zine-poster-v01/blob/4a180244eb8d2eb5c1b234bbfe3ed6c45e867c88/SKILL.md",
+      "upstream_blob_sha": "bce667d158288a02f8b9660e9718a611dfc187ca",
+      "packaged_sha256": "c6fe8ee04a7c1e5ba42a43738a52e1d90bd5f48f441a4f9486c2d3fd8519c272",
+      "acquisition": "hash-matched local copy",
+      "modifications": [
+        "Renamed in-package SKILL.md references to SOURCE.md."
+      ]
+    },
+    {
+      "package_path": "community/photo-revival/LICENSE",
+      "upstream_path": "LICENSE",
+      "upstream_url": "https://github.com/dacnay816y62-hub/photo-revival/blob/ca4c3c6c0f812355bd6d815d8a78652db801b7f1/LICENSE",
+      "upstream_blob_sha": "659299ec0969ee2ef293d205c4e78be6530ba310",
+      "packaged_sha256": "9963223ce230bc199a9d802d7502bdadc3e505587c622ac4a4de4a048586ccc3",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/photo-revival/SOURCE.md",
+      "upstream_path": "SKILL.md",
+      "upstream_url": "https://github.com/dacnay816y62-hub/photo-revival/blob/ca4c3c6c0f812355bd6d815d8a78652db801b7f1/SKILL.md",
+      "upstream_blob_sha": "8e758cb080f99bb2cae505492c8d86d2a36fac97",
+      "packaged_sha256": "d3c422db637481bbd075169313921cd00346812666930ec1734b119be60188f6",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/pixel-bitmap/LICENSE",
+      "upstream_path": "LICENSE",
+      "upstream_url": "https://github.com/v92388375-gif/pixel-style-poster-skill/blob/b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b/LICENSE",
+      "upstream_blob_sha": "14fac913ccf80234b1848540089a3bbcb6e5283d",
+      "packaged_sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/pixel-bitmap/SOURCE.md",
+      "upstream_path": "SKILL.md",
+      "upstream_url": "https://github.com/v92388375-gif/pixel-style-poster-skill/blob/b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b/SKILL.md",
+      "upstream_blob_sha": "a2b51291cd280b67eaacaa46028e471f5f44dab9",
+      "packaged_sha256": "ef289ac6f8eccb0b93e8f53dc17f47f497f46a81634190fdb2d581a4710cffb0",
+      "acquisition": "hash-matched local copy",
+      "modifications": [
+        "Renamed in-package SKILL.md references to SOURCE.md."
+      ]
+    },
+    {
+      "package_path": "community/photo-relic/LICENSE",
+      "upstream_path": "LICENSE",
+      "upstream_url": "https://github.com/wnby/photo-relic-editorial/blob/2232da16afddc7940e2e2f280bfb85aa62da1bae/LICENSE",
+      "upstream_blob_sha": "76aa5a419728f1cc5576f0a8b6b76e4d0938a84f",
+      "packaged_sha256": "2d016be42668215309c81858dab0a5725845ba12cfc25ed71e178b49f08a7bc5",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/photo-relic/SOURCE.md",
+      "upstream_path": "SKILL.md",
+      "upstream_url": "https://github.com/wnby/photo-relic-editorial/blob/2232da16afddc7940e2e2f280bfb85aa62da1bae/SKILL.md",
+      "upstream_blob_sha": "5954c931c4761dd25bdc1908a5b01a1c4b29ba31",
+      "packaged_sha256": "9f7665be38b31c1e0f9db6d3dea10dca60b29ad71722224faf753ee5c3b18501",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/photo-relic/references/afterimage-editorial-prompt.md",
+      "upstream_path": "references/afterimage-editorial-prompt.md",
+      "upstream_url": "https://github.com/wnby/photo-relic-editorial/blob/2232da16afddc7940e2e2f280bfb85aa62da1bae/references/afterimage-editorial-prompt.md",
+      "upstream_blob_sha": "07c1a49c1a5d0e43934ca0f5166d913bbb46b3df",
+      "packaged_sha256": "729b4d4081063515178314444cd1e23a00a38510d1f73d7b25d191d09c45a2ae",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/LICENSE",
+      "upstream_path": "LICENSE",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/LICENSE",
+      "upstream_blob_sha": "362bc4ddc3ae202ef8fc9a03c5e43e6a63d4597f",
+      "packaged_sha256": "62a4f08168e7e8f2219fdd950066f748d563dd1c861c314f7982b46993cfd406",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/SOURCE.md",
+      "upstream_path": "visual-memory-translator/SKILL.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/SKILL.md",
+      "upstream_blob_sha": "7d715f291b3119bbc905b11e484194dc211af0eb",
+      "packaged_sha256": "3e0610c4126d1dee6445dffc92eca92bb22fd0b0ab61e70a1c3c811bc519da92",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/examples.md",
+      "upstream_path": "visual-memory-translator/examples.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/examples.md",
+      "upstream_blob_sha": "73884a7c6405f64c49a782f2ac7a384c629e99a4",
+      "packaged_sha256": "8afe1e74e297caa08ebb8dd51a212b2d09c377fc973e177aa2f2195dc54f0d52",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/references/banknote.md",
+      "upstream_path": "visual-memory-translator/references/banknote.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/references/banknote.md",
+      "upstream_blob_sha": "b5ba4fdd81e432a7cca65cb2fbb463ed44898f9d",
+      "packaged_sha256": "f413e0d4da9a438aac0093a5705527ef94b53fffc8ece236a608531c9c461475",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/references/defaults-and-presets.md",
+      "upstream_path": "visual-memory-translator/references/defaults-and-presets.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/references/defaults-and-presets.md",
+      "upstream_blob_sha": "1c1f944022a5ad047dd78840fd7e42655b42642a",
+      "packaged_sha256": "9df87229e2484a6b9d9030029b8c0f9d4c6872af1892184d663c0a53490b96d8",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/references/display-and-layout.md",
+      "upstream_path": "visual-memory-translator/references/display-and-layout.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/references/display-and-layout.md",
+      "upstream_blob_sha": "f7398ff92cbe034c62479e03e512709ac4b420ec",
+      "packaged_sha256": "ab055be8c9a06d410882555c836e5ac732828de4715e4436eeeab0e47f6cc9a2",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/references/holidays.md",
+      "upstream_path": "visual-memory-translator/references/holidays.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/references/holidays.md",
+      "upstream_blob_sha": "a8ba505ed71864f836240d57f4a4b2622df09cdc",
+      "packaged_sha256": "b7fbeb03f32dc80698f5d83b335dc74f644e437dd0ffd89e603e8494f3f165bb",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/references/parameters.md",
+      "upstream_path": "visual-memory-translator/references/parameters.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/references/parameters.md",
+      "upstream_blob_sha": "756fa7fc5bf44b9831da32a39f7ebd5beda4e4bd",
+      "packaged_sha256": "09fe816689fd5e3571bccd392eb485e81f2da7a70e65e7ecd9605ba2e4f472c7",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/references/quality.md",
+      "upstream_path": "visual-memory-translator/references/quality.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/references/quality.md",
+      "upstream_blob_sha": "a581dda6acfd352fd89bee86be30c58bd2d0184e",
+      "packaged_sha256": "ca4406ff9d7e253d639ea735660fe88ae756e178a245bdeda56490bab7cfce00",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/references/style-preview.md",
+      "upstream_path": "visual-memory-translator/references/style-preview.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/references/style-preview.md",
+      "upstream_blob_sha": "00cff7b97217fd9f7bc1b64256ec64e79389a5f8",
+      "packaged_sha256": "b01ef6fd0766306dc6352a9cbd321b2ec7cfbdf7062b50801cfe4804c7ec96a6",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/references/styles.md",
+      "upstream_path": "visual-memory-translator/references/styles.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/references/styles.md",
+      "upstream_blob_sha": "9390f40c89c6df60c8523f79b4f1ef01bdf3b7ac",
+      "packaged_sha256": "1717f3542d37a9f203fe8a261298bb3b5b8f654dc037a8c8bdb2e309a163206a",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/references/systems.md",
+      "upstream_path": "visual-memory-translator/references/systems.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/references/systems.md",
+      "upstream_blob_sha": "96d3f3aa57c2fa2d40e753b01114f38654d8c443",
+      "packaged_sha256": "990f95e97e7b6e18d00e6bb9516c1d680b8903e6ac9a49d6d50b4c106861b24f",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/visual-memory/references/text-visual.md",
+      "upstream_path": "visual-memory-translator/references/text-visual.md",
+      "upstream_url": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/visual-memory-translator/references/text-visual.md",
+      "upstream_blob_sha": "0ad8a040ed2018b75cce6686d71e6df9c9f17598",
+      "packaged_sha256": "1fbbc0bf75462aa9c51dec57e82d762a49c274a44e38e6d38f202bb13bcbc1c8",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/surreal-library/LICENSE",
+      "upstream_path": "LICENSE",
+      "upstream_url": "https://github.com/hbmartin/skills/blob/bbf3e8c6215c5c8743bcf1848cb1cde1b51f8254/LICENSE",
+      "upstream_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "packaged_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "acquisition": "pinned GitHub API",
+      "modifications": []
+    },
+    {
+      "package_path": "community/surreal-library/SOURCE.md",
+      "upstream_path": "photo-alchemy/SKILL.md",
+      "upstream_url": "https://github.com/hbmartin/skills/blob/bbf3e8c6215c5c8743bcf1848cb1cde1b51f8254/photo-alchemy/SKILL.md",
+      "upstream_blob_sha": "4d3f177421ba2282943c68232b0a7075498e58a0",
+      "packaged_sha256": "c3f6ca6d5b4c439aabc89de5ce547df794a706e8a19401744a37fe9d13c1b523",
+      "acquisition": "hash-matched local copy",
+      "modifications": [
+        "Added explicit root-engine boundary and original dependency notice; original source body retained."
+      ]
+    },
+    {
+      "package_path": "community/jiuerli-sketch/LICENSE",
+      "upstream_path": "jiuerli-visual-director/LICENSE",
+      "upstream_url": "https://github.com/18810320381-del/jiuerli-visual-director/blob/988077a3e861da6c835621e670298fddb7d1137b/jiuerli-visual-director/LICENSE",
+      "upstream_blob_sha": "f9a5df843a89014bb8fefd400b4357a598c77cae",
+      "packaged_sha256": "d95d0f97e150a2d6d2f4538aab63dcfad50efa587633c172a5461c0a64292c26",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/jiuerli-sketch/SOURCE.md",
+      "upstream_path": "jiuerli-visual-director/skills/jiuerli-visual-director/SKILL.md",
+      "upstream_url": "https://github.com/18810320381-del/jiuerli-visual-director/blob/988077a3e861da6c835621e670298fddb7d1137b/jiuerli-visual-director/skills/jiuerli-visual-director/SKILL.md",
+      "upstream_blob_sha": "f769287f7f9dd463a6521846edc430fd0a71d0f2",
+      "packaged_sha256": "04d728b06fe2d100ab971500b2bced9d6dd6d4527b5d285ef864a03471293799",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/jiuerli-sketch/assets/line-authority-doodle-01.jpg",
+      "upstream_path": "jiuerli-visual-director/skills/jiuerli-visual-director/assets/line-authority-doodle-01.jpg",
+      "upstream_url": "https://github.com/18810320381-del/jiuerli-visual-director/blob/988077a3e861da6c835621e670298fddb7d1137b/jiuerli-visual-director/skills/jiuerli-visual-director/assets/line-authority-doodle-01.jpg",
+      "upstream_blob_sha": "d80c70d9ca5a9b8b99ff596ac257e4bea8d16663",
+      "packaged_sha256": "1946e06b28f0317dd5699a74d1d2b49649fedaf3a90dbe2da8a860701a1c3e47",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/jiuerli-sketch/assets/line-authority-doodle-02.jpg",
+      "upstream_path": "jiuerli-visual-director/skills/jiuerli-visual-director/assets/line-authority-doodle-02.jpg",
+      "upstream_url": "https://github.com/18810320381-del/jiuerli-visual-director/blob/988077a3e861da6c835621e670298fddb7d1137b/jiuerli-visual-director/skills/jiuerli-visual-director/assets/line-authority-doodle-02.jpg",
+      "upstream_blob_sha": "91f55ba66d51d49b5a960a1964611f80a1f0969a",
+      "packaged_sha256": "61809ea4d758737970d8266d3d8b2204e7d49d0316cdaf296244211617aeacd4",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/jiuerli-sketch/assets/style-authority-bplus.png",
+      "upstream_path": "jiuerli-visual-director/skills/jiuerli-visual-director/assets/style-authority-bplus.png",
+      "upstream_url": "https://github.com/18810320381-del/jiuerli-visual-director/blob/988077a3e861da6c835621e670298fddb7d1137b/jiuerli-visual-director/skills/jiuerli-visual-director/assets/style-authority-bplus.png",
+      "upstream_blob_sha": "fddffd428e9995a7630cc942a561ff5451ebf988",
+      "packaged_sha256": "31c2d7f93954296515163267291700909987a8e7df4b3ca35db41deed585ae9e",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/photo-postcard/LICENSE",
+      "upstream_path": "LICENSE",
+      "upstream_url": "https://github.com/Whiplashzeb/photo-to-zine-postcard/blob/0091403bccb219d1be78c5be8552de29a6446f0a/LICENSE",
+      "upstream_blob_sha": "bd8322894388b37ecf067d1c19d7f214df05545d",
+      "packaged_sha256": "e8606f61d5e3b4619b94ed8aec8837b9caeb82fe13d730d49cff909c927eaf80",
+      "acquisition": "hash-matched local copy",
+      "modifications": []
+    },
+    {
+      "package_path": "community/photo-postcard/SOURCE.md",
+      "upstream_path": "SKILL.md",
+      "upstream_url": "https://github.com/Whiplashzeb/photo-to-zine-postcard/blob/0091403bccb219d1be78c5be8552de29a6446f0a/SKILL.md",
+      "upstream_blob_sha": "1844d00f17c0480649372af240b77e9ba310b66e",
+      "packaged_sha256": "938e72d56586cd96110537a7010772ba69981aaa430b521a6ddb6958857821c9",
+      "acquisition": "hash-matched local copy",
+      "modifications": [
+        "Renamed in-package SKILL.md references to SOURCE.md."
+      ]
+    }
+  ],
+  "link_check": {
+    "nested_skill_files": [],
+    "mandatory_missing_links": [],
+    "upstream_optional_missing_references": [
+      {
+        "file": "community/jiuerli-sketch/PACKAGING.md",
+        "reference": "references/photo-sketch-full-text-style.md",
+        "required_for_default_workflow": false
+      },
+      {
+        "file": "community/jiuerli-sketch/PACKAGING.md",
+        "reference": "references/regression-checklist-v2.md",
+        "required_for_default_workflow": false
+      },
+      {
+        "file": "community/jiuerli-sketch/SOURCE.md",
+        "reference": "references/photo-sketch-full-text-style.md",
+        "required_for_default_workflow": false
+      },
+      {
+        "file": "community/jiuerli-sketch/SOURCE.md",
+        "reference": "references/regression-checklist-v2.md",
+        "required_for_default_workflow": false
+      }
+    ],
+    "output_template_links": [
+      {
+        "file": "community/muted-zine/SOURCE.md",
+        "reference": "absolute-image-path-or-rendered-image"
+      },
+      {
+        "file": "community/minimal-zine/SOURCE.md",
+        "reference": "absolute-image-path-or-rendered-image"
+      },
+      {
+        "file": "community/pixel-bitmap/SOURCE.md",
+        "reference": "absolute-image-path-or-rendered-image"
+      }
+    ]
+  },
+  "boundaries": [
+    "Root MIT applies to newly authored material only. Third-party notices and licenses remain applicable.",
+    "Six restricted/unknown sources were not copied; their eight style entries contain only source/permission status.",
+    "Deconstructed Duotone software is MIT but its required layout images were not independently cleared; it stays source-link.",
+    "Only the explicitly licensed Jiuerli authority images are included. No third-party sample/gallery images are included.",
+    "Surreal Library original engine is not enabled. Default generation is routed through root ImageGen.",
+    "Optional Jiuerli extension/regression files are absent from pinned upstream and are not claimed to be bundled."
+  ]
+}

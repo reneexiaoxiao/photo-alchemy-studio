@@ -1,0 +1,3 @@
+community/** linguist-vendored
+*.png binary
+*.jpg binary
