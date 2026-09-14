@@ -947,6 +947,720 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "family": "structural-glass-network"
   },
   {
+    "id": "heritage-cutout",
+    "label": "中式留白拼贴",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "让真实摄影轮廓跨出色块，在纸白与可选中文标题之间形成疏密。",
+    "best": [
+      "摄影轮廓",
+      "留白",
+      "可选标题"
+    ],
+    "fidelity": "medium",
+    "direction": "narrative",
+    "image": "assets/playful/heritage-cutout.webp",
+    "entry": "styles/heritage-cutout.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 参考视觉独立再设计",
+    "sourceImage": "assets/playful/source-tree-street.webp",
+    "collectedAt": "2026-09-15",
+    "creationType": "reference-reimplementation",
+    "imageCredit": "Renee · AI 辅助生成",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "inspiration": "参考用户提供的视频视觉截图；未找到可核实的原版 Skill，工作流由 Renee 独立编写。",
+    "contract": {
+      "id": "heritage-cutout",
+      "family": "photographic-silhouette-colorfield",
+      "direction": "narrative",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "single-subject",
+        "strong-color",
+        "negative-space",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "clear-silhouette",
+        "single-subject"
+      ],
+      "signature": [
+        "一块主导摄影轮廓与源图强调色矩形交叠",
+        "纸白与摄影细节形成疏密，拒绝整照片套框",
+        "可选用户提供的大号中文绕轮廓排布，不添加中式道具"
+      ],
+      "adaptation": "轮廓随人物、植物、食物、物件或街景关系取形；色场取源图强调色，画幅跟随主体长轴与用户需求，不固定配色或建筑题材。",
+      "useWhen": "想让清楚的摄影主体与留白、色块和可选标题形成有分寸的纪念海报",
+      "avoidWhen": "主体边界无法可靠辨认，或要求精确身份、原字、逐像素不变时"
+    },
+    "features": [
+      "clear-silhouette",
+      "single-subject",
+      "strong-color",
+      "negative-space",
+      "editorial"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/heritage-cutout.webp",
+        "sourceImage": "assets/playful/source-tree-street.webp",
+        "caption": "照片转译试作",
+        "note": "示例标题“枝间”为本次拟定，无地点含义。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · 参考视觉独立再设计，AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-tree-street.webp"
+      }
+    ],
+    "family": "photographic-silhouette-colorfield"
+  },
+  {
+    "id": "postage-keepsake",
+    "label": "邮票时刻",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "把一个瞬间收进齿孔邮票，以轻微越界与纸张厚度留下纪念感。",
+    "best": [
+      "单张照片",
+      "纪念物",
+      "纸感"
+    ],
+    "fidelity": "medium",
+    "direction": "narrative",
+    "image": "assets/playful/postage-keepsake.webp",
+    "entry": "styles/postage-keepsake.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 参考视觉独立再设计",
+    "sourceImage": "assets/playful/source-beach-sunset.webp",
+    "collectedAt": "2026-09-15",
+    "creationType": "reference-reimplementation",
+    "imageCredit": "Renee · AI 辅助生成",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "inspiration": "参考用户提供的视频视觉截图；未找到可核实的原版 Skill，工作流由 Renee 独立编写。",
+    "contract": {
+      "id": "postage-keepsake",
+      "family": "perforated-photographic-keepsake",
+      "direction": "narrative",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "single-subject",
+        "busy-scene",
+        "strong-color",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "一枚主导齿孔摄影邮票、轻微倾斜与薄纸接触影",
+        "最多一个源图可见轮廓越界，主体不复制",
+        "邮政意象只作无信息装饰，不虚构邮戳、面值和时间"
+      ],
+      "adaptation": "票面比例与画幅随主体及空间关系变化，边纸和装饰色来自源图；单物留完整边、人物组保相对位置，越界只用可见轮廓。",
+      "useWhen": "想把一个可辨动作、人物关系或风景瞬间收成具有邮票物件感的纪念画面",
+      "avoidWhen": "必须精确保留面貌、文字或像素，或需要真实邮资与寄送凭证时"
+    },
+    "features": [
+      "clear-silhouette",
+      "single-subject",
+      "busy-scene",
+      "strong-color",
+      "editorial"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/postage-keepsake.webp",
+        "sourceImage": "assets/playful/source-beach-sunset.webp",
+        "caption": "照片转译试作",
+        "note": "保留三位背影与夕阳，未添加邮政信息。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · 参考视觉独立再设计，AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-beach-sunset.webp"
+      }
+    ],
+    "family": "perforated-photographic-keepsake"
+  },
+  {
+    "id": "paper-scene-memory",
+    "label": "剪纸叙事",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "保留人物姿态与互动，把热闹场景提炼成大块具象剪纸和少量边缘线索。",
+    "best": [
+      "人物互动",
+      "动态",
+      "具象提炼"
+    ],
+    "fidelity": "medium",
+    "direction": "narrative",
+    "image": "assets/playful/paper-scene-memory.webp",
+    "entry": "styles/paper-scene-memory.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 参考视觉独立再设计",
+    "sourceImage": "assets/playful/source-beach-sunset.webp",
+    "collectedAt": "2026-09-15",
+    "creationType": "reference-reimplementation",
+    "imageCredit": "Renee · AI 辅助生成",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "inspiration": "参考用户提供的视频视觉截图；未找到可核实的原版 Skill，工作流由 Renee 独立编写。",
+    "contract": {
+      "id": "paper-scene-memory",
+      "family": "figurative-paper-scene",
+      "direction": "narrative",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "person",
+        "motion",
+        "busy-scene",
+        "strong-color",
+        "playful"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "人物姿态与场景主物件形成大块具象剪纸",
+        "少量背景线索移到边缘，留下可读空白",
+        "手切轮廓与纸纹表现动作，不做立体纸雕"
+      ],
+      "adaptation": "按主体动作和关系组织形块；人数、朝向、识别点及源色参与构图，场景片段不机械复制。",
+      "useWhen": "想把有动作或互动的照片做成鲜活的平面剪纸叙事",
+      "avoidWhen": "必须精确还原人脸或原像素，或主体小到无法判断动作时"
+    },
+    "features": [
+      "person",
+      "motion",
+      "busy-scene",
+      "strong-color",
+      "playful"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/paper-scene-memory.webp",
+        "sourceImage": "assets/playful/source-beach-sunset.webp",
+        "caption": "照片转译试作",
+        "note": "保留三位背影与躺椅，把动作转为具象纸片。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · 参考视觉独立再设计，AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-beach-sunset.webp"
+      }
+    ],
+    "family": "figurative-paper-scene"
+  },
+  {
+    "id": "fridge-magnet",
+    "label": "把这一刻贴起来 · 冰箱贴",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "把照片压成沿主体轮廓成形的浅浮雕小物，材料、配色与外形跟着照片走。",
+    "best": [
+      "旅行冰箱贴",
+      "纪念物",
+      "轮廓清晰"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/playful/fridge-magnet-architecture.webp",
+    "entry": "styles/fridge-magnet.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · Renee 工作流",
+    "sourceImage": "assets/examples/source-courtyard.png",
+    "collectedAt": "2026-09-15",
+    "creationType": "original-workflow",
+    "imageCredit": "Renee · AI 辅助生成",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "fridge-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "collectible",
+        "object",
+        "food",
+        "plant"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "一个沿来源轮廓成形的浅浮雕冰箱贴",
+        "主体、配角和留空组成连通造型",
+        "釉面、珐琅或树脂按照片选择一种，保留侧壁和接触阴影"
+      ],
+      "adaptation": "外轮廓、浮雕层次、材料与画幅根据主体和源色变化，不固定城市、纪念牌形或装饰。",
+      "useWhen": "想把一个主体或紧密场景变成有触感的旅行小纪念物",
+      "avoidWhen": "需要精确人物身份、原图像素、小字或可直接生产的工程图时"
+    },
+    "features": [
+      "clear-silhouette",
+      "strong-geometry",
+      "collectible",
+      "object",
+      "food",
+      "plant"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "建筑",
+        "image": "assets/playful/fridge-magnet-architecture.webp",
+        "sourceImage": "assets/examples/source-courtyard.png",
+        "caption": "照片转译试作",
+        "note": "陶瓷浅浮雕保留三道拱、水池和橙枝。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      },
+      {
+        "label": "食物",
+        "image": "assets/playful/fridge-magnet-food.webp",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "照片转译试作",
+        "note": "珐琅分区保留一梨、一碟、两颗杏仁。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      },
+      {
+        "label": "植物",
+        "image": "assets/playful/fridge-magnet-plant.webp",
+        "sourceImage": "assets/transfer/source-plant.png",
+        "caption": "照片转译试作",
+        "note": "两片叶和枝条组成连通轮廓，树脂浅浮雕。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "contour-relief-magnet"
+  },
+  {
+    "id": "kinetic-mobile",
+    "label": "悬衡小剧场",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "让实际形态沿长短悬臂和分级吊挂重新取得平衡，保留源图的辨识点与关系。",
+    "best": [
+      "不对称平衡",
+      "可辨形态",
+      "悬挂小物"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/playful/kinetic-mobile.webp",
+    "entry": "styles/kinetic-mobile.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · Renee 工作流",
+    "sourceImage": "assets/transfer/source-food.png",
+    "collectedAt": "2026-09-15",
+    "creationType": "original-workflow",
+    "imageCredit": "Renee · AI 辅助生成",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "kinetic-mobile",
+      "family": "kinetic-balance-assembly",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "directional-lines",
+        "busy-scene",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "源形组成不对称悬挂组",
+        "连接点和悬臂呈现可信受力",
+        "轮廓、源色与关系仍可辨"
+      ],
+      "adaptation": "形片数量、吊挂方向、臂长与色彩由输入的形态和主轴决定。",
+      "useWhen": "想把有辨识度的形态重构为有平衡张力的小装置",
+      "avoidWhen": "无法提取足够的来源线索，或要求精确身份、原字和原像素时"
+    },
+    "features": [
+      "clear-silhouette",
+      "directional-lines",
+      "busy-scene",
+      "abstract-friendly"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/kinetic-mobile.webp",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "照片转译试作",
+        "note": "源物件拆成悬挂形片；这是视觉概念图。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "kinetic-balance-assembly"
+  },
+  {
+    "id": "photo-foldout",
+    "label": "折景明信片",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "把照片中连续的可见区域折成小作品，让一条真实边缘跨折线改变空间方向。",
+    "best": [
+      "连续边缘",
+      "空间错位",
+      "照片折页"
+    ],
+    "fidelity": "medium",
+    "direction": "narrative",
+    "image": "assets/playful/photo-foldout.webp",
+    "entry": "styles/photo-foldout.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · Renee 工作流",
+    "sourceImage": "assets/playful/source-coffee-terrace.webp",
+    "collectedAt": "2026-09-15",
+    "creationType": "original-workflow",
+    "imageCredit": "Renee · AI 辅助生成",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "photo-foldout",
+      "family": "continuous-fold-space",
+      "direction": "narrative",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "directional-lines",
+        "strong-geometry",
+        "layered-depth",
+        "clear-silhouette"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "同一张连续折页共边相连",
+        "真实边缘跨折缝可追踪",
+        "只设一次空间错位，不补背面"
+      ],
+      "adaptation": "折线跟随源图可延续的边缘，横竖走势决定站立折、起伏折或窄手风琴。",
+      "useWhen": "输入中存在可跨折线延续的边缘、方向或整体与背景关系",
+      "avoidWhen": "无法提取足够的来源线索，或要求精确身份、原字和原像素时"
+    },
+    "features": [
+      "directional-lines",
+      "strong-geometry",
+      "layered-depth",
+      "clear-silhouette"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/photo-foldout.webp",
+        "sourceImage": "assets/playful/source-coffee-terrace.webp",
+        "caption": "照片转译试作",
+        "note": "同一照片跨过折线；细节会随重绘变化。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-coffee-terrace.webp"
+      }
+    ],
+    "family": "continuous-fold-space"
+  },
+  {
+    "id": "visual-rebus",
+    "label": "画面谜语",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio",
+    "license": "MIT",
+    "summary": "提取几个可认出的图像线索，把照片里的空间关系变成一则无字小谜语。",
+    "best": [
+      "图像线索",
+      "空间关系",
+      "无字趣味"
+    ],
+    "fidelity": "medium",
+    "direction": "abstract",
+    "image": "assets/playful/visual-rebus.webp",
+    "entry": "styles/visual-rebus.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · Renee 工作流",
+    "sourceImage": "assets/transfer/source-food.png",
+    "collectedAt": "2026-09-15",
+    "creationType": "original-workflow",
+    "imageCredit": "Renee · AI 辅助生成",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "visual-rebus",
+      "family": "source-relation-rebus",
+      "direction": "abstract",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "busy-scene",
+        "negative-space",
+        "clear-silhouette",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "少量可辨物象来自输入",
+        "一个真实空间动词组织线索",
+        "一次可解转折，无字也能猜读"
+      ],
+      "adaptation": "按输入里的包围、承托、穿行或全貌与局部关系选择位置、尺度与遮挡。",
+      "useWhen": "想让可见物象之间的一个关系变成简短可读的视觉趣味",
+      "avoidWhen": "无法提取足够的来源线索，或要求精确身份、原字和原像素时"
+    },
+    "features": [
+      "busy-scene",
+      "negative-space",
+      "clear-silhouette",
+      "abstract-friendly"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/visual-rebus.webp",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "照片转译试作",
+        "note": "把碟中两颗杏仁嵌进梨形，形成一次不可能的嵌套。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "source-relation-rebus"
+  },
+  {
     "id": "minimal-zine",
     "label": "极简 Zine",
     "origin": "community",

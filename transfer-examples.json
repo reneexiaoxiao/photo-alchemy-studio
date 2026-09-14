@@ -50,5 +50,143 @@
         "note": "采用倒影分支，保留三处开口的对应节奏；属于艺术重组。"
       }
     ]
+  },
+  {
+    "id": "heritage-cutout",
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/heritage-cutout.webp",
+        "sourceImage": "assets/playful/source-tree-street.webp",
+        "caption": "照片转译试作",
+        "note": "示例标题“枝间”为本次拟定，无地点含义。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · 参考视觉独立再设计，AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-tree-street.webp"
+      }
+    ]
+  },
+  {
+    "id": "postage-keepsake",
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/postage-keepsake.webp",
+        "sourceImage": "assets/playful/source-beach-sunset.webp",
+        "caption": "照片转译试作",
+        "note": "保留三位背影与夕阳，未添加邮政信息。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · 参考视觉独立再设计，AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-beach-sunset.webp"
+      }
+    ]
+  },
+  {
+    "id": "paper-scene-memory",
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/paper-scene-memory.webp",
+        "sourceImage": "assets/playful/source-beach-sunset.webp",
+        "caption": "照片转译试作",
+        "note": "保留三位背影与躺椅，把动作转为具象纸片。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · 参考视觉独立再设计，AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-beach-sunset.webp"
+      }
+    ]
+  },
+  {
+    "id": "fridge-magnet",
+    "examples": [
+      {
+        "label": "建筑",
+        "image": "assets/playful/fridge-magnet-architecture.webp",
+        "sourceImage": "assets/examples/source-courtyard.png",
+        "caption": "照片转译试作",
+        "note": "陶瓷浅浮雕保留三道拱、水池和橙枝。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      },
+      {
+        "label": "食物",
+        "image": "assets/playful/fridge-magnet-food.webp",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "照片转译试作",
+        "note": "珐琅分区保留一梨、一碟、两颗杏仁。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      },
+      {
+        "label": "植物",
+        "image": "assets/playful/fridge-magnet-plant.webp",
+        "sourceImage": "assets/transfer/source-plant.png",
+        "caption": "照片转译试作",
+        "note": "两片叶和枝条组成连通轮廓，树脂浅浮雕。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ]
+  },
+  {
+    "id": "kinetic-mobile",
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/kinetic-mobile.webp",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "照片转译试作",
+        "note": "源物件拆成悬挂形片；这是视觉概念图。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ]
+  },
+  {
+    "id": "photo-foldout",
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/photo-foldout.webp",
+        "sourceImage": "assets/playful/source-coffee-terrace.webp",
+        "caption": "照片转译试作",
+        "note": "同一照片跨过折线；细节会随重绘变化。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-coffee-terrace.webp"
+      }
+    ]
+  },
+  {
+    "id": "visual-rebus",
+    "examples": [
+      {
+        "label": "试作",
+        "image": "assets/playful/visual-rebus.webp",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "照片转译试作",
+        "note": "把碟中两颗杏仁嵌进梨形，形成一次不可能的嵌套。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ]
   }
 ]

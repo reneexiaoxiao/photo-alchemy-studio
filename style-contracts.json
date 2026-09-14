@@ -465,6 +465,287 @@
       "adaptation": "按可见节点组织观看而非地理路线，单图可展开全貌与细节，不能新增隐藏视角。",
       "useWhen": "想把丰富的可见片段做成可逐处阅读的微缩图",
       "avoidWhen": "源图过于单薄或必须精确保留人物、像素与地理关系时"
+    },
+    {
+      "id": "heritage-cutout",
+      "family": "photographic-silhouette-colorfield",
+      "direction": "narrative",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "single-subject",
+        "strong-color",
+        "negative-space",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "clear-silhouette",
+        "single-subject"
+      ],
+      "signature": [
+        "一块主导摄影轮廓与源图强调色矩形交叠",
+        "纸白与摄影细节形成疏密，拒绝整照片套框",
+        "可选用户提供的大号中文绕轮廓排布，不添加中式道具"
+      ],
+      "adaptation": "轮廓随人物、植物、食物、物件或街景关系取形；色场取源图强调色，画幅跟随主体长轴与用户需求，不固定配色或建筑题材。",
+      "useWhen": "想让清楚的摄影主体与留白、色块和可选标题形成有分寸的纪念海报",
+      "avoidWhen": "主体边界无法可靠辨认，或要求精确身份、原字、逐像素不变时"
+    },
+    {
+      "id": "postage-keepsake",
+      "family": "perforated-photographic-keepsake",
+      "direction": "narrative",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "single-subject",
+        "busy-scene",
+        "strong-color",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "一枚主导齿孔摄影邮票、轻微倾斜与薄纸接触影",
+        "最多一个源图可见轮廓越界，主体不复制",
+        "邮政意象只作无信息装饰，不虚构邮戳、面值和时间"
+      ],
+      "adaptation": "票面比例与画幅随主体及空间关系变化，边纸和装饰色来自源图；单物留完整边、人物组保相对位置，越界只用可见轮廓。",
+      "useWhen": "想把一个可辨动作、人物关系或风景瞬间收成具有邮票物件感的纪念画面",
+      "avoidWhen": "必须精确保留面貌、文字或像素，或需要真实邮资与寄送凭证时"
+    },
+    {
+      "id": "paper-scene-memory",
+      "family": "figurative-paper-scene",
+      "direction": "narrative",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "person",
+        "motion",
+        "busy-scene",
+        "strong-color",
+        "playful"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "人物姿态与场景主物件形成大块具象剪纸",
+        "少量背景线索移到边缘，留下可读空白",
+        "手切轮廓与纸纹表现动作，不做立体纸雕"
+      ],
+      "adaptation": "按主体动作和关系组织形块；人数、朝向、识别点及源色参与构图，场景片段不机械复制。",
+      "useWhen": "想把有动作或互动的照片做成鲜活的平面剪纸叙事",
+      "avoidWhen": "必须精确还原人脸或原像素，或主体小到无法判断动作时"
+    },
+    {
+      "id": "fridge-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "collectible",
+        "object",
+        "food",
+        "plant"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "一个沿来源轮廓成形的浅浮雕冰箱贴",
+        "主体、配角和留空组成连通造型",
+        "釉面、珐琅或树脂按照片选择一种，保留侧壁和接触阴影"
+      ],
+      "adaptation": "外轮廓、浮雕层次、材料与画幅根据主体和源色变化，不固定城市、纪念牌形或装饰。",
+      "useWhen": "想把一个主体或紧密场景变成有触感的旅行小纪念物",
+      "avoidWhen": "需要精确人物身份、原图像素、小字或可直接生产的工程图时"
+    },
+    {
+      "id": "kinetic-mobile",
+      "family": "kinetic-balance-assembly",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "directional-lines",
+        "busy-scene",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "源形组成不对称悬挂组",
+        "连接点和悬臂呈现可信受力",
+        "轮廓、源色与关系仍可辨"
+      ],
+      "adaptation": "形片数量、吊挂方向、臂长与色彩由输入的形态和主轴决定。",
+      "useWhen": "想把有辨识度的形态重构为有平衡张力的小装置",
+      "avoidWhen": "无法提取足够的来源线索，或要求精确身份、原字和原像素时"
+    },
+    {
+      "id": "photo-foldout",
+      "family": "continuous-fold-space",
+      "direction": "narrative",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "directional-lines",
+        "strong-geometry",
+        "layered-depth",
+        "clear-silhouette"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "同一张连续折页共边相连",
+        "真实边缘跨折缝可追踪",
+        "只设一次空间错位，不补背面"
+      ],
+      "adaptation": "折线跟随源图可延续的边缘，横竖走势决定站立折、起伏折或窄手风琴。",
+      "useWhen": "输入中存在可跨折线延续的边缘、方向或整体与背景关系",
+      "avoidWhen": "无法提取足够的来源线索，或要求精确身份、原字和原像素时"
+    },
+    {
+      "id": "visual-rebus",
+      "family": "source-relation-rebus",
+      "direction": "abstract",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "busy-scene",
+        "negative-space",
+        "clear-silhouette",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "少量可辨物象来自输入",
+        "一个真实空间动词组织线索",
+        "一次可解转折，无字也能猜读"
+      ],
+      "adaptation": "按输入里的包围、承托、穿行或全貌与局部关系选择位置、尺度与遮挡。",
+      "useWhen": "想让可见物象之间的一个关系变成简短可读的视觉趣味",
+      "avoidWhen": "无法提取足够的来源线索，或要求精确身份、原字和原像素时"
     }
   ]
 }

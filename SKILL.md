@@ -5,7 +5,7 @@ description: Transform travel and everyday photos into shareable artwork; browse
 
 # Photo Alchemy Studio
 
-One photo-art entry, many ways of seeing: abstraction, narrative composition and material reinterpretation. Use the supplied photo as factual evidence and the selected style as an artistic treatment. Open `index.html` for the catalog or launch `python3 scripts/studio_server.py` for local installation and update checks. See `docs/maintenance.md` only when maintaining the library.
+One photo-art entry, many ways of seeing: abstraction, narrative composition, playful spatial relationships and material reinterpretation. Use the supplied photo as factual evidence and the selected style as an artistic treatment. Open `index.html` for the catalog or launch `python3 scripts/studio_server.py` for local installation and update checks. See `docs/maintenance.md` only when maintaining the library.
 
 ## Choose and generate
 
@@ -21,13 +21,13 @@ One photo-art entry, many ways of seeing: abstraction, narrative composition and
 
 ## Transferable style selection
 
-For original workflows, read `docs/style-grammar.md` and the selected `styles/<id>.md`. Fixed rules define the visual method; palette, orientation, density, fragment count and layout follow the actual input. Gallery destinations and objects are examples, never mandatory additions. Read `style-contracts.json` for required features and preservation conflicts. `scripts/style_selector.py recommend --features ...` excludes incompatible or unmatched methods and favors different visual families. With incomplete photo analysis, do not claim the shortlist is an image-quality evaluation.
+For Renee-authored workflows, including the screenshot-informed reimplementations below, read `docs/style-grammar.md` and the selected `styles/<id>.md`. Fixed rules define the visual method; palette, orientation, density, fragment count and layout follow the actual input. Gallery destinations and objects are examples, never mandatory additions. Read `style-contracts.json` for required features and preservation conflicts. `scripts/style_selector.py recommend --features ...` excludes incompatible or unmatched methods and favors different visual families. With incomplete photo analysis, do not claim the shortlist is an image-quality evaluation.
 
 A style's matching subject alone is insufficient: light relations need observed shadows, transmission or reflection; layer methods need actual occlusion or contour layers; narrative methods need enough visible fragments. Never add hidden views or geographic facts to satisfy a method. Check inputCount in the contract; selected one-photo styles process supplied photos independently.
 
-## Original modules
+## Renee-authored modules
 
-These workflow implementations are designed and written by **Renee**, with AI assistance. Their traditional artistic media are not inventions of the project.
+These 18 workflow implementations are written by **Renee**, with AI assistance: 15 original implementations and 3 independent reimplementations informed by user-provided screenshots. “Original” describes this project’s implementation, not the invention of an artistic medium or visual tradition. The screenshot-informed workflows are listed separately; they are not the screenshot creators’ original Skills and do not establish authorship of the reference direction.
 
 | ID | Workflow | Source condition |
 |---|---|---|
@@ -42,6 +42,23 @@ These workflow implementations are designed and written by **Renee**, with AI as
 | `riso-travel-print` | [套色版画](styles/riso-travel-print.md) | 想用鲜明形面与套色关系提升照片的图形感 |
 | `paper-cut-theatre` | [纸雕层景](styles/paper-cut-theatre.md) | 原图有可辨前后层次、开口或重叠关系 |
 | `stained-glass-light` | [透光彩玻璃](styles/stained-glass-light.md) | 想把清楚的形面与色彩转成透光作品 |
+| `fridge-magnet` | [把这一刻贴起来](styles/fridge-magnet.md) | 有可辨轮廓或紧密场景，想压成一枚浅浮雕纪念物 |
+| `kinetic-mobile` | [悬衡小剧场](styles/kinetic-mobile.md) | 可提取相互关联的形态，用不对称吊挂重新组织平衡 |
+| `photo-foldout` | [折景明信片](styles/photo-foldout.md) | 可见区域有可延续的边缘或方向，适合共边折面与一次空间错位 |
+| `visual-rebus` | [画面谜语](styles/visual-rebus.md) | 可辨物象之间存在承托、包围、穿行或全貌与局部等关系 |
+
+### Screenshot-informed reimplementations
+
+The screenshot creators’ original Skill source code has not been located and verified. Renee independently wrote the workflows below from the supplied visual direction. Attribute them as **Renee 独立编写 · 参考用户提供的视觉方向**, not “original direction” or “the source author’s Skill.” MIT applies only to this project’s newly written workflow text; it does not grant rights to the screenshots or third-party assets.
+
+| ID | Workflow | Source condition |
+|---|---|---|
+| `heritage-cutout` | [中式留白拼贴](styles/heritage-cutout.md) | 可辨摄影轮廓适合与源色矩形交叠，用户标题可选；不补中式符号 |
+| `postage-keepsake` | [邮票时刻](styles/postage-keepsake.md) | 一个值得保留的摄影关系适合装入单枚齿孔邮票，越界部分须来自可见轮廓 |
+| `paper-scene-memory` | [剪纸叙事](styles/paper-scene-memory.md) | 一组真实动作或相邻关系可转为薄纸主形和少量背景线索 |
+
+For the seven additions, choose the mechanism before the material. A magnet is one coherent shallow object; a mobile needs credible connections and balance; a foldout is one continuous folded surface, not separate paper-theatre layers; a rebus needs a readable relation, not merely fewer shapes. Paper-scene-memory stays on a flat collage plane. Never add unseen views or new story facts to complete these mechanisms. Gallery sample status determines what has actually been rendered and reviewed; a new workflow file is not proof of transfer quality.
+
 
 Community sources retain their original contracts, authors and licenses in `catalog.json` and `THIRD_PARTY.md`. Sources marked link-only are not bundled. Public image permissions and workflow redistribution permissions are separate.
 
