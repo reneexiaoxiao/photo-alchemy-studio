@@ -17,3 +17,7 @@ These are exact copies of the existing reference images. No preview was regenera
 The MIT images are official repository examples with no separate exclusion found. Repository author/licensor statements are the basis for inclusion; this is not a warranty of third-party rights. Do not imply endorsement by depicted people or upstream authors.
 
 All 18 original previews remain available only in the local library. Eight previews remain local-only due to upstream restrictions, missing permission, or a restricted source photograph. See [image rights audit](../../docs/image-rights-audit.json).
+
+## 2026-09-14 additions
+
+Six new artwork examples from AlbertAZ1992/albert-imagebook retain [the upstream MIT notice](licenses/albert-imagebook-MIT.txt). The organic-knit before/after example retains [NalaZhang27's MIT notice](licenses/photo-to-organic-knit-MIT.txt). Per-file sources and hashes are in [the expansion audit](../../docs/github-expansion-2026-09-14.json). No Wibi or image-as-score artwork was added to this public directory.

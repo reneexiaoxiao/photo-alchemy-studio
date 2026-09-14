@@ -36,9 +36,9 @@ Gathered Scenes Zine has a personal non-commercial license that expressly exclud
 
 ## Images and runtime dependencies
 
-The public gallery retains **10 community-style reference images**: seven official repository examples distributed under their MIT notices, plus three project-generated examples whose recorded generation used no external image inputs. Each image is attributed in [the preview manifest](gallery-previews.json), [image-rights audit](docs/image-rights-audit.json) and [image license index](assets/community-previews/LICENSES.md). This assessment relies on the upstream licenses and available provenance; it is not an independent investigation of underlying photography rights.
+The public gallery retains **17 community-style reference images**: fourteen official repository examples distributed under their MIT notices, plus three project-generated examples whose recorded generation used no external image inputs. Each image is attributed in [the preview manifest](gallery-previews.json), [image-rights audit](docs/image-rights-audit.json) and [image license index](assets/community-previews/LICENSES.md). This assessment relies on the upstream licenses and available provenance; it is not an independent investigation of underlying photography rights.
 
-The other eight legacy reference images remain in the private local collection; the public page lists their style names and source links under “Other recommendations”. Image-display permission and Skill-source redistribution are separate decisions. A source link does not by itself license the linked picture. Do not hotlink an excluded picture as a workaround. No private user travel photograph is included.
+Eight legacy reference images and three newly collected references remain in the private local collection; the public page lists their style names and source links under “Other recommendations”. Image-display permission and Skill-source redistribution are separate decisions. A source link does not by itself license the linked picture. Do not hotlink an excluded picture as a workaround. No private user travel photograph is included.
 
 The following three Jiuerli authority files also remain bundled as dependencies, required for its explicit-only, one-call default workflow:
 
@@ -51,3 +51,9 @@ The following three Jiuerli authority files also remain bundled as dependencies,
 Deconstructed Duotone remains a source link because its original workflow requires layout-guide images that this package has not separately cleared. The primary Jiuerli workflow is bundled; two optional extended-rule/regression documents mentioned upstream were absent from the pinned tree and are not supplied. Surreal Library retains its Apache source as reference; its original imagemine/Claude/Gemini/Apple Photos engine is not installed or executed. Root generation uses built-in ImageGen.
 
 Full fixed commits, upstream URLs, blob hashes, packaging hashes and link-check results are in [docs/source-audit.json](docs/source-audit.json).
+
+## 2026-09-14 collection
+
+Ten community styles were added to the visual/source catalog; complete new source packages are not bundled in this public repository. AlbertAZ1992/albert-imagebook contributes six styles and six MIT artwork examples; NalaZhang27/photo-to-organic-knit contributes one style and its MIT before/after example. Unmodified license texts are in `assets/community-previews/licenses/`. Upstream provenance describes owner-provided photographs; underlying photography authorship has not been independently investigated. Imagebook also discloses unresolved earlier inspiration sources, retained in the expansion audit.
+
+The two Vieeeeeee/wibi-style modules are personal/non-commercial; their references are research-only and cannot be extracted for separate redistribution. ninggele/image-as-score licenses instructions under MIT and required reference artwork separately under CC BY-NC 4.0. These three references remain private, with public names and source links only. None is Renee-original or covered by this project's MIT. Exact pins, sample URLs, hashes and scope are in [the expansion audit](docs/github-expansion-2026-09-14.json).

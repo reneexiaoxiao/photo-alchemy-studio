@@ -4,10 +4,11 @@ const baseStyles = window.PHOTO_ALCHEMY_CATALOG || [];
 let styles = [...baseStyles], filter = 'all', chosen = null, connected = false;
 let toastTimer;
 let direction='all', subject='all', preservation='all';
-const featureLabels={'landscape':'风景','architecture':'建筑','street':'街景','object':'物件','food':'美食','plant':'植物','pet':'宠物','person':'人物','identity-critical':'保留人物身份','faithful-photo':'保留原照','text-in-source':'含原文文字','product-geometry':'保留物件形状','strong-geometry':'结构鲜明','layered-depth':'层次丰富','clear-silhouette':'轮廓清晰','motion':'动态','negative-space':'留白','busy-scene':'丰富场景','strong-color':'鲜明色彩','muted-color':'低饱和','low-light':'暗光','nostalgic':'怀旧','poetic':'诗意','editorial':'刊物感','cinematic':'电影感','abstract-friendly':'可抽象','playful':'活泼','collectible':'纪念物','social-cover':'分享封面','printable':'打印'};
+const featureLabels={'backlight':'逆光','directional-lines':'方向线','landscape':'风景','architecture':'建筑','street':'街景','object':'物件','food':'美食','plant':'植物','pet':'宠物','person':'人物','identity-critical':'保留人物身份','faithful-photo':'保留原照','text-in-source':'含原文文字','product-geometry':'保留物件形状','strong-geometry':'结构鲜明','layered-depth':'层次丰富','clear-silhouette':'轮廓清晰','motion':'动态','negative-space':'留白','busy-scene':'丰富场景','strong-color':'鲜明色彩','muted-color':'低饱和','low-light':'暗光','nostalgic':'怀旧','poetic':'诗意','editorial':'刊物感','cinematic':'电影感','abstract-friendly':'可抽象','playful':'活泼','collectible':'纪念物','social-cover':'分享封面','printable':'打印'};
 function textNode(tag, text, className) { const el=document.createElement(tag); el.textContent=text; if(className) el.className=className; return el; }
 function button(text, fn, cls='') { const el=textNode('button',text,cls); el.type='button'; el.addEventListener('click',fn); return el; }
 function safeLink(href) { try { const u=new URL(href,location.href); return u.protocol==='https:' && u.hostname==='github.com' ? u.href : null; } catch {return null;} }
+function sourceQuery(s){const safe=safeLink(s.sourceUrl||'');if(safe){const parts=new URL(safe).pathname.split('/').filter(Boolean);if(parts.length>=2)return 'https://github.com/'+parts.slice(0,2).join('/');}return s.source||'';}
 function link(text, href) { const el=textNode('a',text); const safe=safeLink(href); if(safe){el.href=safe;el.target='_blank';el.rel='noopener noreferrer';} return el; }
 function notice(text) { $('toast').textContent=text; $('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{$('toast').hidden=true;},3000); }
 async function copy(text) {try {await navigator.clipboard.writeText(text);notice('指令已复制');} catch { $('copy-text').value=text;$('copy-dialog').showModal();$('copy-text').focus();$('copy-text').select(); } }
@@ -36,7 +37,8 @@ function showImage(s) {
 function subjectsFor(s){const aliases={'建筑':'architecture','风景':'landscape','街景':'street','街巷':'street','物件':'object','食物':'food','美食':'food','植物':'plant','宠物':'pet','人物':'person'};return s.subjects?.length?s.subjects:(s.best||[]).map(x=>aliases[x]||x);}
 function visualFamily(s){return s.contract?.family||baseStyles.find(b=>b.id===s.id)?.family||s.family||s.id;}
 function resetPhotoFilters(){direction='all';subject='all';preservation='all';for(const id of ['direction','subject','preservation'])$(id).value='all';}
-function matches(s) { const query=$('search').value.trim().toLowerCase(); return (!query || [s.id,s.label,s.summary,s.source,...(s.best||[]),...(s.destinations||[])].join(' ').toLowerCase().includes(query)) && (filter==='all'||(filter==='installed'?s.installed:s.origin===filter)) && (direction==='all'||s.direction===direction) && (subject==='all'||subjectsFor(s).includes(subject)) && (preservation!=='keep'||(s.origin!=='original'&&s.fidelity==='high')) && (preservation!=='redraw'||s.origin==='original'||s.fidelity!=='high') && (!chosen||chosen.has(s.id)); }
+function newestCollection(){return styles.map(s=>s.collectedAt||'').sort().pop()||null;}
+function matches(s) { const query=$('search').value.trim().toLowerCase(); return (!query || [s.id,s.label,s.summary,s.source,...(s.best||[]),...(s.destinations||[])].join(' ').toLowerCase().includes(query)) && (filter==='all'||(filter==='new'?Boolean(s.collectedAt)&&s.collectedAt===newestCollection():filter==='installed'?s.installed:s.origin===filter)) && (direction==='all'||s.direction===direction) && (subject==='all'||subjectsFor(s).includes(subject)) && (preservation!=='keep'||(s.origin!=='original'&&s.fidelity==='high')) && (preservation!=='redraw'||s.origin==='original'||s.fidelity!=='high') && (!chosen||chosen.has(s.id)); }
 function render() {
  $('grid').replaceChildren();$('source-list').replaceChildren();const visible=styles.filter(matches).sort((a,b)=>(a.origin==='original')-(b.origin==='original'));
  $('count').textContent=`${visible.length} / ${styles.length} 种风格`;$('empty').hidden=visible.length>0;
@@ -51,7 +53,7 @@ function render() {
   if(s.best?.length)body.append(textNode('p',s.best.map(x=>featureLabels[x]||x).join(' · '),'tags'));
   const actions=document.createElement('div');actions.className='card-actions';
   if(s.installed) actions.append(button('复制使用指令',()=>copy(promptFor(s))));
-  else actions.append(button('查找并添加',()=>{ $('skill-query').value=s.sourceUrl||s.source;$('add').scrollIntoView();if(connected)findSources();else notice('可启动本地服务，或复制添加请求');}));
+  else actions.append(button('查找并添加',()=>{ $('skill-query').value=sourceQuery(s);$('add').scrollIntoView();if(connected)findSources();else notice('可启动本地服务，或复制添加请求');}));
   if(safeLink(s.sourceUrl||'')) actions.append(link(s.installed?'查看来源 ↗':'来源链接 ↗',s.sourceUrl)); else actions.append(textNode('span','来源待核实','style-id'));body.append(actions);card.append(body);(s.image?$('grid'):$('source-list')).append(card);
  }
  $('recommendations').hidden=!$('source-list').children.length;
