@@ -382,7 +382,7 @@ class Studio:
                 candidate = self._preview_target(preview.get("image"))
                 if candidate and not current:
                     item["image"] = "/local-previews/" + candidate[0].name
-                    for key in ("imageCaption", "credit"):
+                    for key in ("imageCaption", "credit", "imageCredit", "imageLicense", "imageLicenseUrl", "imageSourceUrl"):
                         if isinstance(preview.get(key), str):
                             item[key] = preview[key][:500]
             for item in merged.values():

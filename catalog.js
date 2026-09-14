@@ -971,6 +971,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "direction": "abstract",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/ddb0d66b24a94f9c4fdd1f02835a836a2db3774e/examples/shore-pause.jpeg",
+    "imageLicense": "MIT",
     "credit": "Copyright (c) 2026 LiamGvchi",
     "family": "sparse-paper"
   },
@@ -999,6 +1000,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "direction": "abstract",
     "imageCaption": "本地生成样例 · 无外部输入图片",
     "imageSourceUrl": "https://github.com/moonlin1213/muted-zine-poster-v01",
+    "imageLicense": "Project-generated sample",
     "credit": "Photo Alchemy Studio · ImageGen 生成样例",
     "family": "sparse-paper"
   },
@@ -1027,6 +1029,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "direction": "material",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/dacnay816y62-hub/photo-revival/blob/ca4c3c6c0f812355bd6d815d8a78652db801b7f1/examples/05_japan_road_page.png",
+    "imageLicense": "MIT",
     "credit": "Copyright (c) 2026 FANTASY",
     "family": "small-illustration"
   },
@@ -1055,6 +1058,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "direction": "material",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/v92388375-gif/pixel-style-poster-skill/blob/b93066b52fc2f32bf9ec3a9a6d379b4088d6fd7b/examples/deep-teal-butterfly.png",
+    "imageLicense": "MIT",
     "credit": "Copyright (c) 2026",
     "family": "halftone"
   },
@@ -1078,6 +1082,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "direction": "abstract",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/Lixorn/deconstructed-duotone-poster/blob/0393d269ff82ef7044a6c6effd36473c4f983a33/examples/purple-canopy.webp",
+    "imageLicense": "MIT",
     "credit": "Copyright (c) 2026 Lixorn",
     "family": "grid-abstraction"
   },
@@ -1091,7 +1096,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "summary": "锁定原照片，只通过标题、层级、轴线、留白和少量字形遮挡建立电影海报张力。",
     "best": [],
     "fidelity": "high",
-    "image": null,
+    "image": "assets/community-previews/morandi-cinematic.png",
     "entry": null,
     "installed": false,
     "packageStatus": "source-link",
@@ -1099,7 +1104,12 @@ window.PHOTO_ALCHEMY_CATALOG = [
       "仅允许完全免费、个人非商业、同条款分享；修改文件须标注修改。禁止代表公司、雇主、机构等组织使用，禁止商业工作流、收费服务及商业交付中使用输出。"
     ],
     "direction": "narrative",
-    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+    "imageCaption": "上游排版参考图 · 未修改",
+    "imageCredit": "© 2026 Zeejay0 · Gathered Scenes Zine",
+    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/skills/morandi-cinematic-poster-zeejay/assets/reference-typography-material-v1.png",
+    "imageLicense": "Gathered Scenes Zine Personal Non-Commercial License 1.0",
+    "imageLicenseUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE",
+    "credit": "© 2026 Zeejay0 · Gathered Scenes Zine",
     "family": "photo-editorial"
   },
   {
@@ -1112,7 +1122,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "summary": "不把照片留在画面里，只留下语义核心、情绪张力与空间关系，重构成独立纸上作品。",
     "best": [],
     "fidelity": "low",
-    "image": null,
+    "image": "assets/community-previews/scene-distillation.jpg",
     "entry": null,
     "installed": false,
     "packageStatus": "source-link",
@@ -1120,7 +1130,12 @@ window.PHOTO_ALCHEMY_CATALOG = [
       "仅允许完全免费、个人非商业、同条款分享；修改文件须标注修改。禁止代表公司、雇主、机构等组织使用，禁止商业工作流、收费服务及商业交付中使用输出。"
     ],
     "direction": "abstract",
-    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+    "imageCaption": "上游样例 · 未修改",
+    "imageCredit": "© 2026 Zeejay0 · Gathered Scenes Zine",
+    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/examples/image-distillation/01-time-waves-back/result.jpg",
+    "imageLicense": "Gathered Scenes Zine Personal Non-Commercial License 1.0",
+    "imageLicenseUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE",
+    "credit": "© 2026 Zeejay0 · Gathered Scenes Zine",
     "family": "semantic-abstraction"
   },
   {
@@ -1133,7 +1148,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "summary": "真实摄影与源图提炼的插画场融合，以自然撕纸纤维和单一结构色完成过渡。",
     "best": [],
     "fidelity": "high",
-    "image": null,
+    "image": "assets/community-previews/gathered-scenes.jpg",
     "entry": null,
     "installed": false,
     "packageStatus": "source-link",
@@ -1141,7 +1156,12 @@ window.PHOTO_ALCHEMY_CATALOG = [
       "仅允许完全免费、个人非商业、同条款分享；修改文件须标注修改。禁止代表公司、雇主、机构等组织使用，禁止商业工作流、收费服务及商业交付中使用输出。"
     ],
     "direction": "narrative",
-    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill",
+    "imageCaption": "上游样例 · 未修改",
+    "imageCredit": "© 2026 Zeejay0 · Gathered Scenes Zine",
+    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/examples/real-scene-collage/01-where-stone-meets-sky/result.jpg",
+    "imageLicense": "Gathered Scenes Zine Personal Non-Commercial License 1.0",
+    "imageLicenseUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE",
+    "credit": "© 2026 Zeejay0 · Gathered Scenes Zine",
     "family": "photo-collage"
   },
   {
@@ -1164,6 +1184,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "direction": "narrative",
     "imageCaption": "本地生成样例 · 无外部输入图片",
     "imageSourceUrl": "https://github.com/BruceZhang111/Zine-Blend",
+    "imageLicense": "Project-generated sample",
     "credit": "Photo Alchemy Studio · ImageGen 生成样例",
     "family": "photo-collage"
   },
@@ -1186,6 +1207,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     ],
     "direction": "narrative",
     "imageCaption": "本地生成样例 · 无外部输入图片",
+    "imageLicense": "Project-generated sample",
     "credit": "Photo Alchemy Studio · ImageGen 生成样例",
     "family": "photo-print"
   },
@@ -1199,7 +1221,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "summary": "上层写“第一眼看见什么”，中层保留未经改写的原照片，下层把方向、距离与间隔变成关系地图。",
     "best": [],
     "fidelity": "high",
-    "image": null,
+    "image": "assets/community-previews/renee-threefold-memory.png",
     "entry": null,
     "installed": false,
     "packageStatus": "source-link",
@@ -1207,7 +1229,21 @@ window.PHOTO_ALCHEMY_CATALOG = [
       "固定提交和当前 main 均未找到 LICENSE 或 README 许可声明。不要将其 SKILL、归纳改写文档或有实质来源依赖的配套实现直接套入新 MIT。"
     ],
     "direction": "narrative",
-    "imageSourceUrl": "https://github.com/Starryear/Starryear-Threefold-Memory",
+    "imageCaption": "Renee 生成样例 · 中段为授权原照 · 非官方样例",
+    "imageCredit": "示例制作：Renee · 原照：AlbertAZ1992 · 方法来源：Starryear",
+    "imageSourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/assets/community-previews/renee-threefold-memory.png",
+    "imageLicense": "MIT（本库样例及授权原照；不含源 Skill）",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "publicExample": {
+      "image": "assets/community-previews/renee-threefold-memory.png",
+      "imageCredit": "示例制作：Renee · 原照：AlbertAZ1992 · 方法来源：Starryear",
+      "imageLicense": "MIT（本库样例及授权原照；不含源 Skill）",
+      "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+      "imageSourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/assets/community-previews/renee-threefold-memory.png",
+      "label": "Renee 生成样例",
+      "caption": "Renee 生成样例 · 中段为授权原照 · 非官方样例"
+    },
+    "credit": "示例制作：Renee · 原照：AlbertAZ1992 · 方法来源：Starryear",
     "family": "sequence"
   },
   {
@@ -1220,7 +1256,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "summary": "上方完整保留当前上传的原照片，下方只用极少的线、点和平面块重建这张照片的方向、间距和层次。",
     "best": [],
     "fidelity": "medium",
-    "image": null,
+    "image": "assets/community-previews/renee-travel-abstraction.png",
     "entry": null,
     "installed": false,
     "packageStatus": "source-link",
@@ -1228,7 +1264,21 @@ window.PHOTO_ALCHEMY_CATALOG = [
       "禁止再分发。"
     ],
     "direction": "abstract",
-    "imageSourceUrl": "https://github.com/Evianis/travel-photo-abstraction",
+    "imageCaption": "Renee 生成样例 · 上段原照像素保留 · 非官方样例",
+    "imageCredit": "示例制作：Renee · 原照：AlbertAZ1992 · Skill：Evianis",
+    "imageSourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/assets/community-previews/renee-travel-abstraction.png",
+    "imageLicense": "MIT（本库样例及授权原照；不含源 Skill）",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "publicExample": {
+      "image": "assets/community-previews/renee-travel-abstraction.png",
+      "imageCredit": "示例制作：Renee · 原照：AlbertAZ1992 · Skill：Evianis",
+      "imageLicense": "MIT（本库样例及授权原照；不含源 Skill）",
+      "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+      "imageSourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/assets/community-previews/renee-travel-abstraction.png",
+      "label": "Renee 生成样例",
+      "caption": "Renee 生成样例 · 上段原照像素保留 · 非官方样例"
+    },
+    "credit": "示例制作：Renee · 原照：AlbertAZ1992 · Skill：Evianis",
     "family": "photo-abstraction"
   },
   {
@@ -1256,6 +1306,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "direction": "narrative",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/wnby/photo-relic-editorial/blob/2232da16afddc7940e2e2f280bfb85aa62da1bae/examples/paper-beijing/corner-tower-water.png",
+    "imageLicense": "MIT",
     "credit": "Copyright (c) 2026 wnby",
     "family": "photo-editorial"
   },
@@ -1269,7 +1320,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "summary": "原图与无纹理象牙白面板直接相接，把人物、建筑、方向与间距压缩成少量关系标记。",
     "best": [],
     "fidelity": "high",
-    "image": null,
+    "image": "assets/community-previews/photo-abstract.jpg",
     "entry": null,
     "installed": false,
     "packageStatus": "source-link",
@@ -1277,7 +1328,12 @@ window.PHOTO_ALCHEMY_CATALOG = [
       "LICENSE.md 只明确个人、学习、研究与非商业使用；商业用途、企业应用、再授权与商业分发须另获授权。README 的 CC BY-NC-SA 4.0 徽章与实际定制许可不一致；成果分享邀请不等于授予源码通用再分发。"
     ],
     "direction": "abstract",
-    "imageSourceUrl": "https://github.com/ZzzLc0405/photo-abstract-editorial",
+    "imageCaption": "上游样例 · 作者原图 · 未修改",
+    "imageCredit": "© 2026 ZzzLlc0405 / @AM. · Photo Abstract Editorial",
+    "imageSourceUrl": "https://github.com/ZzzLc0405/photo-abstract-editorial/blob/c7904b70c9829f614b37064d0005149b8a2037dc/assets/examples/case-1.jpg",
+    "imageLicense": "Photo Abstract Editorial custom personal/educational/non-commercial terms",
+    "imageLicenseUrl": "https://github.com/ZzzLc0405/photo-abstract-editorial/blob/c7904b70c9829f614b37064d0005149b8a2037dc/LICENSE.md",
+    "credit": "© 2026 ZzzLlc0405 / @AM. · Photo Abstract Editorial",
     "family": "photo-abstraction"
   },
   {
@@ -1305,6 +1361,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "direction": "narrative",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/TanShilongMario/visual-memory-translator-SKILL/blob/62978de54401235adb9823e10e4f258397805bca/outputs/paddleboard-style-preview-6-grid-v1.2.png",
+    "imageLicense": "MIT",
     "credit": "Copyright (c) 2026 Visual Memory Translator contributors",
     "family": "memory-collage"
   },
@@ -1333,6 +1390,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "direction": "narrative",
     "imageCaption": "上游公开样例 · MIT",
     "imageSourceUrl": "https://github.com/Whiplashzeb/photo-to-zine-postcard/blob/0091403bccb219d1be78c5be8552de29a6446f0a/assets/lake-at-dusk.png",
+    "imageLicense": "MIT",
     "credit": "Copyright (c) 2026 Enbozhao",
     "family": "postcard"
   },
@@ -1349,7 +1407,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
       "媒介尝试"
     ],
     "fidelity": "low",
-    "image": null,
+    "image": "assets/community-previews/surreal-library.png",
     "entry": "community/surreal-library/SOURCE.md",
     "installed": true,
     "packageStatus": "bundled",
@@ -1359,7 +1417,12 @@ window.PHOTO_ALCHEMY_CATALOG = [
     ],
     "sourcePath": "photo-alchemy/SKILL.md",
     "direction": "material",
-    "imageSourceUrl": "https://github.com/hbmartin/skills",
+    "imageCaption": "本库生成样例 · 基于 Zeejay0 来源图改编 · 非官方样例",
+    "imageCredit": "原始图像来源：Zeejay0 / Gathered Scenes Zine；Renee 使用 ImageGen 改编。 工作流来源：hbmartin/photo-alchemy。",
+    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/examples/image-distillation/01-time-waves-back/source.jpg",
+    "imageLicense": "Gathered Scenes Zine Personal Non-Commercial License 1.0 (adapted image)",
+    "imageLicenseUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE",
+    "credit": "原始图像来源：Zeejay0 / Gathered Scenes Zine；Renee 使用 ImageGen 改编。 工作流来源：hbmartin/photo-alchemy。",
     "family": "medium-experiment"
   },
   {
@@ -1376,7 +1439,7 @@ window.PHOTO_ALCHEMY_CATALOG = [
       "旅行"
     ],
     "fidelity": "medium",
-    "image": null,
+    "image": "assets/community-previews/jiuerli-sketch.png",
     "entry": "community/jiuerli-sketch/SOURCE.md",
     "installed": true,
     "packageStatus": "bundled",
@@ -1388,7 +1451,12 @@ window.PHOTO_ALCHEMY_CATALOG = [
     ],
     "sourcePath": "jiuerli-visual-director/skills/jiuerli-visual-director/SKILL.md",
     "direction": "narrative",
-    "imageSourceUrl": "https://github.com/18810320381-del/jiuerli-visual-director",
+    "imageCaption": "本库生成样例 · 基于 Zeejay0 来源图改编 · 非官方样例",
+    "imageCredit": "原始图像来源：Zeejay0 / Gathered Scenes Zine；Renee 使用 ImageGen 改编。 工作流：Jiuerli。",
+    "imageSourceUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/examples/image-distillation/01-time-waves-back/source.jpg",
+    "imageLicense": "Gathered Scenes Zine Personal Non-Commercial License 1.0 (adapted image)",
+    "imageLicenseUrl": "https://github.com/Zeejay0/gathered-scenes-zine-skill/blob/eae9a62e20cb570c0adabc94cb189b1c91b7be99/LICENSE",
+    "credit": "原始图像来源：Zeejay0 / Gathered Scenes Zine；Renee 使用 ImageGen 改编。 工作流：Jiuerli。",
     "family": "jiuerli-sketch"
   },
   {
@@ -1701,14 +1769,27 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "fidelity": "medium",
     "direction": "abstract",
     "family": "pixel-stretch",
-    "imageCaption": "上游参考图 · 尚未由本库重跑",
-    "imageCredit": "@威比 Hunter Wei.",
-    "imageSourceUrl": "https://github.com/Vieeeeeee/wibi-style/blob/142025aba65bf962d07d933491b96810e34686d0/assets/thumbs/pixel-stretch.jpg",
-    "imageLicense": "个人非商业使用",
+    "imageCaption": "Renee 生成样例 · 合成静物输入 · 非官方样例",
+    "imageCredit": "示例制作：Renee · Skill：@威比 Hunter Wei.（抖音、小红书同名）",
+    "imageSourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/assets/community-previews/renee-pixel-stretch.png",
+    "imageLicense": "Wibi Personal Non-Commercial License 1.0",
     "manualOnly": false,
     "collectedAt": "2026-09-14",
     "entry": null,
-    "image": null
+    "image": "assets/community-previews/renee-pixel-stretch.png",
+    "imageLicenseUrl": "https://github.com/Vieeeeeee/wibi-style/blob/142025aba65bf962d07d933491b96810e34686d0/skills/pixel-stretch/LICENSE",
+    "publicExample": {
+      "image": "assets/community-previews/renee-pixel-stretch.png",
+      "imageCredit": "示例制作：Renee · Skill：@威比 Hunter Wei.（抖音、小红书同名）",
+      "imageLicense": "Wibi Personal Non-Commercial License 1.0",
+      "imageLicenseUrl": "https://github.com/Vieeeeeee/wibi-style/blob/142025aba65bf962d07d933491b96810e34686d0/skills/pixel-stretch/LICENSE",
+      "imageSourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/assets/community-previews/renee-pixel-stretch.png",
+      "label": "Renee 生成样例",
+      "caption": "Renee 生成样例 · 合成静物输入 · 非官方样例",
+      "sourceImage": "assets/transfer/source-food.png",
+      "sourceCaption": "合成演示底图 · Renee / ImageGen"
+    },
+    "credit": "示例制作：Renee · Skill：@威比 Hunter Wei.（抖音、小红书同名）"
   },
   {
     "id": "iridescent-long-exposure",
@@ -1741,14 +1822,27 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "fidelity": "medium",
     "direction": "abstract",
     "family": "iridescent-motion",
-    "imageCaption": "上游参考图 · 尚未由本库重跑",
-    "imageCredit": "@威比 Hunter Wei.",
-    "imageSourceUrl": "https://github.com/Vieeeeeee/wibi-style/blob/142025aba65bf962d07d933491b96810e34686d0/assets/thumbs/iridescent-long-exposure.jpg",
-    "imageLicense": "个人非商业使用",
+    "imageCaption": "Renee 生成样例 · NASA 公开肖像艺术改编 · 非官方样例",
+    "imageCredit": "示例制作：Renee · 原照：NASA · Skill：@威比 Hunter Wei.（抖音、小红书同名）",
+    "imageSourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/assets/community-previews/renee-iridescent-long-exposure.png",
+    "imageLicense": "Wibi Personal Non-Commercial License 1.0",
     "manualOnly": false,
     "collectedAt": "2026-09-14",
     "entry": null,
-    "image": null
+    "image": "assets/community-previews/renee-iridescent-long-exposure.png",
+    "imageLicenseUrl": "https://github.com/Vieeeeeee/wibi-style/blob/142025aba65bf962d07d933491b96810e34686d0/skills/iridescent-long-exposure/LICENSE",
+    "publicExample": {
+      "image": "assets/community-previews/renee-iridescent-long-exposure.png",
+      "imageCredit": "示例制作：Renee · 原照：NASA · Skill：@威比 Hunter Wei.（抖音、小红书同名）",
+      "imageLicense": "Wibi Personal Non-Commercial License 1.0",
+      "imageLicenseUrl": "https://github.com/Vieeeeeee/wibi-style/blob/142025aba65bf962d07d933491b96810e34686d0/skills/iridescent-long-exposure/LICENSE",
+      "imageSourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/assets/community-previews/renee-iridescent-long-exposure.png",
+      "label": "Renee 生成样例",
+      "caption": "Renee 生成样例 · NASA 公开肖像艺术改编 · 非官方样例",
+      "sourceImage": "assets/community-previews/source-nasa-portrait.png",
+      "sourceCaption": "原照：NASA · Eileen Collins · Public domain"
+    },
+    "credit": "示例制作：Renee · 原照：NASA · Skill：@威比 Hunter Wei.（抖音、小红书同名）"
   },
   {
     "id": "image-as-score",
@@ -1787,14 +1881,16 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "fidelity": "medium",
     "direction": "abstract",
     "family": "graphic-score",
-    "imageCaption": "上游参考图 · 尚未由本库重跑",
-    "imageCredit": "ninggele",
+    "imageCaption": "上游参考作品 · CC BY-NC 4.0 · 未修改",
+    "imageCredit": "ninggele / image-as-score project author · © 2026 image-as-score project author",
     "imageSourceUrl": "https://github.com/ninggele/image-as-score/blob/d2a9a2fe6bf642a749decc2aa0559068a0711cc1/assets/style-reference.png",
     "imageLicense": "CC BY-NC 4.0",
     "manualOnly": false,
     "collectedAt": "2026-09-14",
     "entry": null,
-    "image": null
+    "image": "assets/community-previews/github-image-as-score.png",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "credit": "ninggele / image-as-score project author · © 2026 image-as-score project author"
   },
   {
     "id": "photo-to-organic-knit",

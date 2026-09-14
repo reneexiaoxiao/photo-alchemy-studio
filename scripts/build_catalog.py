@@ -34,7 +34,7 @@ def build(check=False):
         by_id = {p['id']:p for p in previews}
         for item in entries:
             preview = by_id.get(item['id'], {})
-            for key in ('image', 'imageCaption', 'imageCredit', 'imageSourceUrl', 'credit', 'summary'):
+            for key in ('image', 'imageCaption', 'imageCredit', 'imageSourceUrl', 'imageLicense', 'imageLicenseUrl', 'publicExample', 'credit', 'summary'):
                 if preview.get(key):
                     item[key] = preview[key]
     ids = set()
@@ -53,6 +53,13 @@ def build(check=False):
                 path = (ROOT/example[key]).resolve()
                 if not path.is_relative_to(ROOT) or not path.is_file():
                     raise ValueError('Missing or unsafe trial image: '+example[key])
+        if item.get('publicExample'):
+            for key in ('image', 'sourceImage'):
+                value = item['publicExample'].get(key)
+                if value:
+                    path = (ROOT/value).resolve()
+                    if not path.is_relative_to(ROOT) or not path.is_file() or '.local' in path.relative_to(ROOT).parts:
+                        raise ValueError('Missing or unsafe public example: '+value)
         if item.get('installed') and not item.get('entry'):
             raise ValueError('Installed style has no entry: '+item['id'])
     payload=json.dumps(entries,ensure_ascii=False,indent=2)+'\n'
