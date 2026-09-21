@@ -19,6 +19,11 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "entry": "styles/souvenir-constellation.md",
     "installed": true,
     "imageCaption": "方向试作 · 虚构旅行场景",
+    "aliases": [
+      "旅行记忆拼贴海报",
+      "旅行记忆拼贴",
+      "旅行贴纸海报"
+    ],
     "contract": {
       "id": "souvenir-constellation",
       "family": "relational-fragment-collage",
@@ -1176,6 +1181,11 @@ window.PHOTO_ALCHEMY_CATALOG = [
     "imageLicense": "MIT",
     "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
     "inspiration": "参考用户提供的视频视觉截图；未找到可核实的原版 Skill，工作流由 Renee 独立编写。",
+    "aliases": [
+      "剪纸拼贴风海报",
+      "剪纸拼贴海报",
+      "剪纸拼贴"
+    ],
     "contract": {
       "id": "paper-scene-memory",
       "family": "figurative-paper-scene",
@@ -1659,6 +1669,757 @@ window.PHOTO_ALCHEMY_CATALOG = [
       }
     ],
     "family": "source-relation-rebus"
+  },
+  {
+    "id": "xieyi-ink-diptych",
+    "label": "写意墨趣双联",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "上半完整容纳摄影，下半以浓淡干湿笔写出小幅墨趣，留出大面积宣纸。",
+    "best": [
+      "3:4 上下双联",
+      "各占一半",
+      "全图无字"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/september/xieyi-ink-diptych.webp",
+    "entry": "styles/xieyi-ink-diptych.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 用户提示参考",
+    "sourceImage": "assets/transfer/source-plant.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "provided-prompt",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "齐白石",
+      "齐白石方向",
+      "写意水墨",
+      "花鸟草虫",
+      "水墨双联"
+    ],
+    "outputRules": "每张上传照片分别输出一张3:4竖版；上下严格各50%，上半等比完整容纳原照片，下半主体占18%–35%，全图禁止文字、数字、Logo、印章及伪文字。",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "xieyi-ink-diptych",
+      "family": "photo-xieyi-diptych",
+      "direction": "material",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "plant",
+        "motion",
+        "negative-space",
+        "poetic"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "3:4 摄影与写意上下各半",
+        "下半主体18%–35%，四周宣纸留白",
+        "干湿浓淡笔墨与少量设色，全图无字"
+      ],
+      "adaptation": "花叶取生长方向，建筑取骨架，器物取物性；每张输入独立输出，不照搬花鸟符号。",
+      "useWhen": "想把照片的形态与动势变成小幅写意，同时保留上半摄影",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    "features": [
+      "clear-silhouette",
+      "plant",
+      "motion",
+      "negative-space",
+      "poetic"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "植物",
+        "image": "assets/september/xieyi-ink-diptych.webp",
+        "sourceImage": "assets/transfer/source-plant.png",
+        "caption": "单图转译试作",
+        "note": "上半完整竖照以留边容纳；两叶和枝势可辨。摄影区域仍经生成式重绘，不承诺原像素锁定。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "photo-xieyi-diptych"
+  },
+  {
+    "id": "folded-paper-diptych",
+    "label": "折纸造物双联",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "摄影中的轮廓与关系，在下半区变成有折面、嵌套和纸字结构的立体纸艺。",
+    "best": [
+      "3:4 上下双联",
+      "立体折面",
+      "纸字标题"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/september/folded-paper-diptych.webp",
+    "entry": "styles/folded-paper-diptych.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 用户提示参考",
+    "sourceImage": "assets/transfer/source-food.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "provided-prompt",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "立体折纸",
+      "折纸海报",
+      "纸雕拼贴双联",
+      "高级纸艺"
+    ],
+    "outputRules": "每张上传照片分别输出一张3:4竖版，上下严格各50%。上半保护原摄影，下半立体折纸；从主题拟一个简短英文艺术标题并融入纸艺，地点、日期、编号只用用户提供的内容。",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "folded-paper-diptych",
+      "family": "photo-origami-diptych",
+      "direction": "material",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "strong-geometry",
+        "clear-silhouette",
+        "object",
+        "food",
+        "layered-depth",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "3:4 上下各半，每张照片独立",
+        "折面、切边、纸纤维与真实制作阴影",
+        "源色纸组和顺主体轴线的小型纸字"
+      ],
+      "adaptation": "按源图重心、长轴和关系安排折面；用可见主题拟一个英文艺术标题，不编地点编号。",
+      "useWhen": "想对照真实摄影与精致折纸造物，并保留一眼可认的关系",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    "features": [
+      "strong-geometry",
+      "clear-silhouette",
+      "object",
+      "food",
+      "layered-depth",
+      "editorial"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "实物",
+        "image": "assets/september/folded-paper-diptych.webp",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "单图转译试作",
+        "note": "一梨一碟两颗杏仁，折面与纸字可辨；STILL为本次艺术标题，上半有生成式适配。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "photo-origami-diptych"
+  },
+  {
+    "id": "luminous-silhouette",
+    "label": "光窗剪影",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "把主题藏进一处柔亮光窗，用主次虚实的影形表达轮廓与情绪。",
+    "best": [
+      "单幅光影海报",
+      "柔边光区",
+      "剪影留白"
+    ],
+    "fidelity": "medium",
+    "direction": "abstract",
+    "image": "assets/september/luminous-silhouette.webp",
+    "entry": "styles/luminous-silhouette.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 用户提示参考",
+    "sourceImage": "assets/examples/source-courtyard.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "provided-prompt",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "光影海报",
+      "诗意光窗",
+      "被光照亮的剪影意象",
+      "扇形窗"
+    ],
+    "outputRules": "独立单幅3:4海报，不做上下双联。中央只用一个柔边光区，主体影形较清、辅助更虚，三到四色、大留白，默认无字。",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "luminous-silhouette",
+      "family": "luminous-container-silhouette",
+      "direction": "abstract",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "poetic",
+        "negative-space",
+        "strong-shadows",
+        "architecture"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "中央一个柔边发光容器",
+        "主轮廓较清、辅助影形更虚",
+        "三到四色，外围大留白，默认无字"
+      ],
+      "adaptation": "照片模式只取源图关系；仅主题模式才做概念意象。容器随主体方向选，不要求原照已有光窗。",
+      "useWhen": "想让主体成为一束光里的轮廓故事",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    "features": [
+      "clear-silhouette",
+      "poetic",
+      "negative-space",
+      "strong-shadows",
+      "architecture"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "建筑",
+        "image": "assets/september/luminous-silhouette.webp",
+        "sourceImage": "assets/examples/source-courtyard.png",
+        "caption": "单图转译试作",
+        "note": "拱形节奏与橙枝转成柔焦影形；发光拱窗为艺术构造，不代表现场原有光线。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "luminous-container-silhouette"
+  },
+  {
+    "id": "shell-mineral-diptych",
+    "label": "贝壳矿物像素双联",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "下半用天然贝壳与矿物小方块收成紧凑的小画，保留暖白纸上的安静留白。",
+    "best": [
+      "4:5 上下双联",
+      "天然材料方格",
+      "极小英文短句"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/september/shell-mineral-diptych.webp",
+    "entry": "styles/shell-mineral-diptych.md",
+    "installed": true,
+    "imageCaption": "方向试作 · 分区约48%/52%，待精修",
+    "sourceImage": "assets/playful/source-beach-sunset.webp",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "provided-prompt",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "贝壳像素",
+      "矿物像素拼贴",
+      "贝壳矿物",
+      "材料像素"
+    ],
+    "outputRules": "每张上传照片分别输出4:5竖版，上下严格各50%。下半主体约占30%，规则天然方块、核心紧密、边缘少量消隐、不倾斜。仅用用户短句；未给短句时从画面拟2–5词英文艺术短句并在交付时说明。",
+    "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "shell-mineral-diptych",
+      "family": "photo-mineral-grid-diptych",
+      "direction": "material",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "strong-geometry",
+        "clear-silhouette",
+        "strong-color",
+        "collectible",
+        "negative-space"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "4:5 摄影与材料作品上下各半",
+        "核心紧凑、基准不斜，主体约占下半30%",
+        "哑光天然方格、少量边缘缺格与极小英文短句"
+      ],
+      "adaptation": "依实际方向选横向小舞台、竖向小章印或方形小画；密度服务辨识，不整组倾斜散开。",
+      "useWhen": "想把照片收成留白中的天然材料像素小画",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    "features": [
+      "strong-geometry",
+      "clear-silhouette",
+      "strong-color",
+      "collectible",
+      "negative-space"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "人物",
+        "image": "assets/september/shell-mineral-diptych.webp",
+        "sourceImage": "assets/playful/source-beach-sunset.webp",
+        "caption": "方向试作 · 分区比例待精修",
+        "note": "三人和伞转为天然材料方格；分区约48%/52%，尚未达到严格各半。Stay a little longer.为本次艺术题句。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-beach-sunset.webp"
+      }
+    ],
+    "family": "photo-mineral-grid-diptych"
+  },
+  {
+    "id": "neo-geometric",
+    "label": "新几何扁平",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "用圆弧、矩形与梯形重建照片的节奏，让源图结构成为平面几何秩序。",
+    "best": [
+      "几何模块",
+      "平涂色块",
+      "负形节奏"
+    ],
+    "fidelity": "medium",
+    "direction": "abstract",
+    "image": "assets/september/neo-geometric.webp",
+    "entry": "styles/neo-geometric.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 描述下独立实现",
+    "sourceImage": "assets/examples/source-courtyard.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "video-summary",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "新几何主义扁平插画",
+      "新几何主义",
+      "几何扁平"
+    ],
+    "outputRules": "独立单幅3:4几何平面插画；按源图结构选择矩形、圆弧、梯形等模块，3–5源色平涂，默认无字，不加无关装饰符号。",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "neo-geometric",
+      "family": "modular-geometric-flat",
+      "direction": "abstract",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "strong-geometry",
+        "clear-silhouette",
+        "strong-color",
+        "architecture",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "明确几何模块重建轮廓",
+        "对齐、重复和负形形成节奏",
+        "3–5源色平涂，无体积渐层"
+      ],
+      "adaptation": "依据源图主轴与重复结构选模块，不能固定五个形，也不增无关几何符号。",
+      "useWhen": "照片有鲜明结构、重复单元或能几何化的轮廓",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    "features": [
+      "strong-geometry",
+      "clear-silhouette",
+      "strong-color",
+      "architecture",
+      "abstract-friendly"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "建筑",
+        "image": "assets/september/neo-geometric.webp",
+        "sourceImage": "assets/examples/source-courtyard.png",
+        "caption": "单图转译试作",
+        "note": "重复圆弧、池面梯形与橙色锚点保留；部分面仍有轻微色差。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "modular-geometric-flat"
+  },
+  {
+    "id": "editorial-object",
+    "label": "留白实物海报",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "以一个真实实物组合、清楚光影和留白，做出有主次的编辑静物海报。",
+    "best": [
+      "实物质感",
+      "偏心留白",
+      "源色强调"
+    ],
+    "fidelity": "medium",
+    "direction": "narrative",
+    "image": "assets/september/editorial-object.webp",
+    "entry": "styles/editorial-object.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 描述下独立实现",
+    "sourceImage": "assets/transfer/source-food.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "video-summary",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "喜茶风格实物海报",
+      "喜茶风格",
+      "实物海报",
+      "产品实物"
+    ],
+    "outputRules": "独立单幅3:4实物海报，默认无字；保留真实物性与数量，不新增喜茶或其他品牌的Logo、口号、价格、产品或配料。",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "editorial-object",
+      "family": "editorial-tactile-object",
+      "direction": "narrative",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "object",
+        "food",
+        "plant"
+      ],
+      "bestFeatures": [
+        "object",
+        "food",
+        "single-subject",
+        "strong-color",
+        "editorial",
+        "product-geometry"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "object",
+        "food",
+        "single-subject"
+      ],
+      "signature": [
+        "一个主物或紧密组合",
+        "真实物性、清楚光影与非平均留白",
+        "来源强调色，无虚构产品或品牌元素"
+      ],
+      "adaptation": "根据物体的尺度和承托关系选布局，源图没有产品时不凭空增加。",
+      "useWhen": "想把日常实物、食物或纪念物做成克制的静物海报",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    "features": [
+      "object",
+      "food",
+      "single-subject",
+      "strong-color",
+      "editorial",
+      "product-geometry"
+    ],
+    "subjects": [
+      "object",
+      "food",
+      "plant"
+    ],
+    "examples": [
+      {
+        "label": "实物",
+        "image": "assets/september/editorial-object.webp",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "单图转译试作",
+        "note": "真实物性、双物关系与留白；按描述独立实现，非喜茶官方样例，实物仍可能有生成式重绘。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "editorial-tactile-object"
+  },
+  {
+    "id": "handdrawn-flat",
+    "label": "手绘平涂",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "把源图关系画成平面色块，在轮廓和关键细节里留下轻巧的手绘笔触。",
+    "best": [
+      "手绘边缘",
+      "平面色组",
+      "轻松笔触"
+    ],
+    "fidelity": "medium",
+    "direction": "abstract",
+    "image": "assets/september/handdrawn-flat.webp",
+    "entry": "styles/handdrawn-flat.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 描述下独立实现",
+    "sourceImage": "assets/playful/source-tree-street.webp",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "video-summary",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "手绘感扁平插画",
+      "治愈手绘",
+      "LOVART手绘",
+      "手绘扁平"
+    ],
+    "outputRules": "独立单幅手绘平涂插画，默认3:4；保留源图关系，4–6源色、少量干刷或彩铅笔触，无字、无卡通表情、无摄影纹理滤镜。",
+    "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "handdrawn-flat",
+      "family": "handdrawn-flat-gouache",
+      "direction": "abstract",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-color",
+        "plant",
+        "street",
+        "playful",
+        "motion"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "源图关系统领平面布局",
+        "4–6源色与微不规则手绘边缘",
+        "笔触只强调关键处，不给物体添表情"
+      ],
+      "adaptation": "主体大小与画幅随照片结构变化，不固定小幅居中，不强制粉彩或童书比例。",
+      "useWhen": "想保留日常场景的温度，同时简化成清楚的平面插画",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    "features": [
+      "clear-silhouette",
+      "strong-color",
+      "plant",
+      "street",
+      "playful",
+      "motion"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "街景",
+        "image": "assets/september/handdrawn-flat.webp",
+        "sourceImage": "assets/playful/source-tree-street.webp",
+        "caption": "单图转译试作",
+        "note": "街树、道路负形与源色被概括为平涂笔触；低优先级人群和招牌被简化，不是视频博主的原Skill。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-tree-street.webp"
+      }
+    ],
+    "family": "handdrawn-flat-gouache"
   },
   {
     "id": "minimal-zine",

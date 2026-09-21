@@ -18,7 +18,12 @@
     "image": "assets/examples/souvenir-constellation.png",
     "entry": "styles/souvenir-constellation.md",
     "installed": true,
-    "imageCaption": "方向试作 · 虚构旅行场景"
+    "imageCaption": "方向试作 · 虚构旅行场景",
+    "aliases": [
+      "旅行记忆拼贴海报",
+      "旅行记忆拼贴",
+      "旅行贴纸海报"
+    ]
   },
   {
     "id": "city-five-shapes",
@@ -319,7 +324,12 @@
     "imageCredit": "Renee · AI 辅助生成",
     "imageLicense": "MIT",
     "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
-    "inspiration": "参考用户提供的视频视觉截图；未找到可核实的原版 Skill，工作流由 Renee 独立编写。"
+    "inspiration": "参考用户提供的视频视觉截图；未找到可核实的原版 Skill，工作流由 Renee 独立编写。",
+    "aliases": [
+      "剪纸拼贴风海报",
+      "剪纸拼贴海报",
+      "剪纸拼贴"
+    ]
   },
   {
     "id": "fridge-magnet",
@@ -426,6 +436,258 @@
     "collectedAt": "2026-09-15",
     "creationType": "original-workflow",
     "imageCredit": "Renee · AI 辅助生成",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+  },
+  {
+    "id": "xieyi-ink-diptych",
+    "label": "写意墨趣双联",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "上半完整容纳摄影，下半以浓淡干湿笔写出小幅墨趣，留出大面积宣纸。",
+    "best": [
+      "3:4 上下双联",
+      "各占一半",
+      "全图无字"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/september/xieyi-ink-diptych.webp",
+    "entry": "styles/xieyi-ink-diptych.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 用户提示参考",
+    "sourceImage": "assets/transfer/source-plant.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "provided-prompt",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "齐白石",
+      "齐白石方向",
+      "写意水墨",
+      "花鸟草虫",
+      "水墨双联"
+    ],
+    "outputRules": "每张上传照片分别输出一张3:4竖版；上下严格各50%，上半等比完整容纳原照片，下半主体占18%–35%，全图禁止文字、数字、Logo、印章及伪文字。",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+  },
+  {
+    "id": "folded-paper-diptych",
+    "label": "折纸造物双联",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "摄影中的轮廓与关系，在下半区变成有折面、嵌套和纸字结构的立体纸艺。",
+    "best": [
+      "3:4 上下双联",
+      "立体折面",
+      "纸字标题"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/september/folded-paper-diptych.webp",
+    "entry": "styles/folded-paper-diptych.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 用户提示参考",
+    "sourceImage": "assets/transfer/source-food.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "provided-prompt",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "立体折纸",
+      "折纸海报",
+      "纸雕拼贴双联",
+      "高级纸艺"
+    ],
+    "outputRules": "每张上传照片分别输出一张3:4竖版，上下严格各50%。上半保护原摄影，下半立体折纸；从主题拟一个简短英文艺术标题并融入纸艺，地点、日期、编号只用用户提供的内容。",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+  },
+  {
+    "id": "luminous-silhouette",
+    "label": "光窗剪影",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "把主题藏进一处柔亮光窗，用主次虚实的影形表达轮廓与情绪。",
+    "best": [
+      "单幅光影海报",
+      "柔边光区",
+      "剪影留白"
+    ],
+    "fidelity": "medium",
+    "direction": "abstract",
+    "image": "assets/september/luminous-silhouette.webp",
+    "entry": "styles/luminous-silhouette.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 用户提示参考",
+    "sourceImage": "assets/examples/source-courtyard.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "provided-prompt",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "光影海报",
+      "诗意光窗",
+      "被光照亮的剪影意象",
+      "扇形窗"
+    ],
+    "outputRules": "独立单幅3:4海报，不做上下双联。中央只用一个柔边光区，主体影形较清、辅助更虚，三到四色、大留白，默认无字。",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+  },
+  {
+    "id": "shell-mineral-diptych",
+    "label": "贝壳矿物像素双联",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "下半用天然贝壳与矿物小方块收成紧凑的小画，保留暖白纸上的安静留白。",
+    "best": [
+      "4:5 上下双联",
+      "天然材料方格",
+      "极小英文短句"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/september/shell-mineral-diptych.webp",
+    "entry": "styles/shell-mineral-diptych.md",
+    "installed": true,
+    "imageCaption": "方向试作 · 分区约48%/52%，待精修",
+    "sourceImage": "assets/playful/source-beach-sunset.webp",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "provided-prompt",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "贝壳像素",
+      "矿物像素拼贴",
+      "贝壳矿物",
+      "材料像素"
+    ],
+    "outputRules": "每张上传照片分别输出4:5竖版，上下严格各50%。下半主体约占30%，规则天然方块、核心紧密、边缘少量消隐、不倾斜。仅用用户短句；未给短句时从画面拟2–5词英文艺术短句并在交付时说明。",
+    "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+  },
+  {
+    "id": "neo-geometric",
+    "label": "新几何扁平",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "用圆弧、矩形与梯形重建照片的节奏，让源图结构成为平面几何秩序。",
+    "best": [
+      "几何模块",
+      "平涂色块",
+      "负形节奏"
+    ],
+    "fidelity": "medium",
+    "direction": "abstract",
+    "image": "assets/september/neo-geometric.webp",
+    "entry": "styles/neo-geometric.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 描述下独立实现",
+    "sourceImage": "assets/examples/source-courtyard.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "video-summary",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "新几何主义扁平插画",
+      "新几何主义",
+      "几何扁平"
+    ],
+    "outputRules": "独立单幅3:4几何平面插画；按源图结构选择矩形、圆弧、梯形等模块，3–5源色平涂，默认无字，不加无关装饰符号。",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+  },
+  {
+    "id": "editorial-object",
+    "label": "留白实物海报",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "以一个真实实物组合、清楚光影和留白，做出有主次的编辑静物海报。",
+    "best": [
+      "实物质感",
+      "偏心留白",
+      "源色强调"
+    ],
+    "fidelity": "medium",
+    "direction": "narrative",
+    "image": "assets/september/editorial-object.webp",
+    "entry": "styles/editorial-object.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 描述下独立实现",
+    "sourceImage": "assets/transfer/source-food.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "video-summary",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "喜茶风格实物海报",
+      "喜茶风格",
+      "实物海报",
+      "产品实物"
+    ],
+    "outputRules": "独立单幅3:4实物海报，默认无字；保留真实物性与数量，不新增喜茶或其他品牌的Logo、口号、价格、产品或配料。",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+  },
+  {
+    "id": "handdrawn-flat",
+    "label": "手绘平涂",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / 用户提供方向的独立实现",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/september-additions.md",
+    "license": "MIT",
+    "summary": "把源图关系画成平面色块，在轮廓和关键细节里留下轻巧的手绘笔触。",
+    "best": [
+      "手绘边缘",
+      "平面色组",
+      "轻松笔触"
+    ],
+    "fidelity": "medium",
+    "direction": "abstract",
+    "image": "assets/september/handdrawn-flat.webp",
+    "entry": "styles/handdrawn-flat.md",
+    "installed": true,
+    "imageCaption": "照片转译试作 · 描述下独立实现",
+    "sourceImage": "assets/playful/source-tree-street.webp",
+    "collectedAt": "2026-09-21",
+    "creationType": "prompt-reimplementation",
+    "referenceKind": "video-summary",
+    "referenceNote": "用户提供文字方向；原提示词或视频 Skill 作者未核实，未转载原文。",
+    "aliases": [
+      "手绘感扁平插画",
+      "治愈手绘",
+      "LOVART手绘",
+      "手绘扁平"
+    ],
+    "outputRules": "独立单幅手绘平涂插画，默认3:4；保留源图关系，4–6源色、少量干刷或彩铅笔触，无字、无卡通表情、无摄影纹理滤镜。",
+    "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
     "imageLicense": "MIT",
     "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
   }

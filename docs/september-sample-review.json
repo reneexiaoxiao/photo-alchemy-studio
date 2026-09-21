@@ -1,0 +1,82 @@
+{
+  "date": "2026-09-21",
+  "generation": "built-in ImageGen; concrete model version unavailable",
+  "method": "native generation with source references; at most one targeted correction per style; only copying/compression afterward",
+  "coverage": "one input per new style; five source photos in total; not a cross-subject benchmark",
+  "styles": [
+    {
+      "id": "xieyi-ink-diptych",
+      "image": "assets/september/xieyi-ink-diptych.webp",
+      "width": 1086,
+      "height": 1448,
+      "note": "上半完整竖照以留边容纳；两叶和枝势可辨。摄影区域仍经生成式重绘，不承诺原像素锁定。",
+      "status": "direction-example",
+      "targetAspectRatio": "3:4",
+      "aspectRatioExact": true,
+      "boundaryTopPixels": 724,
+      "boundaryMeasurement": "visual inspection plus maximum mean RGB row discontinuity within 43–55% height; transition may span adjacent rows",
+      "topPercent": 50.0,
+      "strictHalfSplit": true
+    },
+    {
+      "id": "folded-paper-diptych",
+      "image": "assets/september/folded-paper-diptych.webp",
+      "width": 1086,
+      "height": 1448,
+      "note": "一梨一碟两颗杏仁，折面与纸字可辨；STILL为本次艺术标题，上半有生成式适配。",
+      "status": "direction-example",
+      "targetAspectRatio": "3:4",
+      "aspectRatioExact": true,
+      "boundaryTopPixels": 724,
+      "boundaryMeasurement": "visual inspection plus maximum mean RGB row discontinuity within 43–55% height; transition may span adjacent rows",
+      "topPercent": 50.0,
+      "strictHalfSplit": true
+    },
+    {
+      "id": "luminous-silhouette",
+      "image": "assets/september/luminous-silhouette.webp",
+      "width": 1086,
+      "height": 1448,
+      "note": "拱形节奏与橙枝转成柔焦影形；发光拱窗为艺术构造，不代表现场原有光线。",
+      "status": "direction-example"
+    },
+    {
+      "id": "shell-mineral-diptych",
+      "image": "assets/september/shell-mineral-diptych.webp",
+      "width": 1122,
+      "height": 1402,
+      "note": "三人和伞转为天然材料方格；分区约48%/52%，尚未达到严格各半。Stay a little longer.为本次艺术题句。",
+      "status": "direction-example-layout-not-exact",
+      "targetAspectRatio": "4:5",
+      "aspectRatioExact": false,
+      "boundaryTopPixels": 671,
+      "boundaryMeasurement": "visual inspection plus maximum mean RGB row discontinuity within 43–55% height; transition may span adjacent rows",
+      "topPercent": 47.86,
+      "strictHalfSplit": false
+    },
+    {
+      "id": "neo-geometric",
+      "image": "assets/september/neo-geometric.webp",
+      "width": 1086,
+      "height": 1448,
+      "note": "重复圆弧、池面梯形与橙色锚点保留；部分面仍有轻微色差。",
+      "status": "direction-example"
+    },
+    {
+      "id": "editorial-object",
+      "image": "assets/september/editorial-object.webp",
+      "width": 1086,
+      "height": 1448,
+      "note": "真实物性、双物关系与留白；按描述独立实现，非喜茶官方样例，实物仍可能有生成式重绘。",
+      "status": "direction-example"
+    },
+    {
+      "id": "handdrawn-flat",
+      "image": "assets/september/handdrawn-flat.webp",
+      "width": 1086,
+      "height": 1448,
+      "note": "街树、道路负形与源色被概括为平涂笔触；低优先级人群和招牌被简化，不是视频博主的原Skill。",
+      "status": "direction-example"
+    }
+  ]
+}

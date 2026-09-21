@@ -27,7 +27,7 @@ A style's matching subject alone is insufficient: light relations need observed 
 
 ## Renee-authored modules
 
-These 18 workflow implementations are written by **Renee**, with AI assistance: 15 original implementations and 3 independent reimplementations informed by user-provided screenshots. “Original” describes this project’s implementation, not the invention of an artistic medium or visual tradition. The screenshot-informed workflows are listed separately; they are not the screenshot creators’ original Skills and do not establish authorship of the reference direction.
+These 25 workflow implementations are written by **Renee**, with AI assistance: 15 original implementations, 3 independent reimplementations informed by user-provided screenshots, and 7 informed by user-provided prompt directions or video summaries. “Original” describes this project’s implementation, not the invention of an artistic medium or visual tradition. The screenshot-informed workflows are listed separately; they are not the screenshot creators’ original Skills and do not establish authorship of the reference direction.
 
 | ID | Workflow | Source condition |
 |---|---|---|
@@ -63,3 +63,18 @@ For the seven additions, choose the mechanism before the material. A magnet is o
 Community sources retain their original contracts, authors and licenses in `catalog.json` and `THIRD_PARTY.md`. Sources marked link-only are not bundled. Public image permissions and workflow redistribution permissions are separate.
 
 The gallery contains actual input-to-output transfer studies for two styles over three synthetic photo subjects. See `docs/transfer-review.md` for what worked and what remains incomplete. The remaining examples do not establish cross-subject reliability.
+
+
+## User-supplied directions · 2026-09-21
+
+Read the selected file; these are Renee-authored independent implementations, not verified copies of the described source Skills. The user's prompt author and video authors have not been established. Attribution in the gallery is Renee 参考实现. See [provenance and all nine direction mappings](docs/september-additions.md).
+
+- `xieyi-ink-diptych`: 写意墨趣双联 / 齐白石方向 — 3:4, exact equal halves, complete photograph above, small ink painting below, no writing anywhere.
+- `folded-paper-diptych`: 折纸造物双联 — 3:4, equal halves, source above folded paper sculpture; a source-derived English art title may become paper lettering.
+- `luminous-silhouette`: 光窗剪影 — single poetic poster with one soft light container and projected silhouettes; accepts a photo or an explicitly conceptual theme.
+- `shell-mineral-diptych`: 贝壳矿物像素双联 — 4:5 equal halves, compact aligned mineral-square work on paper below, one tiny supplied or source-derived English art phrase.
+- `neo-geometric`: 新几何扁平 — repeatable geometric modules and flat source colors, no fixed five-shape limit.
+- `editorial-object`: 留白实物海报 / 喜茶风格实物海报 — source-grounded still life; no invented brand assets or implied official affiliation.
+- `handdrawn-flat`: 手绘平涂 — flat source-color masses and selective hand-drawn edges, not a claimed copy of the video creator's LOVART workflow.
+
+旅行记忆拼贴海报 routes to `souvenir-constellation`; 剪纸拼贴风海报 routes to `paper-scene-memory`. These are existing styles, not two additional families. All three diptychs read [photo-diptychs](docs/photo-diptychs.md); several uploads mean separate outputs, not a single combined sheet. Their explicit text policy overrides the shared no-new-lettering default only for non-factual art titles/phrases. Never fabricate dates, places or serial numbers. Whole-image generation does not prove pixel-locked preservation. Sample status, ratios and limitations are recorded separately from workflow constraints.

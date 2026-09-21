@@ -746,6 +746,288 @@
       "adaptation": "按输入里的包围、承托、穿行或全貌与局部关系选择位置、尺度与遮挡。",
       "useWhen": "想让可见物象之间的一个关系变成简短可读的视觉趣味",
       "avoidWhen": "无法提取足够的来源线索，或要求精确身份、原字和原像素时"
+    },
+    {
+      "id": "xieyi-ink-diptych",
+      "family": "photo-xieyi-diptych",
+      "direction": "material",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "plant",
+        "motion",
+        "negative-space",
+        "poetic"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "3:4 摄影与写意上下各半",
+        "下半主体18%–35%，四周宣纸留白",
+        "干湿浓淡笔墨与少量设色，全图无字"
+      ],
+      "adaptation": "花叶取生长方向，建筑取骨架，器物取物性；每张输入独立输出，不照搬花鸟符号。",
+      "useWhen": "想把照片的形态与动势变成小幅写意，同时保留上半摄影",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    {
+      "id": "folded-paper-diptych",
+      "family": "photo-origami-diptych",
+      "direction": "material",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "strong-geometry",
+        "clear-silhouette",
+        "object",
+        "food",
+        "layered-depth",
+        "editorial"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "3:4 上下各半，每张照片独立",
+        "折面、切边、纸纤维与真实制作阴影",
+        "源色纸组和顺主体轴线的小型纸字"
+      ],
+      "adaptation": "按源图重心、长轴和关系安排折面；用可见主题拟一个英文艺术标题，不编地点编号。",
+      "useWhen": "想对照真实摄影与精致折纸造物，并保留一眼可认的关系",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    {
+      "id": "luminous-silhouette",
+      "family": "luminous-container-silhouette",
+      "direction": "abstract",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "poetic",
+        "negative-space",
+        "strong-shadows",
+        "architecture"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "中央一个柔边发光容器",
+        "主轮廓较清、辅助影形更虚",
+        "三到四色，外围大留白，默认无字"
+      ],
+      "adaptation": "照片模式只取源图关系；仅主题模式才做概念意象。容器随主体方向选，不要求原照已有光窗。",
+      "useWhen": "想让主体成为一束光里的轮廓故事",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    {
+      "id": "shell-mineral-diptych",
+      "family": "photo-mineral-grid-diptych",
+      "direction": "material",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "strong-geometry",
+        "clear-silhouette",
+        "strong-color",
+        "collectible",
+        "negative-space"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "4:5 摄影与材料作品上下各半",
+        "核心紧凑、基准不斜，主体约占下半30%",
+        "哑光天然方格、少量边缘缺格与极小英文短句"
+      ],
+      "adaptation": "依实际方向选横向小舞台、竖向小章印或方形小画；密度服务辨识，不整组倾斜散开。",
+      "useWhen": "想把照片收成留白中的天然材料像素小画",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    {
+      "id": "neo-geometric",
+      "family": "modular-geometric-flat",
+      "direction": "abstract",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "strong-geometry",
+        "clear-silhouette",
+        "strong-color",
+        "architecture",
+        "abstract-friendly"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "明确几何模块重建轮廓",
+        "对齐、重复和负形形成节奏",
+        "3–5源色平涂，无体积渐层"
+      ],
+      "adaptation": "依据源图主轴与重复结构选模块，不能固定五个形，也不增无关几何符号。",
+      "useWhen": "照片有鲜明结构、重复单元或能几何化的轮廓",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    {
+      "id": "editorial-object",
+      "family": "editorial-tactile-object",
+      "direction": "narrative",
+      "photoMode": "hybrid",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "object",
+        "food",
+        "plant"
+      ],
+      "bestFeatures": [
+        "object",
+        "food",
+        "single-subject",
+        "strong-color",
+        "editorial",
+        "product-geometry"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "object",
+        "food",
+        "single-subject"
+      ],
+      "signature": [
+        "一个主物或紧密组合",
+        "真实物性、清楚光影与非平均留白",
+        "来源强调色，无虚构产品或品牌元素"
+      ],
+      "adaptation": "根据物体的尺度和承托关系选布局，源图没有产品时不凭空增加。",
+      "useWhen": "想把日常实物、食物或纪念物做成克制的静物海报",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    {
+      "id": "handdrawn-flat",
+      "family": "handdrawn-flat-gouache",
+      "direction": "abstract",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-color",
+        "plant",
+        "street",
+        "playful",
+        "motion"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "源图关系统领平面布局",
+        "4–6源色与微不规则手绘边缘",
+        "笔触只强调关键处，不给物体添表情"
+      ],
+      "adaptation": "主体大小与画幅随照片结构变化，不固定小幅居中，不强制粉彩或童书比例。",
+      "useWhen": "想保留日常场景的温度，同时简化成清楚的平面插画",
+      "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
     }
   ]
 }

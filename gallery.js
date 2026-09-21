@@ -10,15 +10,16 @@ function button(text, fn, cls='') { const el=textNode('button',text,cls); el.typ
 function safeLink(href, hosts=['github.com']) { try { const u=new URL(href,location.href); return u.protocol==='https:' && hosts.includes(u.hostname) ? u.href : null; } catch {return null;} }
 function sourceQuery(s){const safe=safeLink(s.sourceUrl||'');if(safe){const parts=new URL(safe).pathname.split('/').filter(Boolean);if(parts.length>=2)return 'https://github.com/'+parts.slice(0,2).join('/');}return s.source||'';}
 function link(text, href, hosts) { const el=textNode('a',text); const safe=safeLink(href,hosts); if(safe){el.href=safe;el.target='_blank';el.rel='noopener noreferrer';} return el; }
-function originalLabel(s){return s.creationType==='reference-reimplementation'?'Renee · 参考再设计':'Renee · 原创工作流';}
-function workflowCredit(s){return s.origin==='original'?(s.creationType==='reference-reimplementation'?'工作流编写：Renee · 参考视觉独立实现':'工作流设计：Renee · AI 辅助'):s.imageCredit||s.credit||s.source;}
+function originalLabel(s){return s.creationType==='prompt-reimplementation'?'Renee · 参考方向实现':s.creationType==='reference-reimplementation'?'Renee · 参考再设计':'Renee · 原创工作流';}
+function originalBadge(s){return s.creationType==='prompt-reimplementation'?'Renee 参考实现':s.creationType==='reference-reimplementation'?'Renee 再设计':'Renee 原创';}
+function workflowCredit(s){return s.origin==='original'?(s.creationType==='prompt-reimplementation'?'工作流编写：Renee · 参考用户提供的文字方向':s.creationType==='reference-reimplementation'?'工作流编写：Renee · 参考视觉独立实现':'工作流设计：Renee · AI 辅助'):s.imageCredit||s.credit||s.source;}
 function imageRights(s){const el=textNode('p',s.imageLicense?'图片：'+s.imageLicense:'','image-rights');if(safeLink(s.imageLicenseUrl||'',['github.com','creativecommons.org']))el.append(document.createTextNode(' · '),link('许可原文 ↗',s.imageLicenseUrl,['github.com','creativecommons.org']));return el;}
 function notice(text) { $('toast').textContent=text; $('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{$('toast').hidden=true;},3000); }
 async function copy(text) {try {await navigator.clipboard.writeText(text);notice('指令已复制');} catch { $('copy-text').value=text;$('copy-dialog').showModal();$('copy-text').focus();$('copy-text').select(); } }
 function promptFor(s) {
   const extra=s.manualOnly?'只手动使用这个风格，只生成一张，保留原来源的调用约定。':'';
   const source=s.origin!=='original'&&s.entry?`读取风格入口 ${s.entry}。`:'';
-  return `用 $photo-alchemy 的 ${s.id} 处理我附上的照片。${source}先读取这套风格的固定规则，再按实际照片的主体、形态、光影和密度选择构图分支。保留辨识线索、关键数量与关系；配色来自原照，不照搬图鉴的对象、地点或版式。用 ${s.label} 加工为适合分享的作品。未提供的地点、日期和文字不要编造。${extra}`;
+  return `用 $photo-alchemy 的 ${s.id} 处理我附上的照片。${source}先读取这套风格的固定规则，再按实际照片的主体、形态、光影和密度选择构图分支。保留辨识线索、关键数量与关系；配色来自原照，不照搬图鉴的对象、地点或版式。用 ${s.label} 加工为适合分享的作品。未提供的地点、日期和事实文字不要编造。${s.outputRules||'默认不添加未经提供的文字。'}${extra}`;
 }
 function showImage(s) {
  const first=s.publicExample?.image===s.image ? s.publicExample : {label:'图鉴参考',image:s.image,sourceImage:s.sourceImage,caption:s.imageCaption};
@@ -44,14 +45,14 @@ function showImage(s) {
 function subjectsFor(s){const aliases={'建筑':'architecture','风景':'landscape','街景':'street','街巷':'street','物件':'object','食物':'food','美食':'food','植物':'plant','宠物':'pet','人物':'person'};return s.subjects?.length?s.subjects:(s.best||[]).map(x=>aliases[x]||x);}
 function visualFamily(s){return s.contract?.family||baseStyles.find(b=>b.id===s.id)?.family||s.family||s.id;}
 function resetPhotoFilters(){subject='all';preservation='all';origin='all';availability='all';sortBy='newest';for(const id of ['subject','preservation','origin','availability'])$(id).value='all';$('sort').value='newest';}
-function matches(s) { const query=$('search').value.trim().toLowerCase(); return (!query || [s.id,s.label,s.summary,s.source,...(s.best||[]),...(s.destinations||[])].join(' ').toLowerCase().includes(query)) && (filter==='all'||s.direction===filter) && (origin==='all'||s.origin===origin) && (availability==='all'||(availability==='installed'?Boolean(s.installed):!s.installed)) && (subject==='all'||subjectsFor(s).includes(subject)) && (preservation!=='keep'||(s.origin!=='original'&&s.fidelity==='high')) && (preservation!=='redraw'||s.origin==='original'||s.fidelity!=='high') && (!chosen||chosen.has(s.id)); }
+function matches(s) { const query=$('search').value.trim().toLowerCase(); return (!query || [s.id,s.label,s.summary,s.source,...(s.aliases||[]),...(s.best||[]),...(s.destinations||[])].join(' ').toLowerCase().includes(query)) && (filter==='all'||s.direction===filter) && (origin==='all'||s.origin===origin) && (availability==='all'||(availability==='installed'?Boolean(s.installed):!s.installed)) && (subject==='all'||subjectsFor(s).includes(subject)) && (preservation!=='keep'||(s.origin!=='original'&&s.fidelity==='high')) && (preservation!=='redraw'||s.origin==='original'||s.fidelity!=='high') && (!chosen||chosen.has(s.id)); }
 function compareStyles(a,b){if(sortBy==='name')return a.label.localeCompare(b.label,'zh-CN');const date=s=>(s.collectedAt||s.installedAt||'').slice(0,10);return date(b).localeCompare(date(a));}
 function render() {
  $('grid').replaceChildren();$('source-list').replaceChildren();const visible=styles.filter(matches).sort(compareStyles);
  $('count').textContent=`${visible.length} / ${styles.length} 种风格`;$('empty').hidden=visible.length>0;
  for(const s of visible){
   const card=document.createElement('article');card.className=s.image?'card':'source-row';card.dataset.id=s.id;
-  if(s.image){const art=button('',()=>showImage(s),'art-button');const img=document.createElement('img');img.src=s.image;img.alt=s.label+'演示样张';img.loading='lazy';art.append(img,textNode('span',s.origin==='original'?(s.creationType==='reference-reimplementation'?'Renee 再设计':'Renee 原创'):'社区参考','image-label'),textNode('span',s.examples?.length>1?`${s.examples.length} 类输入对照 ↗`:s.sourceImage?'原图对照 ↗':'查看大图 ↗','image-action'));card.append(art);}
+  if(s.image){const art=button('',()=>showImage(s),'art-button');const img=document.createElement('img');img.src=s.image;img.alt=s.label+'演示样张';img.loading='lazy';art.append(img,textNode('span',s.origin==='original'?originalBadge(s):'社区参考','image-label'),textNode('span',s.examples?.length>1?`${s.examples.length} 类输入对照 ↗`:s.sourceImage?'原图对照 ↗':'查看大图 ↗','image-action'));card.append(art);}
   const body=document.createElement('div');body.className=s.image?'card-body':'';
   const meta=textNode('div','','meta');meta.append(textNode('span',s.manualOnly?'仅手动点选':s.origin==='original'?originalLabel(s):'社区来源'),textNode('span',s.license||'许可待核实'));
   body.append(meta,textNode('h3',s.label),textNode('div',s.id,'style-id'),textNode('p',s.summary||s.description||'', 'desc'));

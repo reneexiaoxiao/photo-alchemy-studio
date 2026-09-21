@@ -67,3 +67,8 @@ Full retained license texts and notices are indexed in [image credits](assets/co
 ## 2026-09-15 playful workflows
 
 Seven Renee-authored modules and nine new generated outputs are documented in [the playful-example provenance](docs/playful-examples.md). Three modules independently reinterpret user-supplied visual references; the screenshots and unverified original Skill text are not distributed. Three additional Albert input photographs retain the pinned MIT license already included in this repository. The other inputs are this project’s synthetic test photos. All earlier community previews and their individual licenses remain present.
+
+
+## User-provided prompt directions · 2026-09-21
+
+Seven added modules are independently implemented by Renee from four user-provided prompt directions and three video-style descriptions. No verified upstream Skill, author, license or LOVART project was provided; the original prompt text is not redistributed in this repository. Gallery badges say Renee 参考实现. Existing travel-memory and paper-collage methods receive aliases rather than duplicate upstream claims. The project's MIT license applies only to its newly written implementation, not to source prompts, brand identities or third-party works. See [the mapping and image sources](docs/september-additions.md).
