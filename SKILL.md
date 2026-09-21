@@ -27,7 +27,7 @@ A style's matching subject alone is insufficient: light relations need observed 
 
 ## Renee-authored modules
 
-These 25 workflow implementations are written by **Renee**, with AI assistance: 15 original implementations, 3 independent reimplementations informed by user-provided screenshots, and 7 informed by user-provided prompt directions or video summaries. “Original” describes this project’s implementation, not the invention of an artistic medium or visual tradition. The screenshot-informed workflows are listed separately; they are not the screenshot creators’ original Skills and do not establish authorship of the reference direction.
+These 31 workflow implementations are written by **Renee**, with AI assistance: 21 original implementations, 3 independent reimplementations informed by user-provided screenshots, and 7 informed by user-provided prompt directions or video summaries. “Original” describes this project’s implementation, not the invention of an artistic medium or visual tradition. The screenshot-informed workflows are listed separately; they are not the screenshot creators’ original Skills and do not establish authorship of the reference direction.
 
 | ID | Workflow | Source condition |
 |---|---|---|
@@ -78,3 +78,16 @@ Read the selected file; these are Renee-authored independent implementations, no
 - `handdrawn-flat`: 手绘平涂 — flat source-color masses and selective hand-drawn edges, not a claimed copy of the video creator's LOVART workflow.
 
 旅行记忆拼贴海报 routes to `souvenir-constellation`; 剪纸拼贴风海报 routes to `paper-scene-memory`. These are existing styles, not two additional families. All three diptychs read [photo-diptychs](docs/photo-diptychs.md); several uploads mean separate outputs, not a single combined sheet. Their explicit text policy overrides the shared no-new-lettering default only for non-factual art titles/phrases. Never fabricate dates, places or serial numbers. Whole-image generation does not prove pixel-locked preservation. Sample status, ratios and limitations are recorded separately from workflow constraints.
+
+## Luminous ceramic and magnet directions · 2026-09-21
+
+Six additional original workflow implementations by Renee, AI-assisted. Read only the selected module; see [examples and limits](docs/luminous-keepsakes.md). Existing mosaic and magnet entries remain available.
+
+- [glazed-ceramic-mosaic](styles/glazed-ceramic-mosaic.md): 规整小瓷砖、通透积釉与细凹缝；不是贝壳矿物方格或不透明石片。
+- [gold-enamel-magnet](styles/gold-enamel-magnet.md): 细金属线按源图结构分区，明亮珐琅色面。
+- [translucent-resin-magnet](styles/translucent-resin-magnet.md): 背景透过局部带色树脂，厚边微折射。
+- [liquid-sand-magnet](styles/liquid-sand-magnet.md): 固定主体、透明浅腔、少量底部沉沙。
+- [nacre-inlay-magnet](styles/nacre-inlay-magnet.md): 随形大贝片与方向性层理、局部虹彩。
+- [openwork-shadow-magnet](styles/openwork-shadow-magnet.md): 连通薄金属、真正镂空和对应短投影。
+
+The five magnets use [shared magnet rules](styles/fridge-magnet.md), with the chosen variant overriding material selection. They share one recommendation family so generic random choices remain diverse; explicit comparisons may generate each requested magnet variant independently from the actual input. Ceramic glazes, translucent resin and open holes are different optical mechanisms. A static sand image illustrates a look, not verified motion or manufacturing. Do not claim broad transfer validation from one input trial per new method.

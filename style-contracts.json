@@ -1028,6 +1028,253 @@
       "adaptation": "主体大小与画幅随照片结构变化，不固定小幅居中，不强制粉彩或童书比例。",
       "useWhen": "想保留日常场景的温度，同时简化成清楚的平面插画",
       "avoidWhen": "要求精确身份、真实文字或原像素绝对保留时"
+    },
+    {
+      "id": "glazed-ceramic-mosaic",
+      "family": "directional-tessellation",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "strong-color",
+        "directional-lines"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "主形由规整小瓷砖和少量轮廓切砖组成",
+        "淡陶胎上的有色半透明积釉、微圆边与选择性高光",
+        "细凹缝参与造形，完整画面不是照片叠网格"
+      ],
+      "adaptation": "砖形、大小、源色和切角随轮廓与密度变化；釉层通透但陶胎不透视背景。",
+      "useWhen": "想把照片变成明亮润泽、砖块感清楚的瓷砖镶嵌画",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    {
+      "id": "gold-enamel-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "strong-color",
+        "collectible",
+        "object"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "一枚随来源轮廓成形的连通浅浮雕",
+        "细金属外缘与内部结构分区",
+        "珐琅源色面略凸、有色层和小高光，不封入照片"
+      ],
+      "adaptation": "外形、金线走势与填色来自实际轮廓和源色，不固定徽章外框、拱门或果实。",
+      "useWhen": "想要细金属边与明亮珐琅质感的照片纪念磁贴",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    {
+      "id": "translucent-resin-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "backlight",
+        "plant",
+        "object",
+        "collectible"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "源色半透明主体与局部清透连接",
+        "背景能透过部分材料被看见，厚边轻微折射与积色",
+        "一枚连通小物，局部承托不遮成整块不透明背板"
+      ],
+      "adaptation": "浓淡、厚薄与透明区随源图主形和空隙变化，不能只加表面高光或统一蓝色水晶。",
+      "useWhen": "想保留轻盈轮廓，让冰箱贴有透光、清透和微折射的层次",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    {
+      "id": "liquid-sand-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "negative-space",
+        "clear-silhouette",
+        "landscape",
+        "collectible",
+        "poetic"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "negative-space",
+        "clear-silhouette",
+        "landscape"
+      ],
+      "signature": [
+        "固定的源图形态与连续封边的透明浅腔",
+        "少量细沙在下方沉积，落向一致、辨识区保持干净",
+        "清透区、侧壁与短接触阴影使夹层可辨"
+      ],
+      "adaptation": "腔体外缘、颗粒颜色和沉积位置随原图轮廓与负形变化；无水景也不凭空补海景。",
+      "useWhen": "原图有可辨主体和空隙，想做带细沙流动感的小纪念物",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    {
+      "id": "nacre-inlay-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-color",
+        "object",
+        "food",
+        "collectible"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "少量较大随形贝片构成一枚异形磁贴",
+        "层理顺主形长轴或转面，珠光只在部分角度出现",
+        "薄侧壁与细接缝，不是方格像素或满屏彩虹"
+      ],
+      "adaptation": "贝片分区、纹理方向与柔亮色组追随原照片；需要主色时可染色，不假称天然原色。",
+      "useWhen": "想让物件、植物或清楚场景变成有珠光和细层理的收藏小物",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    {
+      "id": "openwork-shadow-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "directional-lines",
+        "negative-space",
+        "collectible"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "clear-silhouette",
+        "strong-geometry",
+        "directional-lines"
+      ],
+      "signature": [
+        "主体骨架与来源空隙构成连通薄金属",
+        "底面从真正的镂空处可见，不填玻璃或整张背板",
+        "轻微离面产生对应的短投影，实形与影形互相呼应"
+      ],
+      "adaptation": "开孔、桥接和少量着色由轮廓、数量和负形决定；可删低优先级背景，但不新增事实。",
+      "useWhen": "照片有清楚轮廓或开口，想以金属实形、空洞和投影重新提炼",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
     }
   ]
 }

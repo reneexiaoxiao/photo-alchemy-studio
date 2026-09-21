@@ -1,5 +1,647 @@
 [
   {
+    "id": "glazed-ceramic-mosaic",
+    "label": "通透釉面马赛克",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/luminous-keepsakes.md",
+    "license": "MIT",
+    "summary": "把原照重建成一幅润泽的小瓷砖镶嵌画，细缝、微圆砖边和积釉色层一起发光。",
+    "best": [
+      "小瓷砖",
+      "通透釉层",
+      "细缝"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/keepsakes/glazed-ceramic-mosaic.webp",
+    "entry": "styles/glazed-ceramic-mosaic.md",
+    "installed": true,
+    "sourceImage": "assets/examples/source-coast.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "original-workflow",
+    "aliases": [
+      "釉面马赛克",
+      "瓷砖马赛克",
+      "通透瓷砖",
+      "亮釉瓷砖",
+      "润泽陶瓷马赛克"
+    ],
+    "outputRules": "整张转为同一平面的釉面瓷砖镶嵌，默认保留源图比例；用源色、细灰缝、积釉与少量高光，避免立体实景贴瓷砖和玻璃窗。无字，不加景物。",
+    "imageCaption": "单图转译试作 · Renee 原创工作流",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "glazed-ceramic-mosaic",
+      "family": "directional-tessellation",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "strong-color",
+        "directional-lines"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "主形由规整小瓷砖和少量轮廓切砖组成",
+        "淡陶胎上的有色半透明积釉、微圆边与选择性高光",
+        "细凹缝参与造形，完整画面不是照片叠网格"
+      ],
+      "adaptation": "砖形、大小、源色和切角随轮廓与密度变化；釉层通透但陶胎不透视背景。",
+      "useWhen": "想把照片变成明亮润泽、砖块感清楚的瓷砖镶嵌画",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    "features": [
+      "clear-silhouette",
+      "strong-geometry",
+      "strong-color",
+      "directional-lines"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "海岸",
+        "image": "assets/keepsakes/glazed-ceramic-mosaic.webp",
+        "sourceImage": "assets/examples/source-coast.png",
+        "caption": "单图转译试作",
+        "note": "蓝门、三盆花与海岸关系保留；釉面和砖块感明显，门环与台阶仍带浅浮雕倾向。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "directional-tessellation"
+  },
+  {
+    "id": "gold-enamel-magnet",
+    "label": "金线珐琅冰箱贴",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/luminous-keepsakes.md",
+    "license": "MIT",
+    "summary": "细金线沿照片的关键结构分区，明亮珐琅色块组成一枚异形小纪念物。",
+    "best": [
+      "细金属边",
+      "珐琅色面",
+      "冰箱贴"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/keepsakes/gold-enamel-magnet.webp",
+    "entry": "styles/gold-enamel-magnet.md",
+    "installed": true,
+    "sourceImage": "assets/examples/source-courtyard.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "original-workflow",
+    "aliases": [
+      "金线边冰箱贴",
+      "金属冰箱贴",
+      "金边珐琅",
+      "珐琅磁贴",
+      "细金线"
+    ],
+    "outputRules": "只做一枚金线珐琅磁贴，默认无字。细金线按源图结构分区，珐琅重新概括源色；不是摄影打印片或胸针，保留可见侧壁与附着阴影。",
+    "imageCaption": "单图转译试作 · Renee 原创工作流",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "gold-enamel-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "strong-color",
+        "collectible",
+        "object"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "一枚随来源轮廓成形的连通浅浮雕",
+        "细金属外缘与内部结构分区",
+        "珐琅源色面略凸、有色层和小高光，不封入照片"
+      ],
+      "adaptation": "外形、金线走势与填色来自实际轮廓和源色，不固定徽章外框、拱门或果实。",
+      "useWhen": "想要细金属边与明亮珐琅质感的照片纪念磁贴",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    "features": [
+      "clear-silhouette",
+      "strong-geometry",
+      "strong-color",
+      "collectible",
+      "object"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "建筑",
+        "image": "assets/keepsakes/gold-enamel-magnet.webp",
+        "sourceImage": "assets/examples/source-courtyard.png",
+        "caption": "单图转译试作",
+        "note": "三道拱、三只橙子与斜向池面保留；水面已归并为珐琅色块，细金线成为结构分区。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "contour-relief-magnet"
+  },
+  {
+    "id": "translucent-resin-magnet",
+    "label": "透光树脂冰箱贴",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/luminous-keepsakes.md",
+    "license": "MIT",
+    "summary": "让源图形态化成半透明的彩色小物，底面从清透区显露，厚边留下折射与淡淡色影。",
+    "best": [
+      "半透明树脂",
+      "厚边折射",
+      "冰箱贴"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/keepsakes/translucent-resin-magnet.webp",
+    "entry": "styles/translucent-resin-magnet.md",
+    "installed": true,
+    "sourceImage": "assets/transfer/source-plant.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "original-workflow",
+    "aliases": [
+      "半透明冰箱贴",
+      "透明冰箱贴",
+      "通透冰箱贴",
+      "树脂磁贴",
+      "水晶感冰箱贴"
+    ],
+    "outputRules": "只做一枚源色半透明树脂磁贴，默认无字。底面须透过局部树脂可见，厚边积色与轻折射；保留形态和连接，不封入照片、不加气泡花朵或满背板。",
+    "imageCaption": "单图转译试作 · Renee 原创工作流",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "translucent-resin-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "backlight",
+        "plant",
+        "object",
+        "collectible"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "源色半透明主体与局部清透连接",
+        "背景能透过部分材料被看见，厚边轻微折射与积色",
+        "一枚连通小物，局部承托不遮成整块不透明背板"
+      ],
+      "adaptation": "浓淡、厚薄与透明区随源图主形和空隙变化，不能只加表面高光或统一蓝色水晶。",
+      "useWhen": "想保留轻盈轮廓，让冰箱贴有透光、清透和微折射的层次",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    "features": [
+      "clear-silhouette",
+      "backlight",
+      "plant",
+      "object",
+      "collectible"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "植物",
+        "image": "assets/keepsakes/translucent-resin-magnet.webp",
+        "sourceImage": "assets/transfer/source-plant.png",
+        "caption": "单图转译试作",
+        "note": "两片银杏与斜枝关系保留，边缘折射、厚处积色与淡色影可辨。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "contour-relief-magnet"
+  },
+  {
+    "id": "liquid-sand-magnet",
+    "label": "流沙夹层冰箱贴",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/luminous-keepsakes.md",
+    "license": "MIT",
+    "summary": "把照片关系固定在透明浅腔里，让少量细沙在下缘沉积，留住一个将停未停的瞬间。",
+    "best": [
+      "透明封边",
+      "细沙沉积",
+      "冰箱贴"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/keepsakes/liquid-sand-magnet.webp",
+    "entry": "styles/liquid-sand-magnet.md",
+    "installed": true,
+    "sourceImage": "assets/playful/source-beach-sunset.webp",
+    "collectedAt": "2026-09-21",
+    "creationType": "original-workflow",
+    "aliases": [
+      "流沙冰箱贴",
+      "流沙磁贴",
+      "摇摇冰箱贴",
+      "夹层磁贴",
+      "细沙纪念物"
+    ],
+    "outputRules": "一枚透明封边流沙夹层磁贴，主体固定，少量细沙顺重力在底部沉积，默认无字。不以粒子遮挡身份锚点、不补新物体；静态图只展示流沙效果，不声称已验证可动结构。",
+    "imageCaption": "单图转译试作 · Renee 原创工作流",
+    "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "liquid-sand-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "negative-space",
+        "clear-silhouette",
+        "landscape",
+        "collectible",
+        "poetic"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "negative-space",
+        "clear-silhouette",
+        "landscape"
+      ],
+      "signature": [
+        "固定的源图形态与连续封边的透明浅腔",
+        "少量细沙在下方沉积，落向一致、辨识区保持干净",
+        "清透区、侧壁与短接触阴影使夹层可辨"
+      ],
+      "adaptation": "腔体外缘、颗粒颜色和沉积位置随原图轮廓与负形变化；无水景也不凭空补海景。",
+      "useWhen": "原图有可辨主体和空隙，想做带细沙流动感的小纪念物",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    "features": [
+      "negative-space",
+      "clear-silhouette",
+      "landscape",
+      "collectible",
+      "poetic"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "海边人物",
+        "image": "assets/keepsakes/liquid-sand-magnet.webp",
+        "sourceImage": "assets/playful/source-beach-sunset.webp",
+        "caption": "单图转译试作",
+        "note": "三个人物关系、伞与低日保留，透明封边和底部细沙可辨；静态概念，不代表实物动态验证。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-beach-sunset.webp"
+      }
+    ],
+    "family": "contour-relief-magnet"
+  },
+  {
+    "id": "nacre-inlay-magnet",
+    "label": "珠母贝镶嵌冰箱贴",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/luminous-keepsakes.md",
+    "license": "MIT",
+    "summary": "随形贝片重组原照的轮廓和色彩，细腻层理与局部虹彩让小物在转面处发亮。",
+    "best": [
+      "随形贝片",
+      "局部珠光",
+      "冰箱贴"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/keepsakes/nacre-inlay-magnet.webp",
+    "entry": "styles/nacre-inlay-magnet.md",
+    "installed": true,
+    "sourceImage": "assets/transfer/source-food.png",
+    "collectedAt": "2026-09-21",
+    "creationType": "original-workflow",
+    "aliases": [
+      "贝壳冰箱贴",
+      "珠母贝磁贴",
+      "螺钿冰箱贴",
+      "虹彩贝片"
+    ],
+    "outputRules": "一枚连通珠母贝镶嵌磁贴，以较大随形贝片和局部虹彩表达源图，默认无字。保留源色关系、数量与接触，不用方格像素、镜面彩虹或陌生装饰。",
+    "imageCaption": "单图转译试作 · Renee 原创工作流",
+    "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "nacre-inlay-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-color",
+        "object",
+        "food",
+        "collectible"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [],
+      "signature": [
+        "少量较大随形贝片构成一枚异形磁贴",
+        "层理顺主形长轴或转面，珠光只在部分角度出现",
+        "薄侧壁与细接缝，不是方格像素或满屏彩虹"
+      ],
+      "adaptation": "贝片分区、纹理方向与柔亮色组追随原照片；需要主色时可染色，不假称天然原色。",
+      "useWhen": "想让物件、植物或清楚场景变成有珠光和细层理的收藏小物",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    "features": [
+      "clear-silhouette",
+      "strong-color",
+      "object",
+      "food",
+      "collectible"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "器物",
+        "image": "assets/keepsakes/nacre-inlay-magnet.webp",
+        "sourceImage": "assets/transfer/source-food.png",
+        "caption": "单图转译试作",
+        "note": "一梨、一碟、两颗杏仁保留；随形贝片与层理可辨，连接背托借用源图影形。",
+        "sourceCaption": "合成测试照片",
+        "imageCredit": "Renee · AI 辅助生成；底图：本项目合成测试照片",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE"
+      }
+    ],
+    "family": "contour-relief-magnet"
+  },
+  {
+    "id": "openwork-shadow-magnet",
+    "label": "镂空浮影冰箱贴",
+    "origin": "original",
+    "author": "Renee",
+    "source": "Renee / Photo Alchemy Studio",
+    "sourceUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/docs/luminous-keepsakes.md",
+    "license": "MIT",
+    "summary": "把主轮廓与真实空隙切成薄金属，让短投影在底面上再画一遍这张照片的骨架。",
+    "best": [
+      "真正镂空",
+      "薄金属",
+      "短投影"
+    ],
+    "fidelity": "medium",
+    "direction": "material",
+    "image": "assets/keepsakes/openwork-shadow-magnet.webp",
+    "entry": "styles/openwork-shadow-magnet.md",
+    "installed": true,
+    "sourceImage": "assets/playful/source-tree-street.webp",
+    "collectedAt": "2026-09-21",
+    "creationType": "original-workflow",
+    "aliases": [
+      "镂空冰箱贴",
+      "金属镂空磁贴",
+      "光影冰箱贴",
+      "浮影磁贴"
+    ],
+    "outputRules": "一枚连通的薄金属镂空磁贴，真实空洞露出底面、近距离投影对应同一轮廓。默认无字；保留源图骨架，不加玻璃背板、通用徽章框或另一幅影子场景。",
+    "imageCaption": "单图转译试作 · Renee 原创工作流",
+    "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+    "imageLicense": "MIT",
+    "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+    "contract": {
+      "id": "openwork-shadow-magnet",
+      "family": "contour-relief-magnet",
+      "direction": "material",
+      "photoMode": "redraw",
+      "inputCount": {
+        "min": 1,
+        "max": 1
+      },
+      "subjects": [
+        "architecture",
+        "landscape",
+        "street",
+        "object",
+        "food",
+        "plant",
+        "pet",
+        "person"
+      ],
+      "bestFeatures": [
+        "clear-silhouette",
+        "strong-geometry",
+        "directional-lines",
+        "negative-space",
+        "collectible"
+      ],
+      "avoidFeatures": [
+        "identity-critical",
+        "faithful-photo"
+      ],
+      "needsAny": [
+        "clear-silhouette",
+        "strong-geometry",
+        "directional-lines"
+      ],
+      "signature": [
+        "主体骨架与来源空隙构成连通薄金属",
+        "底面从真正的镂空处可见，不填玻璃或整张背板",
+        "轻微离面产生对应的短投影，实形与影形互相呼应"
+      ],
+      "adaptation": "开孔、桥接和少量着色由轮廓、数量和负形决定；可删低优先级背景，但不新增事实。",
+      "useWhen": "照片有清楚轮廓或开口，想以金属实形、空洞和投影重新提炼",
+      "avoidWhen": "需精确人物身份、原像素、小字或可直接制造的工程文件时"
+    },
+    "features": [
+      "clear-silhouette",
+      "strong-geometry",
+      "directional-lines",
+      "negative-space",
+      "collectible"
+    ],
+    "subjects": [
+      "architecture",
+      "landscape",
+      "street",
+      "object",
+      "food",
+      "plant",
+      "pet",
+      "person"
+    ],
+    "examples": [
+      {
+        "label": "街树",
+        "image": "assets/keepsakes/openwork-shadow-magnet.webp",
+        "sourceImage": "assets/playful/source-tree-street.webp",
+        "caption": "单图转译试作",
+        "note": "树干在右、枝势向左与街道负形保留，开孔露出底面；细小人物与招牌被省略。",
+        "sourceCaption": "Albert 公开示例照片 · MIT",
+        "imageCredit": "Renee · AI 辅助生成；底图：Albert / albert-imagebook（MIT）",
+        "imageLicense": "MIT",
+        "imageLicenseUrl": "https://github.com/reneexiaoxiao/photo-alchemy-studio/blob/main/LICENSE",
+        "sourceUrl": "https://github.com/AlbertAZ1992/albert-imagebook/blob/277f38d1f12a90296d11b7dc4954155821a66e6e/assets/examples/source-tree-street.webp"
+      }
+    ],
+    "family": "contour-relief-magnet"
+  },
+  {
     "id": "souvenir-constellation",
     "label": "碎片星图",
     "origin": "original",

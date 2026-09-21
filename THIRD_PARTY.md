@@ -72,3 +72,7 @@ Seven Renee-authored modules and nine new generated outputs are documented in [t
 ## User-provided prompt directions · 2026-09-21
 
 Seven added modules are independently implemented by Renee from four user-provided prompt directions and three video-style descriptions. No verified upstream Skill, author, license or LOVART project was provided; the original prompt text is not redistributed in this repository. Gallery badges say Renee 参考实现. Existing travel-memory and paper-collage methods receive aliases rather than duplicate upstream claims. The project's MIT license applies only to its newly written implementation, not to source prompts, brand identities or third-party works. See [the mapping and image sources](docs/september-additions.md).
+
+## 2026-09-21 通透釉面与冰箱贴扩充
+
+新增6个工作流为Renee原创实现文字，受用户提出的通用材质方向启发；不主张媒介或工艺的发明权。四张合成底图和两张Albert固定版本MIT底图分别标注，图像与底图来源见 [本轮素材许可](assets/keepsakes/LICENSES.md)。旧版社区代码、许可和参考图没有改变。

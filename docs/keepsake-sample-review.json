@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-21",
+  "tool": "built-in ImageGen",
+  "modelVersion": "not reported by tool",
+  "coverage": "Six different input photos; one accepted study per new style, not broad transfer validation.",
+  "generationCalls": 9,
+  "postProcessing": "File copying, WebP compression and mechanical contact-sheet assembly only.",
+  "styles": [
+    {
+      "id": "glazed-ceramic-mosaic",
+      "image": "assets/keepsakes/glazed-ceramic-mosaic.webp",
+      "sourceImage": "assets/examples/source-coast.png",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "mode": "RGB",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "correctionCount": 1,
+      "status": "single-input-study",
+      "note": "蓝门、三盆花与海岸关系保留；釉面和砖块感明显，门环与台阶仍带浅浮雕倾向。"
+    },
+    {
+      "id": "gold-enamel-magnet",
+      "image": "assets/keepsakes/gold-enamel-magnet.webp",
+      "sourceImage": "assets/examples/source-courtyard.png",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "mode": "RGB",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "correctionCount": 1,
+      "status": "single-input-study",
+      "note": "三道拱、三只橙子与斜向池面保留；水面已归并为珐琅色块，细金线成为结构分区。"
+    },
+    {
+      "id": "translucent-resin-magnet",
+      "image": "assets/keepsakes/translucent-resin-magnet.webp",
+      "sourceImage": "assets/transfer/source-plant.png",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "mode": "RGB",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "correctionCount": 0,
+      "status": "single-input-study",
+      "note": "两片银杏与斜枝关系保留，边缘折射、厚处积色与淡色影可辨。"
+    },
+    {
+      "id": "liquid-sand-magnet",
+      "image": "assets/keepsakes/liquid-sand-magnet.webp",
+      "sourceImage": "assets/playful/source-beach-sunset.webp",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "mode": "RGB",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "correctionCount": 0,
+      "status": "single-input-study",
+      "note": "三个人物关系、伞与低日保留，透明封边和底部细沙可辨；静态概念，不代表实物动态验证。"
+    },
+    {
+      "id": "nacre-inlay-magnet",
+      "image": "assets/keepsakes/nacre-inlay-magnet.webp",
+      "sourceImage": "assets/transfer/source-food.png",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "mode": "RGB",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "correctionCount": 0,
+      "status": "single-input-study",
+      "note": "一梨、一碟、两颗杏仁保留；随形贝片与层理可辨，连接背托借用源图影形。"
+    },
+    {
+      "id": "openwork-shadow-magnet",
+      "image": "assets/keepsakes/openwork-shadow-magnet.webp",
+      "sourceImage": "assets/playful/source-tree-street.webp",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "mode": "RGB",
+      "alphaRange": [
+        255,
+        255
+      ],
+      "correctionCount": 1,
+      "status": "single-input-study",
+      "note": "树干在右、枝势向左与街道负形保留，开孔露出底面；细小人物与招牌被省略。"
+    }
+  ]
+}
